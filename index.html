@@ -5,165 +5,44 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quark-Systems — En construcción</title>
-  <meta name="description" content="Automatización industrial, proyectos y hardware. ¡Algo increíble está por llegar!" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="bg-grid" aria-hidden="true"></div>
   <main class="wrap">
     <section class="card">
       <header class="brand">
-        <img src="assets/logo.svg" alt="Logo Quark-Systems" class="logo"/>
+        <img src="assets/logo.jpg" alt="Logo Quark-Systems" class="logo"/>
         <h1 class="wordmark">Quark‑Systems</h1>
       </header>
       <h2 class="headline">¡Algo increíble está por llegar!</h2>
       <p class="sub">Estamos trabajando para traerte lo mejor en <strong>automatización industrial</strong>.</p>
-      <div class="cta"><a class="btn" href="#contacto">Contactanos</a></div>
     </section>
 
-    <section class="card form" id="contacto" aria-labelledby="contact-title">
-      <h3 id="contact-title">Escribinos</h3>
-      <p class="hint">Dejanos tu consulta y te contactamos a la brevedad.</p>
-
-      <form id="contact-form" action="https://formspree.io/f/xeozbbqa" method="POST" novalidate>
-        <div class="grid">
-          <label>Nombre y apellido
-            <input type="text" name="name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Juan Pérez">
-            <small class="err-msg" data-for="name"></small>
-          </label>
-          <label>Email
-            <input type="email" name="email" autocomplete="email" required placeholder="nombre@empresa.com">
-            <small class="err-msg" data-for="email"></small>
-          </label>
-        </div>
-        <div class="grid">
-          <label>Teléfono (opcional)
-            <input type="tel" name="phone" inputmode="tel" pattern="[+0-9()\-\s]{6,}" placeholder="+54 9 341 123 4567">
-            <small class="err-msg" data-for="phone"></small>
-          </label>
-          <label>Empresa (opcional)
-            <input type="text" name="company" maxlength="120" placeholder="Quark-Systems S.A.">
-          </label>
-        </div>
+    <section class="card form" id="contacto">
+      <h3>Escribinos</h3>
+      <form action="https://formspree.io/f/xeozbbqa" method="POST">
+        <label>Nombre
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
         <label>Asunto
           <select name="topic" required>
             <option value="" selected disabled>Seleccioná una opción</option>
-            <option>Consulta general</option>
-            <option>Proyecto</option>
-            <option>Soporte</option>
-            <option>Cotización</option>
+            <option>Quiero datos en la nube, ¿por dónde empiezo?</option>
+            <option>¿Podemos optimizar mi proceso?</option>
+            <option>Automatización: necesito dar el siguiente paso</option>
+            <option>Soy integrador, quiero hardware</option>
+            <option>Capacitación en automatización industrial</option>
           </select>
-          <small class="err-msg" data-for="topic"></small>
         </label>
         <label>Mensaje
-          <textarea name="message" rows="6" placeholder="Contanos brevemente tu necesidad" required minlength="10" maxlength="1500"></textarea>
-          <small class="err-msg" data-for="message"></small>
+          <textarea name="message" rows="5" required></textarea>
         </label>
-
-        <!-- Anti-bot honeypot -->
-        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-        <!-- Subject for email and metadata fields set by JS -->
-        <input type="hidden" name="subject" value="Consulta desde quark-systems.com">
-        <input type="hidden" name="page" value="">
-        <input type="hidden" name="ts" value="">
-
-        <label class="consent">
-          <input type="checkbox" name="consent" required>
-          Acepto ser contactado a través de los datos proporcionados.
-        </label>
-        <small class="err-msg" data-for="consent"></small>
-
-        <div class="actions">
-          <button type="submit" class="btn" id="sendBtn">Enviar</button>
-          <span class="status" id="status" role="status" aria-live="polite"></span>
-        </div>
-
-        <noscript>
-          <p class="noscript">Tu navegador tiene deshabilitado JavaScript. El formulario igual enviará por POST.</p>
-        </noscript>
+        <button type="submit">Enviar</button>
       </form>
-
-      <div class="success" id="success" hidden role="status" aria-live="polite">
-        <h4>¡Mensaje enviado!</h4>
-        <p>Gracias por contactarte. Te responderemos a la brevedad.</p>
-      </div>
     </section>
   </main>
-
-  <script>
-  (function(){
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('status');
-    const btn = document.getElementById('sendBtn');
-    const okBox = document.getElementById('success');
-    // set metadata
-    form.querySelector('input[name="page"]').value = location.href;
-    form.querySelector('input[name="ts"]').value = new Date().toISOString();
-
-    // client validation helpers
-    const errs = {
-      name: 'Ingresá tu nombre (mín. 2 caracteres).',
-      email: 'Ingresá un correo válido.',
-      phone: 'Formato no válido. Usá dígitos, +, (), - o espacios.',
-      topic: 'Seleccioná un asunto.',
-      message: 'Contanos un poco más (mín. 10 caracteres).',
-      consent: 'Debés aceptar el contacto para enviar.'
-    };
-
-    function showError(input){
-      const name = input.name;
-      const small = form.querySelector(`.err-msg[data-for="${name}"]`);
-      if (!small) return;
-      if (!input.checkValidity()) {
-        small.textContent = errs[name] || 'Revisá este campo.';
-        input.setAttribute('aria-invalid', 'true');
-      } else {
-        small.textContent = '';
-        input.removeAttribute('aria-invalid');
-      }
-    }
-
-    form.addEventListener('input', (e)=>{
-      if (e.target.closest('input, textarea, select')) showError(e.target);
-    });
-
-    form.addEventListener('submit', async function(e){
-      e.preventDefault();
-      status.textContent=''; okBox.hidden = true;
-
-      // Validate all required fields manually when novalidate is set
-      let valid = true;
-      for (const el of form.querySelectorAll('input, textarea, select')){
-        if (!el.checkValidity()) { showError(el); valid = false; }
-      }
-      if (!valid) { status.textContent = 'Revisá los campos marcados.'; status.classList.add('err'); return; }
-
-      btn.disabled = true; btn.textContent = 'Enviando…';
-      try {
-        const data = new FormData(form);
-        const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
-        if (res.ok) {
-          form.reset();
-          okBox.hidden = false;
-          status.textContent = '';
-          status.classList.remove('err','ok');
-          // restablecer metadata
-          form.querySelector('input[name="page"]').value = location.href;
-          form.querySelector('input[name="ts"]').value = new Date().toISOString();
-        } else {
-          status.textContent = 'No se pudo enviar. Probá de nuevo o escribinos a contacto.quark.systems@gmail.com';
-          status.classList.add('err');
-        }
-      } catch(err){
-        status.textContent = 'Hubo un error de conexión. Intentalo nuevamente.';
-        status.classList.add('err');
-      } finally { btn.disabled = false; btn.textContent = 'Enviar'; }
-    });
-  })();
-  </script>
 </body>
 </html>
