@@ -1,0 +1,17 @@
+
+:root{ --bg:#0b1220; --bg2:#0f172a; --grid:rgba(255,255,255,.04); --card:rgba(255,255,255,.06); --stroke:rgba(255,255,255,.12); --text:#e5f0ff; --muted:#94a3b8; --accent:#19a1ff; }
+*{box-sizing:border-box} html,body{height:100%}
+body{ margin:0; color:var(--text); font-family:'Montserrat',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background: radial-gradient(1000px 500px at 10% 10%, #0a2540 0%, transparent 60%), radial-gradient(800px 400px at 90% 90%, #1b3b6f 0%, transparent 60%), linear-gradient(180deg, var(--bg), var(--bg2)); }
+.bg-grid{ position:fixed; inset:0; pointer-events:none; background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size:32px 32px; mask-image: radial-gradient(60% 60% at 50% 50%, black, transparent 80%); }
+.wrap{ min-height:100%; display:grid; place-items:center; padding:clamp(16px,4vw,48px); }
+.card{ width:min(980px,100%); background:var(--card); border:1px solid var(--stroke); border-radius:20px; backdrop-filter:blur(8px); padding:clamp(24px,5vw,56px); text-align:center; box-shadow:0 10px 30px rgba(0,0,0,.35); }
+.brand{ display:flex; align-items:center; justify-content:center; gap:14px; margin-bottom:8px }
+.logo{ width:54px; height:54px }
+.wordmark{ font-family:'Rajdhani',sans-serif; font-weight:700; letter-spacing:.5px; margin:0; font-size:clamp(24px,4.5vw,42px) }
+.headline{ margin:10px 0 6px; font-size:clamp(22px,5.2vw,46px); line-height:1.1 }
+.sub{ margin:0 0 22px; color:var(--muted); font-size:clamp(14px,2.4vw,18px) }
+.actions{ display:flex; justify-content:center; margin-top:6px }
+.btn{ display:inline-block; padding:12px 20px; border-radius:12px; background:linear-gradient(135deg,#0ea5e9,#3b82f6); color:#fff; text-decoration:none; font-weight:700; letter-spacing:.2px; box-shadow:0 8px 20px rgba(14,165,233,.35); transition:transform .15s ease, box-shadow .15s ease }
+.btn:hover{ transform:translateY(-2px); box-shadow:0 12px 26px rgba(14,165,233,.45) }
+.foot{ margin-top:22px; color:var(--muted); font-size:12px }
+@media (prefers-color-scheme: light){ :root{ --text:#0b1220; --muted:#334155; --card:rgba(255,255,255,.8); --stroke:rgba(2,6,23,.12) } }
