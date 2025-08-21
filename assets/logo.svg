@@ -1,37 +1,30 @@
 
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' role='img' aria-label='Quark-Systems logomark'>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300' role='img' aria-label='Quark-Systems logomark'>
   <defs>
-    <radialGradient id='glow' cx='30%' cy='25%' r='80%'>
-      <stop offset='0%' stop-color='#67e8f9'/>
-      <stop offset='40%' stop-color='#22d3ee'/>
-      <stop offset='100%' stop-color='#0b4a6f'/>
+    <radialGradient id='tealGlow' cx='30%' cy='25%' r='70%'>
+      <stop offset='0%' stop-color='#74E1F2'/>
+      <stop offset='45%' stop-color='#22D3EE'/>
+      <stop offset='100%' stop-color='#0B4A6F'/>
     </radialGradient>
-    <linearGradient id='metal' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#cfd8df'/>
-      <stop offset='100%' stop-color='#f8fafc'/>
+    <linearGradient id='steel' x1='0' y1='0' x2='1' y2='1'>
+      <stop offset='0%' stop-color='#D8DEE4'/>
+      <stop offset='100%' stop-color='#F8FAFC'/>
     </linearGradient>
-    <linearGradient id='metal2' x1='0' y1='0' x2='1' y2='1'>
-      <stop offset='0%' stop-color='#aeb7bf'/>
-      <stop offset='100%' stop-color='#e2e8f0'/>
-    </linearGradient>
+    <clipPath id='circleClip'>
+      <circle cx='150' cy='150' r='120'/>
+    </clipPath>
   </defs>
-  <!-- Background circle with teal glow (clipped) -->
-  <g transform='translate(256,256)'>
-    <circle r='170' fill='url(#glow)'/>
-    <!-- Outer arcs -->
-    <g fill='none' stroke-linecap='round'>
-      <circle r='200' stroke='url(#metal)' stroke-width='28' stroke-dasharray='320 160' transform='rotate(35)'/>
-      <circle r='160' stroke='white' stroke-width='28' stroke-dasharray='200 420' transform='rotate(20)'/>
-      <circle r='120' stroke='white' stroke-width='28' stroke-dasharray='120 480' transform='rotate(-30)'/>
-    </g>
-    <!-- Inner ring and nucleus -->
-    <circle r='18' fill='url(#metal2)'/>
-    <circle r='8' fill='#4b5563'/>
-    <!-- Dots / particles -->
-    <g fill='url(#metal2)'>
-      <circle cx='-40' cy='-40' r='10'/>
-      <circle cx='-90' cy='10' r='10'/>
-      <circle cx='0' cy='-110' r='10'/>
+  <g transform='translate(150,150)'>
+    <g clip-path='url(#circleClip)'><circle r='100' fill='url(#tealGlow)'/></g>
+    <circle r='118' fill='none' stroke='url(#steel)' stroke-width='20' stroke-linecap='round' stroke-dasharray='155 620' transform='rotate(30)'/>
+    <circle r='92' fill='none' stroke='#FFFFFF' stroke-width='20' stroke-linecap='round' stroke-dasharray='200 480' transform='rotate(20)'/>
+    <circle r='64' fill='none' stroke='#FFFFFF' stroke-width='20' stroke-linecap='round' stroke-dasharray='185 320' transform='rotate(-55)'/>
+    <circle r='6' fill='#6B7280'/>
+    <circle r='14' fill='none' stroke='#C7CED6' stroke-width='8'/>
+    <g fill='#E6EDF3'>
+      <circle cx='-48' cy='-44' r='6'/>
+      <circle cx='-88' cy='8' r='6'/>
+      <circle cx='-6' cy='-88' r='6'/>
     </g>
   </g>
 </svg>
