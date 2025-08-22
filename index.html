@@ -1,15 +1,30 @@
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quark-Systems — En construcción</title>
-  <meta name="description" content="Automatización industrial, proyectos y hardware. ¡Algo increíble está por llegar!" />
+  <meta name="description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <!-- SEO & Social -->
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-192.png">
+  <link rel="canonical" href="/" />
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quark-Systems — En construcción">
+  <meta property="og:description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware.">
+  <meta property="og:image" content="assets/favicon-512.png">
+  <meta property="og:locale" content="es_AR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quark-Systems — En construcción">
+  <meta name="twitter:description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware.">
+  <meta name="twitter:image" content="assets/favicon-512.png">
 </head>
 <body>
   <div class="bg"></div>
@@ -22,15 +37,16 @@
   </header>
 
   <main class="wrap">
-    <section class="hero" aria-labelledby="h1">
+    <section class="hero reveal" aria-labelledby="h1">
       <h1 id="h1" class="headline" title="¡Algo increíble está por llegar!">
         <span class="shine">¡Algo increíble está por llegar!</span>
       </h1>
+      <div class="brandline">Quark‑Systems</div>
       <p class="sub">Estamos trabajando para traerte lo mejor en <strong>automatización industrial</strong>.</p>
       <div class="cta"><a class="btn" href="#contacto">Escribinos</a></div>
     </section>
 
-    <section class="card form" id="contacto" aria-labelledby="contact-title">
+    <section class="card form reveal" id="contacto" aria-labelledby="contact-title">
       <h2 id="contact-title">Contacto</h2>
       <p class="hint">Dejanos tu consulta y te respondemos a la brevedad.</p>
 
@@ -76,28 +92,16 @@
           </div>
         </label>
 
-        <!-- Honeypot -->
         <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-
-        <!-- Metadata -->
         <input type="hidden" name="page" value="">
         <input type="hidden" name="ts" value="">
         <input type="hidden" name="ua" value="">
 
-        <!-- Consent -->
         <label class="consent">
           <input type="checkbox" name="consent" required>
           Acepto que me contacten con la información proporcionada.
         </label>
         <small class="err" data-for="consent"></small>
-
-        <!-- Optional CAPTCHA (desactivado por defecto) -->
-        <!-- 
-        <div class="captcha">
-          <div class="h-captcha" data-sitekey="PONER_TU_SITE_KEY_AQUI"></div>
-        </div>
-        <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
-        -->
 
         <div class="actions">
           <button type="submit" class="btn" id="sendBtn">Enviar</button>
@@ -121,82 +125,25 @@
     const btn = document.getElementById('sendBtn');
     const okBox = document.getElementById('success');
     const counter = document.getElementById('counter');
-
-    // metadata
     form.querySelector('input[name="page"]').value = location.href;
     form.querySelector('input[name="ts"]').value = new Date().toISOString();
     form.querySelector('input[name="ua"]').value = navigator.userAgent;
 
-    // live counter
-    const msg = form.message;
-    const max = parseInt(msg.getAttribute('maxlength'), 10) || 1500;
-    const updateCount = ()=> counter.textContent = `${msg.value.length} / ${max}`;
+    const msg = form.message; const max = parseInt(msg.getAttribute('maxlength'), 10) || 1500;
+    const updateCount = ()=> { counter.textContent = msg.value.length + ' / ' + max; };
     msg.addEventListener('input', updateCount); updateCount();
 
-    const errors = {
-      name: 'Ingresá tu nombre (mín. 2 caracteres).',
-      email: 'Ingresá un correo válido (ej. nombre@empresa.com).',
-      phone: 'Formato no válido. Usá dígitos, +, (), - o espacios.',
-      topic: 'Seleccioná un asunto.',
-      message: 'Contanos un poco más (mín. 10 caracteres).',
-      consent: 'Debés aceptar el contacto para enviar.'
-    };
-
-    const emailRe = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-    const banned = ['test.com','example.com','mailinator.com','tempmail'];
-
-    function showError(input){
-      const name = input.name;
-      const small = form.querySelector(`.err[data-for="${name}"]`);
-      if (!small) return true;
-      let valid = input.checkValidity();
-      if (name === 'email' && valid) {
-        valid = emailRe.test(input.value) && !banned.some(b=> input.value.toLowerCase().includes(b));
-      }
-      if (!valid) {
-        small.textContent = errors[name] || 'Revisá este campo.';
-        input.setAttribute('aria-invalid', 'true');
-      } else {
-        small.textContent = '';
-        input.removeAttribute('aria-invalid');
-      }
-      return valid;
-    }
-
-    form.addEventListener('input', (e)=>{
-      if (e.target.matches('input, textarea, select')) showError(e.target);
-    });
-
-    form.addEventListener('submit', async (e)=>{
-      e.preventDefault();
-      status.textContent=''; okBox.hidden = true;
-
-      let allValid = true;
-      for (const el of form.querySelectorAll('input, textarea, select')){
-        if (!showError(el)) allValid = false;
-      }
-      if (!allValid) { status.textContent = 'Revisá los campos marcados.'; status.classList.add('err'); return; }
-
-      btn.disabled = true; btn.textContent = 'Enviando…';
-      try {
-        const data = new FormData(form);
-        const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
-        if (res.ok) {
-          form.reset(); updateCount();
-          okBox.hidden = false; status.textContent = ''; status.classList.remove('err','ok');
-          form.querySelector('input[name="page"]').value = location.href;
-          form.querySelector('input[name="ts"]').value = new Date().toISOString();
-          form.querySelector('input[name="ua"]').value = navigator.userAgent;
-        } else {
-          status.textContent = 'No se pudo enviar. Probá de nuevo o escribinos a contacto.quark.systems@gmail.com';
-          status.classList.add('err');
-        }
-      } catch(err){
-        status.textContent = 'Hubo un error de conexión. Intentalo nuevamente.';
-        status.classList.add('err');
-      } finally { btn.disabled = false; btn.textContent = 'Enviar'; }
-    });
+    const errs = {name:'Ingresá tu nombre (mín. 2 caracteres).', email:'Ingresá un correo válido (ej. nombre@empresa.com).', phone:'Formato no válido. Usá dígitos, +, (), - o espacios.', topic:'Seleccioná un asunto.', message:'Contanos un poco más (mín. 10 caracteres).', consent:'Debés aceptar el contacto para enviar.'};
+    const emailRe = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i; const banned = ['test.com','example.com','mailinator.com','tempmail'];
+    function showError(input){ const name=input.name; const small=form.querySelector('.err[data-for=\'+name+'\]'); if(!small) return true; let valid=input.checkValidity(); if(name==='email' && valid){ valid = emailRe.test(input.value) && !banned.some(b=> input.value.toLowerCase().includes(b)); } if(!valid){ small.textContent = errs[name] || 'Revisá este campo.'; input.setAttribute('aria-invalid','true'); } else { small.textContent=''; input.removeAttribute('aria-invalid'); } return valid; }
+    form.addEventListener('input', e=>{ if(e.target.matches('input, textarea, select')) showError(e.target); });
+    form.addEventListener('submit', async e=>{ e.preventDefault(); status.textContent=''; okBox.hidden=true; let allValid=true; for(const el of form.querySelectorAll('input, textarea, select')){ if(!showError(el)) allValid=false; } if(!allValid){ status.textContent='Revisá los campos marcados.'; status.classList.add('err'); return; } btn.disabled=true; btn.textContent='Enviando…'; try { const data=new FormData(form); const res=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}}); if(res.ok){ form.reset(); updateCount(); okBox.hidden=false; status.textContent=''; status.classList.remove('err','ok'); form.querySelector('input[name="page"]').value=location.href; form.querySelector('input[name="ts"]').value=new Date().toISOString(); form.querySelector('input[name="ua"]').value=navigator.userAgent; } else { status.textContent='No se pudo enviar. Probá de nuevo o escribinos a contacto.quark.systems@gmail.com'; status.classList.add('err'); } } catch(err){ status.textContent='Hubo un error de conexión. Intentalo nuevamente.'; status.classList.add('err'); } finally { btn.disabled=false; btn.textContent='Enviar'; } });
   })();
+  </script>
+  <script>
+    // Scroll reveal
+    const io = new IntersectionObserver(entries => { entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
+    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
   </script>
 </body>
 </html>
