@@ -33,7 +33,6 @@
       <img src="assets/logo.jpg" alt="Logo Quark-Systems" class="logo"/>
       <span class="wordmark">Quark‑Systems</span>
     </div>
-    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema" aria-pressed="false">☾</button>
     <a class="btn ghost" href="#contacto">Contactanos</a>
   </header>
 
@@ -42,9 +41,9 @@
       <h1 id="h1" class="headline" title="¡Algo increíble está por llegar!">
         <span class="shine">¡Algo increíble está por llegar!</span>
       </h1>
-      <div class="brandlockup" aria-label="Marca">
-        <span class="brand-badge">QUARK‑SYSTEMS</span>
-      </div>
+      <div class="brandline-wrap">
+  <span class="brandline">Quark‑Systems</span> — <span class="subline">automatización industrial</span>
+</div>
       <p class="sub">Estamos trabajando para traerte lo mejor en <strong>automatización industrial</strong>.</p>
       <div class="cta"><a class="btn" href="#contacto">Escribinos</a></div>
     </section>
@@ -148,7 +147,5 @@
     const io = new IntersectionObserver(entries => { entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
   </script>
-
-  <script>(function(){const r=document.documentElement,k="qs-theme";function a(t){r.setAttribute("data-theme",t)}const s=localStorage.getItem(k);const d=window.matchMedia("(prefers-color-scheme: dark)").matches;a(s|| (d?"dark":"light"));const b=document.getElementById("themeToggle");if(b){const y=()=>{const t=r.getAttribute("data-theme");b.setAttribute("aria-pressed",t==="dark");b.textContent=t==="dark"?"☀":"☾";};y();b.addEventListener("click",()=>{const t=r.getAttribute("data-theme")==="dark"?"light":"dark";a(t);localStorage.setItem(k,t);y();});}})();</script>
 </body>
 </html>
