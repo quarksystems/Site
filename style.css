@@ -1,3 +1,14 @@
+/* THEME TOKENS */
+:root{ --radius:12px; }
+:root[data-theme="dark"]{ --bg1:#0b1220; --bg2:#0f172a; --glass: rgba(255,255,255,.06); --stroke: rgba(255,255,255,.12); --text:#e5f0ff; --muted:#94a3b8; --accent:#22d3ee; --accent2:#3b82f6; --white:#fff; --ok:#10b981; --err:#ef4444; --field:#0f172a; --field-b:#1f2937; }
+:root[data-theme="light"]{ --bg1:#f3f6fb; --bg2:#eaf0f8; --glass: rgba(255,255,255,.85); --stroke: rgba(2,6,23,.12); --text:#0b1220; --muted:#334155; --accent:#0ea5e9; --accent2:#3b82f6; --white:#0b1220; --ok:#10b981; --err:#ef4444; --field:#ffffff; --field-b:#cbd5e1; }
+body{background: radial-gradient(1000px 500px at 10% 10%, rgba(14,165,233,.25) 0%, transparent 60%), radial-gradient(800px 400px at 90% 90%, rgba(59,130,246,.25) 0%, transparent 60%), linear-gradient(180deg,var(--bg1),var(--bg2)); color:var(--text);}
+.theme-toggle{ margin-right:10px; border:1px solid var(--stroke); background:var(--glass); color:var(--text); border-radius:var(--radius); padding:8px 10px; cursor:pointer; }
+.theme-toggle:hover{ border-color:var(--accent); }
+.brandlockup{ margin-top:6px; display:flex; gap:10px; align-items:center; justify-content:center; }
+.brand-badge{ display:inline-block; padding:8px 14px; border-radius:999px; letter-spacing:2px; font-weight:800; font-family:'Rajdhani',sans-serif; font-size: clamp(16px, 3.8vw, 24px); background: linear-gradient(135deg, var(--accent), var(--accent2)); color:#fff; box-shadow:0 10px 30px rgba(0,0,0,.25); text-transform:uppercase; }
+.hero{ gap:10px; }
+
 
 :root{ --bg1:#0b1220; --bg2:#0f172a; --glass: rgba(255,255,255,.06); --stroke: rgba(255,255,255,.12); --text:#e5f0ff; --muted:#94a3b8; --accent:#22d3ee; --accent2:#3b82f6; --white:#fff; --ok:#10b981; --err:#ef4444; --field:#0f172a; --field-b:#1f2937; }
 *{box-sizing:border-box}
