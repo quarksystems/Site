@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Q‑IIoT • Quark‑Systems</title>
-  <meta name="description" content="Gateways V‑BOX Wecon para conectividad IIoT." />
+  <title>Contacto • Quark‑Systems</title>
+  <meta name="description" content="Contacto con Quark‑Systems." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -30,14 +30,25 @@
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1>Q‑IIoT</h1><p class="lead lang-es">Conectividad industrial inteligente para un mundo conectado.</p><p class="lead lang-en">Smart industrial connectivity for a connected world.</p></div></main>
-<section class="main-content"><div class="container grid-3">
-  <div class="card"><h3>V‑BOX H Series</h3><p class="muted lang-es">Hasta 3 puertos Ethernet, WVPN, modelos con Wi‑Fi/4G/GPS. Ideal para monitoreo remoto y SCADA en la nube.</p><p class="muted lang-en">Up to 3 Ethernet ports, WVPN, models with Wi‑Fi/4G/GPS. Ideal for remote monitoring and cloud SCADA.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/126.html">Datasheet</a></p></div>
-  <div class="card"><h3>V‑BOX E Series</h3><p class="muted lang-es">Diseño delgado, bajo consumo. Funcionalidad esencial para aplicaciones simples.</p><p class="muted lang-en">Slim design, low power. Essential functionality for simple applications.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/164.html">Datasheet</a></p></div>
-  <div class="card"><h3>V‑BOX RH Series</h3><p class="muted lang-es">Salida HDMI, E/S integradas, alta compatibilidad de protocolos. Ideal para IIoT con visualización local.</p><p class="muted lang-en">HDMI output, integrated I/O, high protocol compatibility. Ideal for IIoT with local visualization.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/11296.html">Datasheet</a></p></div>
-</div>
-<div class="container card" style="margin-top:18px"><p class="muted lang-es">Ejemplos: estaciones de bombeo, calderas, compresores (H); hornos y prensas simples (E); líneas con HDMI local (RH).</p><p class="muted lang-en">Examples: pump stations, boilers, compressors (H); ovens and simple presses (E); lines with local HDMI (RH).</p></div>
-</section>
+<main class="hero"><div class="container"><h1 class="lang-es">Contacto</h1><h1 class="lang-en">Contact</h1><p class="lead lang-es">Contactanos hoy y descubrí cómo podemos ayudarte.</p><p class="lead lang-en">Contact us today and see how we can help.</p></div></main>
+<section class="main-content"><div class="container" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px">
+  <form class="card" onsubmit="openMail(event)">
+    <div style="display:grid;gap:12px">
+      <div><label class="lang-es" for="name">Tu nombre</label><label class="lang-en" for="name">Your name</label><input id="name" required placeholder="Jane Doe"/></div>
+      <div><label class="lang-es" for="email">Email</label><label class="lang-en" for="email">Email</label><input id="email" type="email" required placeholder="you@company.com"/></div>
+      <div><label class="lang-es" for="msg">Mensaje</label><label class="lang-en" for="msg">Message</label><textarea id="msg" required placeholder="Necesito 6x PLC + 6x HMI…"></textarea></div>
+      <button class="btn btn-primary" type="submit"><span class="lang-es">Enviar</span><span class="lang-en">Send</span></button>
+      <p class="muted small lang-es">Se abrirá tu app de correo con el mensaje pre‑cargado.</p>
+      <p class="muted small lang-en">Your email app will open with a pre‑filled message.</p>
+    </div>
+  </form>
+  <div class="card">
+    <h3 class="lang-es">Directo</h3><h3 class="lang-en">Direct</h3>
+    <p class="muted">📧 <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br>📞 +54 9 341 (completar)<br>🌐 <a href="http://quark-systems.ar/">quark-systems.ar</a></p>
+    <p class="small lang-es">Horario: Lunes a Viernes 8:30–16:30 • Sábado 9:00–12:00</p>
+    <p class="small lang-en">Hours: Mon–Fri 8:30–16:30 • Sat 9:00–12:00 (ART)</p>
+  </div>
+</div></section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>

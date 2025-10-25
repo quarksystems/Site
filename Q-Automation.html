@@ -1,76 +1,66 @@
-
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="color-scheme" content="light dark">
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-  <meta property='og:type' content='website'>
-  <meta property='og:title' content='QUARK‑SYSTEMS'>
-  <meta property='og:description' content='Hardware industrial con soporte local — PLCs, HMIs, V‑BOX, VFDs.'>
-  <meta property='og:image' content='assets/img/og-default.png'>
-  <title>Q‑Automation — PLCs y HMIs | QUARK‑SYSTEMS</title>
-
+  <title>Q‑Automation • Quark‑Systems</title>
+  <meta name="description" content="Q‑Automation: provisión de hardware industrial Wecon." />
+  <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="Inicio.html" class="brand" aria-label="Inicio QUARK-SYSTEMS">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <circle cx="12" cy="12" r="10" fill="currentColor" opacity=".1"/>
-          <path d="M6 12h12M12 6v12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <span>QUARK-SYSTEMS</span>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="menu" class="site-nav" aria-label="Principal">
-        <ul>
-          <li><a href="Inicio.html">Inicio</a></li>
-          <li><a href="Q-Automation.html">Q-Automation</a></li>
-          <li><a href="Q-IIoT.html">Q-IIoT</a></li>
-          <li><a href="Q-Drives.html">Q-Drives</a></li>
-          <li><a href="Blog.html">Blog</a></li>
-          <li><a href="Quienes_somos.html">Quiénes somos</a></li>
-          <li><a href="Contacto.html">Contacto</a></li>
-          <li><a class="btn btn-primary" href="https://forms.gle/Aebanfsd7pK9wXq56" target="_blank" rel="noopener">Contactar</a></li>
-        </ul>
-      </nav>
+<header>
+  <div class="container nav">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">Q</div>
+      <div class="brand-name">Quark‑Systems</div>
     </div>
-  </header>
-
-<main id="contenido">
-  <section class="hero reveal">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <h1>Q‑Automation</h1>
-        <p class="lead">PLCs y HMIs con soporte local.</p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" href="#catalogo">Ver productos</a>
-          <a class="btn btn-secondary" href="https://forms.gle/Aebanfsd7pK9wXq56" target="_blank" rel="noopener">Armar cotización</a>
-        </div>
-      </div>
-      <div class="hero-media"><img src="assets/img/og-default.png" alt="PLCs y HMIs"/></div>
-    </div>
-  </section>
-  <section class="section reveal" id="catalogo">
-    <div class="container grid cards">
-      <article class="card"><h3>PLCs</h3><p>Control confiable.</p><p><a class="btn" href="#">Ver PLCs</a></p></article>
-      <article class="card"><h3>HMIs</h3><p>Interfaces táctiles.</p><p><a class="btn" href="#">Ver HMIs</a></p></article>
-    </div>
-  </section>
+    <nav id="nav">
+      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+      <ul>
+        <li><a data-page="Inicio.html" href="Inicio.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
+        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
+        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+        <li><button class="btn btn-outline lang-toggle" onclick="toggleLang()">ES / EN</button></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="hero">
+  <div class="container">
+    <div class="kicker">Q‑Automation</div>
+    <h1 class="lang-es">Eficiencia y confiabilidad en cada proceso</h1>
+    <h1 class="lang-en">Efficiency and reliability in every process</h1>
+    <p class="lead lang-es">Q‑Automation, la unidad de Quark‑Systems especializada en provisión de hardware, ofrece soluciones de automatización industrial con tecnología Wecon, reconocida por su confiabilidad, compatibilidad y excelente relación costo‑beneficio.</p>
+    <p class="lead lang-en">Q‑Automation, Quark‑Systems’ hardware unit, delivers industrial automation solutions based on Wecon technology—renowned for reliability, compatibility, and great value.</p>
+  </div>
 </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> QUARK‑SYSTEMS · Argentina · Todos los derechos reservados.</small>
-      <a href="#" class="to-top" aria-label="Volver arriba">↑</a>
+<section class="main-content">
+  <div class="container grid-3">
+    <a class="card" href="Q-PLCs.html"><h3>Q‑PLCs</h3><p class="muted lang-es">PLCs de alta precisión y rendimiento.</p><p class="muted lang-en">High‑precision, high‑performance PLCs.</p></a>
+    <a class="card" href="Q-HMIs.html"><h3>Q‑HMIs</h3><p class="muted lang-es">Interfaces HMI intuitivas y robustas.</p><p class="muted lang-en">Intuitive, robust HMI panels.</p></a>
+    <a class="card" href="Q-VFDs.html"><h3>Q‑VFDs</h3><p class="muted lang-es">Variadores para control y eficiencia.</p><p class="muted lang-en">Drives for control and efficiency.</p></a>
+  </div>
+</section>
+<section>
+  <div class="container card">
+    <h3>Wecon Technology</h3>
+    <p><a class="btn btn-outline" href="https://www.we-con.com.cn/ES/" target="_blank">Wecon →</a></p>
+  </div>
+</section>
+<footer>
+  <div class="container footer-grid">
+    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
+    <div class="social">
+      <a href="Inicio.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
     </div>
-  </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</footer>
+<script src="assets/site.js"></script>
 </body>
 </html>
