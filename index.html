@@ -3,149 +3,186 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quark-Systems — En construcción</title>
-  <meta name="description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Rajdhani:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <!-- SEO & Social -->
-  <meta name="theme-color" content="#0b1220" />
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-192.png">
-  <link rel="canonical" href="/" />
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Quark-Systems — En construcción">
-  <meta property="og:description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware.">
-  <meta property="og:image" content="assets/favicon-512.png">
-  <meta property="og:locale" content="es_AR">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Quark-Systems — En construcción">
-  <meta name="twitter:description" content="¡Algo increíble está por llegar! Automatización industrial, proyectos y hardware.">
-  <meta name="twitter:image" content="assets/favicon-512.png">
+  <title>Quark‑Systems</title>
+  <meta name="description" content="Quark‑Systems: Q‑Automation, IIoT y VFD con Wecon — importación directa y garantía oficial." />
+  assets/site.css
 </head>
 <body>
-  <div class="bg"></div>
-  <header class="top">
-    <div class="brand">
-      <img src="assets/logo.jpg" alt="Logo Quark-Systems" class="logo"/>
-      <span class="wordmark">Quark‑Systems</span>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Reemplazá por images/logo.png si preferís PNG -->
+        images/logo.svg
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li><a data-page="index.html" href="index.html"><span classs="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li><a data-page="Quines somos.html" href="Quines somos.htmlan><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <a class="btn ghost" href="mailto:contacto.quark.systems@gmail.com?subject=Consulta%20Quark-Systems&body=Hola%20Quark-Systems,%20tengo%20la%20siguiente%20consulta:">Contactanos</a>
   </header>
 
-  <main class="wrap">
-    <section class="hero reveal" aria-labelledby="h1">
-      <h1 id="h1" class="headline" title="¡Algo increíble está por llegar!">
-        <span class="shine">¡Algo increíble está por llegar!</span>
-      </h1>
-      <div class="brandline-wrap">
-  <span class="brandline">Quark‑Systems</span> — <span class="subline">automatización industrial</span>
-</div>
-      <p class="sub">Estamos trabajando para traerte lo mejor en <strong>automatización industrial</strong>.</p>
-      <div class="cta"><a class="btn" href="#contacto">Escribinos</a></div>
-    </section>
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Industrial • Wecon • Networking</span>
+        <h1 class="lang-es">Impulsá la transformación digital</h1>
+        <h1 class="lang-en">Drive your digital transformation</h1>
 
-    <section class="card form reveal" id="contacto" aria-labelledby="contact-title">
-      <h2 id="contact-title">Contacto</h2>
-      <p class="hint">Dejanos tu consulta y te respondemos a la brevedad.</p>
+        <p class="lead lang-es">
+          Automatización (Q‑Automation), IIoT y VFD con Wecon. Soporte local, importación directa y garantía oficial.
+        </p>
+        <p class="lead lang-en">
+          Automation (Q‑Automation), IIoT and VFD powered by Wecon. Local support, factory‑direct import and official warranty.
+        </p>
 
-      <form id="contact-form" action="https://formspree.io/f/xeozbbqa" method="POST" novalidate>
-        <div class="grid">
-          <label>Nombre y apellido
-            <input type="text" name="name" autocomplete="name" required minlength="2" maxlength="80" placeholder="Juan Pérez">
-            <small class="err" data-for="name"></small>
-          </label>
-          <label>Email
-            <input type="email" name="email" autocomplete="email" required inputmode="email" placeholder="nombre@empresa.com">
-            <small class="err" data-for="email"></small>
-          </label>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+          Q-Automation.htmlQ‑Automation</a>
+          <a class="log</a>
         </div>
 
-        <div class="grid">
-          <label>Teléfono (opcional)
-            <input type="tel" name="phone" inputmode="tel" pattern="[+0-9()\-\s]{6,}" placeholder="+54 9 341 123 4567">
-            <small class="err" data-for="phone"></small>
-          </label>
-          <label>Empresa (opcional)
-            <input type="text" name="company" maxlength="120" placeholder="Quark-Systems S.A.">
-          </label>
-        </div>
-
-        <label>Asunto
-          <select name="topic" required>
-            <option value="" selected disabled>Seleccioná una opción</option>
-            <option>Quiero datos en la nube, ¿por dónde empiezo?</option>
-            <option>¿Podemos optimizar mi proceso?</option>
-            <option>Automatización: necesito dar el siguiente paso</option>
-            <option>Soy integrador, quiero hardware</option>
-            <option>Capacitación en automatización industrial</option>
-          </select>
-          <small class="err" data-for="topic"></small>
-        </label>
-
-        <label>Mensaje
-          <textarea name="message" rows="6" placeholder="Contanos brevemente tu necesidad" required minlength="10" maxlength="1500"></textarea>
-          <div class="row between">
-            <small class="err" data-for="message"></small>
-            <small id="counter" class="muted">0 / 1500</small>
+        <!-- ===== Banner Catálogo / Tienda ===== -->
+        <div class="catalog-banner" aria-label="Catálogo y tienda online">
+          <div class="catalog-media">
+            <!-- Cuando subas imágenes reales, podés usar .jpg/.png -->
+            images/wecon-plc.svg
+            images/wecon-hmi.svg
           </div>
-        </label>
-
-        <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="page" value="">
-        <input type="hidden" name="ts" value="">
-        <input type="hidden" name="ua" value="">
-
-        <label class="consent">
-          <input type="checkbox" name="consent" required>
-          Acepto que me contacten con la información proporcionada.
-        </label>
-        <small class="err" data-for="consent"></small>
-
-        <div class="actions">
-          <button type="submit" class="btn" id="sendBtn">Enviar</button>
-          <span class="status" id="status" role="status" aria-live="polite"></span>
-        </div>
-      </form>
-
-      <div class="success" id="success" hidden role="status" aria-live="polite">
-        <h3>¡Mensaje enviado!</h3>
-        <p>Gracias por contactarte. Te responderemos a la brevedad.</p>
+          <strong class="lang-es">Nuevo: Catálogo y tienda online</strong>
+          <strong class="lang-en">New: Online catalog & store</strong>
+          <div>
+            <a class="btn btn-outline" href="https://store.quark-systems.ar" target="_blank" rel="noopener">store.quark-systems.ar></div>
+        <div class="badge hazard" aria-label="Industria 4.0">Industria 4.0</div>
+        <div class="badge" aria-label="Partner Wecon">Wecon Partner</div>
       </div>
-    </section>
+
+      <div class="card">
+        <strong>Quark‑Systems</strong>
+        <p class="muted lang-es">
+          Socio estratégico para PYMES argentinas. Distribución oficial de Wecon + llave en mano y soporte local desde el cordón industrial de San Lorenzo.
+        </p>
+        <p class="muted lang-en">
+          Strategic partner for Argentine SMEs. Official Wecon distribution + turn‑key methodology and local support from the San Lorenzo industrial belt.
+        </p>
+      </div>
+    </div>
   </main>
 
-  <footer class="foot">© 2025 Quark‑Systems — En construcción</footer>
+  <!-- ===================== ¿POR QUÉ WECON? ===================== -->
+  <section class="section" aria-labelledby="why-wecon">
+    <div class="container">
+      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
+      <h2 class="lang-es">Wecon: calidad, soporte y IIoT integrados</h2>
+      <h2 class="lang-en">Wecon: quality, support and integrated IIoT</h2>
 
-  <script>
-  (function(){
-    const form = document.getElementById('contact-form');
-    const status = document.getElementById('status');
-    const btn = document.getElementById('sendBtn');
-    const okBox = document.getElementById('success');
-    const counter = document.getElementById('counter');
-    form.querySelector('input[name="page"]').value = location.href;
-    form.querySelector('input[name="ts"]').value = new Date().toISOString();
-    form.querySelector('input[name="ua"]').value = navigator.userAgent;
+      <div class="why-wecon" style="margin-top:12px">
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es">Calidad industrial probada (ISO9001, CE, FCC, RoHS) para entornos exigentes.</p>
+          <p class="muted lang-en">Proven industrial quality (ISO9001, CE, FCC, RoHS) for harsh environments.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es">Soporte local y garantía oficial: importación directa y respuesta inmediata.</p>
+          <p class="muted lang-en">Local support & official warranty: factory‑direct import and swift response.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es">Innovación IIoT: V‑BOX y V‑NET para conectividad remota y telemetría.</p>
+          <p class="muted lang-en">IIoT innovation: V‑BOX & V‑NET for remote connectivity and telemetry.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es">Excelente costo/beneficio y curva de aprendizaje amigable.</p>
+          <p class="muted lang-en">Excellent value and friendly learning curve.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es">Capacitación y documentación para integradores, OEMs y usuarios finales.</p>
+          <p class="muted lang-en">Training & docs for integrators, OEMs and end‑users.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    const msg = form.message; const max = parseInt(msg.getAttribute('maxlength'), 10) || 1500;
-    const updateCount = ()=> { counter.textContent = msg.value.length + ' / ' + max; };
-    msg.addEventListener('input', updateCount); updateCount();
+  <!-- ======================= COMUNIDAD ======================= -->
+  <section class="section" aria-labelledby="community">
+    <div class="container card">
+      <h3 id="community" class="lang-es">Construyamos la Comunidad Wecon Argentina</h3>
+      <h3 class="lang-en">Let’s build the Wecon Argentina Community</h3>
+      <p class="muted lang-es">
+        Para integradores, OEMs y entusiastas: contenidos técnicos, capacitación, soporte y colaboración.
+        La comunidad vive en nuestro <strong>Blog</strong>.
+      </p>
+      <p class="muted lang-en">
+        For integrators, OEMs and enthusiasts: technical content, training, support and collaboration.
+        The community lives in our <strong>Blog</strong>.
+      </p>
+      Blog.html<span class="lang-es">Quiero ser parte →</span><span class="lang-en">Join →</span></a>
+    </div>
+  </section>
 
-    const errs = {name:'Ingresá tu nombre (mín. 2 caracteres).', email:'Ingresá un correo válido (ej. nombre@empresa.com).', phone:'Formato no válido. Usá dígitos, +, (), - o espacios.', topic:'Seleccioná un asunto.', message:'Contanos un poco más (mín. 10 caracteres).', consent:'Debés aceptar el contacto para enviar.'};
-    const emailRe = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i; const banned = ['test.com','example.com','mailinator.com','tempmail'];
-    function showError(input){ const name=input.name; const small=form.querySelector('.err[data-for=\'+name+'\]'); if(!small) return true; let valid=input.checkValidity(); if(name==='email' && valid){ valid = emailRe.test(input.value) && !banned.some(b=> input.value.toLowerCase().includes(b)); } if(!valid){ small.textContent = errs[name] || 'Revisá este campo.'; input.setAttribute('aria-invalid','true'); } else { small.textContent=''; input.removeAttribute('aria-invalid'); } return valid; }
-    form.addEventListener('input', e=>{ if(e.target.matches('input, textarea, select')) showError(e.target); });
-    form.addEventListener('submit', async e=>{ e.preventDefault(); status.textContent=''; okBox.hidden=true; let allValid=true; for(const el of form.querySelectorAll('input, textarea, select')){ if(!showError(el)) allValid=false; } if(!allValid){ status.textContent='Revisá los campos marcados.'; status.classList.add('err'); return; } btn.disabled=true; btn.textContent='Enviando…'; try { const data=new FormData(form); const res=await fetch(form.action,{method:'POST',body:data,headers:{'Accept':'application/json'}}); if(res.ok){ form.reset(); updateCount(); okBox.hidden=false; status.textContent=''; status.classList.remove('err','ok'); form.querySelector('input[name="page"]').value=location.href; form.querySelector('input[name="ts"]').value=new Date().toISOString(); form.querySelector('input[name="ua"]').value=navigator.userAgent; } else { status.textContent='No se pudo enviar. Probá de nuevo o escribinos a contacto.quark.systems@gmail.com'; status.classList.add('err'); } } catch(err){ status.textContent='Hubo un error de conexión. Intentalo nuevamente.'; status.classList.add('err'); } finally { btn.disabled=false; btn.textContent='Enviar'; } });
-  })();
-  </script>
-  <script>
-    // Scroll reveal
-    const io = new IntersectionObserver(entries => { entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el=> io.observe(el));
-  </script>
+  <!-- ===================== ACCESOS RÁPIDOS ===================== -->
+  <section class="section" aria-labelledby="quick-links">
+    <div class="container grid-3" id="quick-links">
+      <div class="card">
+        <h3>Q‑PLCs</h3>
+        <p class="muted lang-es">Rendimiento y precisión.</p>
+        <p class="muted lang-en">Performance and precision.</p>
+        <mages/wecon-plc.svg
+        Q-PLCs.html→</a>
+      </div>
+
+      <div class="card">
+        <h3>Q‑HMIs</h3>
+        <p class="muted lang-es">Interfaz clara y robusta.</p>
+        <p class="muted lang-en">Clear, robust interface.</p>
+        images/wecon-hmi.svg
+        Q-HMIs.html→</a>
+      </div>
+
+      <div class="card">
+        <h3>Q‑VFDs</h3>
+        <p class="muted lang-es">Control y eficiencia energética.</p>
+        <p class="muted lang-en">Control & energy efficiency.</p>
+        images/wecon-vfd.svg
+        Q-VFDs.html→</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <!-- ======================== SCRIPTS ======================== -->
+  <ssets/site.js</script>
 </body>
 </html>
