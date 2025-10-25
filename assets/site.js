@@ -1,13 +1,13 @@
-<script>
 function getLang(){ return localStorage.getItem('lang') || 'es'; }
 function setLang(l){ localStorage.setItem('lang', l); document.documentElement.lang = l; markActive(); }
 function toggleLang(){ setLang(getLang()==='es'?'en':'es'); }
 
+// Marca activo en el menú (soporta nombres con espacios usando decodeURIComponent)
 function markActive(){
-  const here = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+  const here = decodeURIComponent((location.pathname.split('/').pop() || 'index.html')).toLowerCase();
   document.querySelectorAll('nav a[data-page]').forEach(a=>{
-    const page = (a.dataset.page || '').toLowerCase();
-    a.classList.toggle('active', page===here);
+    const page = decodeURIComponent(a.dataset.page || '').toLowerCase();
+    a.classList.toggle('active', page === here);
   });
 }
 
@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
   markActive();
 });
 
+// Mailto del formulario de Contacto
 function openMail(e){
   e.preventDefault();
   const name = encodeURIComponent((document.getElementById('name')||{}).value||'');
@@ -25,4 +26,3 @@ function openMail(e){
   const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\n${decodeURIComponent(msg)}`);
   window.location.href = `mailto:contacto.quark.systems@gmail.com?subject=${subject}&body=${body}`;
 }
-</script>
