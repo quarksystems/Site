@@ -9,9 +9,10 @@
 </head>
 <body>
 <header>
+  <div class="header-top"></div>
   <div class="container nav">
     <div class="brand">
-      <div class="logo" aria-hidden="true">Q</div>
+      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
       <div class="brand-name">Quark‑Systems</div>
     </div>
     <nav id="nav">
@@ -19,26 +20,36 @@
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
         <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html"><span>Q‑Automation ▾</span></a>
-          <ul class="submenu">
-            <li><a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a></li>
-            <li><a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a></li>
-          </ul>
+          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
+          <div class="submenu">
+            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
+            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+          </div>
         </li>
         <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
         <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
       </ul>
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1 class="lang-es">Contacto</h1><h1 class="lang-en">Contact</h1></div></main><section class="section"><div class="container" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px"><form class="card" onsubmit="openMail(event)"><div style="display:grid;gap:12px"><div><label class="lang-es" for="name">Tu nombre</label><label class="lang-en" for="name">Your name</label><input id="name" required /></div><div><label for="email">Email</label><input id="email" type="email" required /></div><div><label class="lang-es" for="msg">Mensaje</label><label class="lang-en" for="msg">Message</label><textarea id="msg" required></textarea></div><button class="btn btn-primary" type="submit"><span class="lang-es">Enviar</span><span class="lang-en">Send</span></button></div></form><div class="card"><h3 class="lang-es">Directo</h3><h3 class="lang-en">Direct</h3><p class="muted">📧 <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br>📞 +54 9 341 (completar)</p></div></div></section>
+<main class="hero"><div class="container"><span class="section-kicker">Contacto</span><h1 class="lang-es">Contacto</h1><h1 class="lang-en">Contact</h1><p class="lead lang-es">Escribinos y respondemos hoy.</p><p class="lead lang-en">Write us — same‑day reply.</p></div></main>
+<section class="section"><div class="container" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px">
+  <form class="card" onsubmit="openMail(event)"><div style="display:grid;gap:12px">
+    <div><label class="lang-es" for="name">Tu nombre</label><label class="lang-en" for="name">Your name</label><input id="name" required placeholder="Jane Doe"/></div>
+    <div><label for="email">Email</label><input id="email" type="email" required placeholder="you@company.com"/></div>
+    <div><label class="lang-es" for="msg">Mensaje</label><label class="lang-en" for="msg">Message</label><textarea id="msg" required placeholder="Necesito 6x PLC + 6x HMI…"></textarea></div>
+    <button class="btn btn-primary" type="submit"><span class="lang-es">Enviar</span><span class="lang-en">Send</span></button>
+  </div></form>
+  <div class="card"><h3 class="lang-es">Directo</h3><h3 class="lang-en">Direct</h3><p class="muted">📧 <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br>📞 +54 9 341 (completar)</p></div>
+</div></section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social"><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>

@@ -4,46 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑HMIs • Quark‑Systems</title>
-  <meta name="description" content="HMIs Wecon: control intuitivo y rendimiento confiable." />
+  <meta name="description" content="HMIs Wecon: intuitivas y robustas." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
 <header>
+  <div class="header-top"></div>
   <div class="container nav">
     <div class="brand">
-      <div class="logo" aria-hidden="true">Q</div>
+      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
       <div class="brand-name">Quark‑Systems</div>
     </div>
     <nav id="nav">
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
-        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
-        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
+          <div class="submenu">
+            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
+            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+          </div>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
       </ul>
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1>Q‑HMIs</h1><p class="lead lang-es">Gama completa de HMIs Wecon: desde modelos básicos hasta IIoT con V‑NET.</p><p class="lead lang-en">Full Wecon HMI range: from basic models to IIoT with V‑NET.</p></div></main>
+<main class="hero"><div class="container"><span class="section-kicker">Q‑HMIs</span><h1>HMIs Wecon</h1><p class="lead">PI3000i • PI3000ie • PI3000ig</p></div></main>
 <section class="section"><div class="container grid-3">
-  <div class="card"><h3>Serie PI3000i</h3><p class="muted lang-es">7" y 10.2", <8W, táctil, multi‑protocolo.</p><p class="muted lang-en">7" & 10.2", <8W, touch, multi‑protocol.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/80.html">Datasheet</a></p></div>
-  <div class="card"><h3>Serie PI3000ie</h3><p class="muted lang-es">Arranque 6 s, cambio de pantalla 100 ms, >300 drivers PLC, LUA.</p><p class="muted lang-en">Boot 6 s, 100 ms screen switch, >300 PLC drivers, LUA scripts.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/79.html">Datasheet</a></p></div>
-  <div class="card"><h3>Serie PI3000ig</h3><p class="muted lang-es">IIoT + V‑NET: nube, alarmas, mantenimiento, SCADA.</p><p class="muted lang-en">IIoT + V‑NET: cloud, alarms, maintenance, SCADA.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/78.html">Datasheet</a></p></div>
+  <div class="card"><h3>PI3000i</h3><p class="muted">7" / 10.2" • <8W • multi‑protocolo</p></div>
+  <div class="card"><h3>PI3000ie</h3><p class="muted">Arranque 6 s • 100 ms cambio pantalla • LUA</p></div>
+  <div class="card"><h3>PI3000ig</h3><p class="muted">IIoT + V‑NET • nube • alarmas • SCADA</p></div>
 </div>
-<div class="container card" style="margin-top:18px"><p class="muted lang-es">¿Listo para una demo? Escribinos.</p><p class="muted lang-en">Ready for a demo? Write us.</p></div>
+<div class="container" style="margin-top:18px"><div class="card">
+  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
+  <p class="muted lang-es">Las primeras implementaciones fueron interfaces simples para tableros compactos. Con la serie ig incorporamos monitoreo remoto y analítica, mejorando OEE y tiempos de respuesta.</p>
+  <p class="muted lang-en">Our first deployments were simple panels for compact boards. With the ig series we added remote monitoring and analytics, improving OEE and response times.</p>
+</div></div>
 </section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social">
-      <a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
-    </div>
+    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>

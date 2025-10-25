@@ -4,46 +4,54 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑IIoT • Quark‑Systems</title>
-  <meta name="description" content="Gateways V‑BOX Wecon para conectividad IIoT." />
+  <meta name="description" content="Gateways V‑BOX Wecon." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
 <header>
+  <div class="header-top"></div>
   <div class="container nav">
     <div class="brand">
-      <div class="logo" aria-hidden="true">Q</div>
+      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
       <div class="brand-name">Quark‑Systems</div>
     </div>
     <nav id="nav">
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
-        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
-        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
+          <div class="submenu">
+            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
+            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+          </div>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
       </ul>
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1>Q‑IIoT</h1><p class="lead lang-es">Conectividad industrial inteligente para un mundo conectado.</p><p class="lead lang-en">Smart industrial connectivity for a connected world.</p></div></main>
+<main class="hero"><div class="container"><span class="section-kicker">Q‑IIoT</span><h1>Gateways V‑BOX</h1><p class="lead">H • E • RH</p></div></main>
 <section class="section"><div class="container grid-3">
-  <div class="card"><h3>V‑BOX H Series</h3><p class="muted lang-es">Hasta 3 puertos Ethernet, WVPN, modelos con Wi‑Fi/4G/GPS. Ideal para monitoreo remoto y SCADA en la nube.</p><p class="muted lang-en">Up to 3 Ethernet ports, WVPN, models with Wi‑Fi/4G/GPS. Ideal for remote monitoring and cloud SCADA.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/126.html">Datasheet</a></p></div>
-  <div class="card"><h3>V‑BOX E Series</h3><p class="muted lang-es">Diseño delgado, bajo consumo. Funcionalidad esencial para aplicaciones simples.</p><p class="muted lang-en">Slim design, low power. Essential functionality for simple applications.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/164.html">Datasheet</a></p></div>
-  <div class="card"><h3>V‑BOX RH Series</h3><p class="muted lang-es">Salida HDMI, E/S integradas, alta compatibilidad de protocolos. Ideal para IIoT con visualización local.</p><p class="muted lang-en">HDMI output, integrated I/O, high protocol compatibility. Ideal for IIoT with local visualization.</p><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/11296.html">Datasheet</a></p></div>
+  <div class="card"><h3>H Series</h3><p class="muted">3x Ethernet • WVPN • modelos Wi‑Fi/4G/GPS</p></div>
+  <div class="card"><h3>E Series</h3><p class="muted">Delgado • bajo consumo • funciones esenciales</p></div>
+  <div class="card"><h3>RH Series</h3><p class="muted">HDMI • E/S integradas • alta compatibilidad</p></div>
 </div>
-<div class="container card" style="margin-top:18px"><p class="muted lang-es">Ejemplos: estaciones de bombeo, calderas, compresores (H); hornos y prensas simples (E); líneas con HDMI local (RH).</p><p class="muted lang-en">Examples: pump stations, boilers, compressors (H); ovens and simple presses (E); lines with local HDMI (RH).</p></div>
+<div class="container" style="margin-top:18px"><div class="card">
+  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
+  <p class="muted lang-es">La necesidad de asistencia remota pos‑pandemia aceleró la adopción de V‑BOX. Empezamos conectando máquinas individuales y hoy gestionamos células completas con dashboards en la nube.</p>
+  <p class="muted lang-en">Post‑pandemic remote assistance needs accelerated V‑BOX adoption. We started by connecting single machines and now manage full cells with cloud dashboards.</p>
+</div></div>
 </section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social">
-      <a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
-    </div>
+    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>

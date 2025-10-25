@@ -9,9 +9,10 @@
 </head>
 <body>
 <header>
+  <div class="header-top"></div>
   <div class="container nav">
     <div class="brand">
-      <div class="logo" aria-hidden="true">Q</div>
+      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
       <div class="brand-name">Quark‑Systems</div>
     </div>
     <nav id="nav">
@@ -19,26 +20,41 @@
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
         <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html"><span>Q‑Automation ▾</span></a>
-          <ul class="submenu">
-            <li><a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a></li>
-            <li><a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a></li>
-          </ul>
+          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
+          <div class="submenu">
+            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
+            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+          </div>
         </li>
         <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
         <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
       </ul>
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><div class="kicker">Q‑Automation</div><h1 class="lang-es">Eficiencia y confiabilidad en cada proceso</h1><h1 class="lang-en">Efficiency and reliability in every process</h1><p class="lead lang-es">Unidad de hardware Wecon, asesoramiento y soporte.</p><p class="lead lang-en">Wecon hardware unit, advisory and support.</p></div></main><section class="section"><div class="container grid-3"><a class="card" href="Q-PLCs.html"><h3>Q‑PLCs</h3><p class="muted lang-es">PLCs de alta precisión.</p><p class="muted lang-en">High‑precision PLCs.</p></a><a class="card" href="Q-HMIs.html"><h3>Q‑HMIs</h3><p class="muted lang-es">HMIs intuitivas.</p><p class="muted lang-en">Intuitive HMIs.</p></a><a class="card" href="Q-VFDs.html"><h3>Q‑VFDs</h3><p class="muted lang-es">Variadores eficientes.</p><p class="muted lang-en">Efficient drives.</p></a></div></section>
+<main class="hero"><div class="container"><span class="section-kicker">Q‑Automation</span><h1 class="lang-es">Eficiencia y confiabilidad en cada proceso</h1><h1 class="lang-en">Efficiency and reliability in every process</h1><p class="lead lang-es">Tecnología Wecon con asesoramiento y soporte local.</p><p class="lead lang-en">Wecon technology with local advisory and support.</p></div></main>
+<section class="section"><div class="container grid-3">
+  <a class="card" href="Q-PLCs.html"><h3>Q‑PLCs</h3><p class="muted lang-es">PLCs de alta precisión.</p><p class="muted lang-en">High‑precision PLCs.</p></a>
+  <a class="card" href="Q-HMIs.html"><h3>Q‑HMIs</h3><p class="muted lang-es">HMIs intuitivas.</p><p class="muted lang-en">Intuitive HMIs.</p></a>
+  <a class="card" href="Q-VFDs.html"><h3>Q‑VFDs</h3><p class="muted lang-es">Variadores eficientes.</p><p class="muted lang-en">Efficient drives.</p></a>
+</div>
+<div class="container" style="margin-top:18px">
+  <div class="card">
+    <h3 class="lang-es">Nuestra historia en Q‑Automation</h3>
+    <h3 class="lang-en">Our Q‑Automation story</h3>
+    <p class="muted lang-es">Comenzamos abasteciendo líneas pequeñas con PLC y HMI básicos. Con cada proyecto fuimos ampliando stock, soporte y formación. Hoy acompañamos migraciones completas y estandarizaciones con una cadena de repuestos local.</p>
+    <p class="muted lang-en">We started supplying small lines with basic PLC/HMI. With each project we expanded stock, support and training. Today we support full migrations and standardization with a local spares chain.</p>
+  </div>
+</div>
+</section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social"><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
