@@ -8,19 +8,20 @@
   assets/site.css
 </head>
 <body>
+
   <!-- ======================= HEADER ======================= -->
   <header>
     <div class="header-top"></div>
     <div class="container nav">
       <div class="brand">
-        <!-- Reemplazá por images/logo.png si preferís PNG -->
+        <!-- Reemplazá por images/logo.png si usás PNG -->
         images/logo.svg
         <div class="brand-name">Quark‑Systems</div>
       </div>
       <nav id="nav">
         <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
         <ul>
-          <li><a data-page="index.html" href="index.html"><span classs="lang-en">Home</span></a></li>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
           <li class="has-sub">
             Q-Automation.htmlQ‑Automation ▾</a>
             <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
@@ -30,7 +31,7 @@
           </li>
           <li>Q-VFDs.htmlQ‑VFDs</a></li>
           <li>Q-IIoT.htmlQ‑IIoT</a></li>
-          <li><a data-page="Quines somos.html" href="Quines somos.htmlan><span class="lang-en">About</span></a></li>
+          <li>Quines somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
           <li>Blog.htmlBlog</a></li>
           <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
           <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
@@ -56,20 +57,24 @@
 
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
           Q-Automation.htmlQ‑Automation</a>
-          <a class="log</a>
+          Blog.htmlBlog</a>
         </div>
 
         <!-- ===== Banner Catálogo / Tienda ===== -->
         <div class="catalog-banner" aria-label="Catálogo y tienda online">
           <div class="catalog-media">
-            <!-- Cuando subas imágenes reales, podés usar .jpg/.png -->
+            <!-- Reemplazá por .jpg/.png reales cuando quieras -->
             images/wecon-plc.svg
             images/wecon-hmi.svg
           </div>
           <strong class="lang-es">Nuevo: Catálogo y tienda online</strong>
           <strong class="lang-en">New: Online catalog & store</strong>
           <div>
-            <a class="btn btn-outline" href="https://store.quark-systems.ar" target="_blank" rel="noopener">store.quark-systems.ar></div>
+            https://store.quark-systems.arstore.quark-systems.ar →</a>
+          </div>
+        </div>
+
+        <div class="hrule"></div>
         <div class="badge hazard" aria-label="Industria 4.0">Industria 4.0</div>
         <div class="badge" aria-label="Partner Wecon">Wecon Partner</div>
       </div>
@@ -147,7 +152,7 @@
         <h3>Q‑PLCs</h3>
         <p class="muted lang-es">Rendimiento y precisión.</p>
         <p class="muted lang-en">Performance and precision.</p>
-        <mages/wecon-plc.svg
+        images/wecon-plc.svg
         Q-PLCs.html→</a>
       </div>
 
@@ -177,12 +182,11 @@
         <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
         <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
       </div>
-      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
     </div>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </footer>
 
-  <!-- ======================== SCRIPTS ======================== -->
-  <ssets/site.js</script>
+  assets/site.js</script>
 </body>
 </html>
