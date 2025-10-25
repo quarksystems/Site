@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quiénes somos • Quark‑Systems</title>
-  <meta name="description" content="Sobre Quark‑Systems: misión, visión y valores." />
+  <meta name="description" content="Sobre Quark‑Systems." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -18,11 +18,15 @@
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
-        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
-        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html"><span>Q‑Automation ▾</span></a>
+          <ul class="submenu">
+            <li><a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a></li>
+            <li><a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a></li>
+          </ul>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
@@ -30,30 +34,11 @@
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1 class="lang-es">Quiénes somos</h1><h1 class="lang-en">About us</h1><p class="lead lang-es">Soluciones en automatización, IIoT y mantenimiento predictivo con IA.</p><p class="lead lang-en">Solutions in automation, IIoT and AI‑based predictive maintenance.</p></div></main>
-<section class="section"><div class="container card">
-  <h3 class="lang-es">Nuestra Historia</h3><h3 class="lang-en">Our Story</h3>
-  <p class="lang-es">Nacimos en el cordón industrial de San Lorenzo, acompañando a pymes e integradores hacia la Industria 4.0.</p>
-  <p class="lang-en">Born in the San Lorenzo industrial belt, we support SMEs and integrators on their Industry 4.0 journey.</p>
-  <h3 class="lang-es">Nuestra Misión</h3><h3 class="lang-en">Our Mission</h3>
-  <p class="lang-es">Impulsar la transformación digital regional con soluciones accesibles y eficientes.</p>
-  <p class="lang-en">Drive regional digital transformation with accessible, efficient solutions.</p>
-  <h3 class="lang-es">Nuestra Visión</h3><h3 class="lang-en">Our Vision</h3>
-  <p class="lang-es">Ser referentes en innovación tecnológica industrial en LATAM.</p>
-  <p class="lang-en">Be a reference in industrial tech innovation across LATAM.</p>
-  <h3 class="lang-es">Valores</h3><h3 class="lang-en">Values</h3>
-  <ul class="lang-es"><li>Innovación</li><li>Cercanía</li><li>Compromiso</li><li>Excelencia técnica</li></ul>
-  <ul class="lang-en"><li>Innovation</li><li>Closeness</li><li>Commitment</li><li>Technical excellence</li></ul>
-  <h3 class="lang-es">Sobre el fundador</h3><h3 class="lang-en">About the founder</h3>
-  <p class="lang-es">Guillermo Espósito, especialista en automatización industrial y mantenimiento (20+ años), con experiencia en DOW, Arauco y Celulosa Argentina.</p>
-  <p class="lang-en">Guillermo Espósito, industrial automation & maintenance specialist (20+ years), with experience at DOW, Arauco and Celulosa Argentina.</p>
-</div></section>
+<main class="hero"><div class="container"><h1 class="lang-es">Quiénes somos</h1><h1 class="lang-en">About us</h1></div></main>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social">
-      <a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
-    </div>
+    <div class="social"><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>

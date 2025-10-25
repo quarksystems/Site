@@ -18,11 +18,15 @@
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
-        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
-        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html"><span>Q‑Automation ▾</span></a>
+          <ul class="submenu">
+            <li><a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a></li>
+            <li><a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a></li>
+          </ul>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
@@ -30,14 +34,14 @@
     </nav>
   </div>
 </header>
-<main class="hero">
+<main class="hero reveal">
   <div class="container hero-grid">
     <div>
       <div class="kicker">Industrial • Wecon • Networking</div>
       <h1 class="lang-es">Impulsá la transformación digital</h1>
       <h1 class="lang-en">Drive your digital transformation</h1>
-      <p class="lead lang-es">Descubrí cómo la automatización, el IIoT y la innovación predictiva pueden transformar tu producción con el respaldo técnico de Quark‑Systems.</p>
-      <p class="lead lang-en">Discover how automation, IIoT, and predictive innovation can transform your operations with Quark‑Systems technical backing.</p>
+      <p class="lead lang-es">Automatización, IIoT e innovación predictiva para transformar tu operación con el respaldo técnico de Quark‑Systems.</p>
+      <p class="lead lang-en">Automation, IIoT and predictive innovation to transform your operation with Quark‑Systems technical backing.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="Contcto.html"><span class="lang-es">Contactar</span><span class="lang-en">Contact us</span></a>
         <a class="btn btn-outline" href="Q-Automation.html"><span class="lang-es">Descubrir Q‑Automation</span><span class="lang-en">Explore Q‑Automation</span></a>
@@ -46,44 +50,15 @@
     <div class="card" role="img" aria-label="Illustration">Quark‑Systems</div>
   </div>
 </main>
-<section class="section">
-  <div class="container grid-3">
-    <div class="card">
-      <h3 class="lang-es">Automatización Industrial</h3>
-      <h3 class="lang-en">Industrial Automation</h3>
-      <p class="muted lang-es">Potenciamos tu planta con tecnología Wecon y más.</p>
-      <p class="muted lang-en">We boost your plant with Wecon technology and more.</p>
-      <a href="Q-Automation.html" class="btn btn-outline"><span class="lang-es">Ver +</span><span class="lang-en">See more</span></a>
-    </div>
-    <div class="card">
-      <h3 class="lang-es">Proyectos llave en mano</h3>
-      <h3 class="lang-en">Turn‑key projects</h3>
-      <p class="muted lang-es">De la idea a la puesta en marcha: tu proyecto en manos expertas.</p>
-      <p class="muted lang-en">From strategy to commissioning: your project in expert hands.</p>
-      <a href="#" class="btn btn-outline" onclick="alert('Sección en preparación / Coming soon');return false;">OK</a>
-    </div>
-    <div class="card">
-      <h3 class="lang-es">Monitoreo Predictivo</h3>
-      <h3 class="lang-en">Predictive Monitoring</h3>
-      <p class="muted lang-es">Anticipate y detectá fallas antes de que sean un problema.</p>
-      <p class="muted lang-en">Anticipate and detect faults before they become problems.</p>
-      <a href="#" class="btn btn-outline" onclick="alert('Sección en preparación / Coming soon');return false;">OK</a>
-    </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container card">
-    <h3 class="lang-es">Contacto</h3>
-    <h3 class="lang-en">Contact</h3>
-    <p>📧 <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br>🌐 <a href="http://quark-systems.ar/">quark-systems.ar</a></p>
-  </div>
-</section>
+<section class="section"><div class="container grid-3">
+  <div class="card"><h3 class="lang-es">Q‑PLCs</h3><h3 class="lang-en">Q‑PLCs</h3><p class="muted lang-es">PLCs de alto rendimiento.</p><p class="muted lang-en">High‑performance PLCs.</p><a href="Q-PLCs.html" class="btn btn-outline">→</a></div>
+  <div class="card"><h3 class="lang-es">Q‑HMIs</h3><h3 class="lang-en">Q‑HMIs</h3><p class="muted lang-es">Interfaces intuitivas.</p><p class="muted lang-en">Intuitive HMIs.</p><a href="Q-HMIs.html" class="btn btn-outline">→</a></div>
+  <div class="card"><h3>Q‑VFDs</h3><p class="muted lang-es">Control y eficiencia energética.</p><p class="muted lang-en">Control & energy efficiency.</p><a href="Q-VFDs.html" class="btn btn-outline">→</a></div>
+</div></section>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social">
-      <a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
-    </div>
+    <div class="social"><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>

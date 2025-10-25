@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑VFDs • Quark‑Systems</title>
-  <meta name="description" content="VFDs Wecon: control y eficiencia energética." />
+  <meta name="description" content="VFDs Wecon: eficiencia energética." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
 <body>
@@ -18,11 +18,15 @@
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li><a data-page="Q-Automation.html" href="Q-Automation.html"><span class="lang-es">Q‑Automation</span><span class="lang-en">Q‑Automation</span></a></li>
-        <li><a data-page="Q-PLCs.html" href="Q-PLCs.html"><span class="lang-es">Q‑PLCs</span><span class="lang-en">Q‑PLCs</span></a></li>
-        <li><a data-page="Q-HMIs.html" href="Q-HMIs.html"><span class="lang-es">Q‑HMIs</span><span class="lang-en">Q‑HMIs</span></a></li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html"><span class="lang-es">Q‑VFDs</span><span class="lang-en">Q‑VFDs</span></a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html"><span class="lang-es">Q‑IIoT</span><span class="lang-en">Q‑IIoT</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html"><span>Q‑Automation ▾</span></a>
+          <ul class="submenu">
+            <li><a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a></li>
+            <li><a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a></li>
+          </ul>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
         <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
         <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
         <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
@@ -30,20 +34,11 @@
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><h1>Q‑VFDs</h1><p class="lead lang-es">Inversores Wecon para control dinámico y eficiencia energética.</p><p class="lead lang-en">Wecon drives for dynamic control and energy efficiency.</p></div></main>
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>Serie VM</h3><ul class="muted lang-es"><li>Formato compacto, instalación rápida</li><li>0–400 Hz, 150%/60 s</li><li>220V monofásico 0.75–2.2 kW, 380V trifásico 0.75–7.5 kW</li></ul><ul class="muted lang-en"><li>Compact form, quick install</li><li>0–400 Hz, 150%/60 s overload</li><li>220V 1φ 0.75–2.2 kW, 380V 3φ 0.75–7.5 kW</li></ul><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/161.html">Datasheet</a></p></div>
-  <div class="card"><h3>Serie VB</h3><ul class="muted lang-es"><li>Vector SVC (hasta 320 Hz) & VF (hasta 1000 Hz)</li><li>Unidad de freno hasta 22 kW</li><li>PID optimizado</li></ul><ul class="muted lang-en"><li>Vector SVC (to 320 Hz) & VF (to 1000 Hz)</li><li>Built‑in brake unit up to 22 kW</li><li>Optimized PID</li></ul><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/162.html">Datasheet</a></p></div>
-  <div class="card"><h3>Serie VC</h3><ul class="muted lang-es"><li>Diseño compacto y expansión modular</li><li>Interfaces de comunicación/E/S/encoder</li><li>Soporta motores síncronos y asíncronos</li></ul><ul class="muted lang-en"><li>Compact with modular expansion</li><li>Comms / I/O / incremental encoder options</li><li>Supports synchronous & asynchronous motors</li></ul><p><a class="btn btn-outline" target="_blank" href="https://www.we-con.com.cn/en/product_t/11306.html">Datasheet</a></p></div>
-</div>
-<div class="container card" style="margin-top:18px"><p class="muted lang-es">Consultá selección y compatibilidad para tu aplicación.</p><p class="muted lang-en">Ask for selection and compatibility for your application.</p></div>
-</section>
+<main class="hero"><div class="container"><h1>Q‑VFDs</h1><p class="lead">Wecon VM, VB, VC</p></div></main>
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div class="social">
-      <a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a>
-    </div>
+    <div class="social"><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
   </div>
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </footer>
