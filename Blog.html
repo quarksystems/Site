@@ -9,13 +9,13 @@
 </head>
 <body>
   <!-- ======================= HEADER ======================= -->
-  <header>
+    <div class="header-top"></div>
     <div class="container nav">
       <div class="brand">
-        images/logo.png
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
         <div class="brand-name">Quark‑Systems</div>
       </div>
-      <nav id="nav">
+    <nav id="nav">
       <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
       <ul>
         <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
@@ -166,20 +166,31 @@
   </div>
 </section>
 
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Tenés un proyecto en mente?</h3>
+        <h3 class="lang-en">Got a project in mind?</h3>
+        <p class="muted lang-es">Escribinos y lo revisamos en el día.</p>
+        <p class="muted lang-en">Drop us a line — same‑day reply.</p>
+      </div>
+      <a class="btn btn-primary" href="Contcto.html"><span class="lang-es">Contacto →</span><span class="/div>
+  </section>
+
   <!-- ======================= FOOTER ======================= -->
   <footer>
     <div class="container footer-grid">
       <div class="small">
-        © Quark‑Systems •
+        © <span id="y"></span> Quark‑Systems •
         <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
         <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
       </div>
-      <div>
-        <a href="index.html">↑ <span class="lang-es">Inicion class="lang-en">Top</span></a>
-      </div>
+      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
     </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </footer>
-  assets/site.js</script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
 ``

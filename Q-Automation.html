@@ -17,32 +17,25 @@
         <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
         <div class="brand-name">Quark‑Systems</div>
       </div>
-
       <nav id="nav">
-        <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-        <ul>
-          <li>
-            <a data-page="index.html class="lang-es">Inicio</span>
-              <span class="lang-en">Home</span>
-            </a>
-          </li>
-          <li class="has-sub">
-            <a data-page="Q-Automation.html" href="Q-Automation.html" aria-haspopup="true" aria-expanded="falseel="Submenú Q‑Automation">
-              <a data-page="Q-PLCs.html" href="Q-PLCs.htmlQ-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-        <a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</-page="Q-IIoT.html" href="Q-IIoT.html"> <a data-page="Quines%20somos.html" href="Quines%20somos.htmlmos</span>
-              <span class="lang-en">About</span>
-            </a>
-          </li>
-          <li>
-            <a data-page="Blog.html" href="Blog.html">Blogdata-page="Contcto.html" href="lang-es">Contacto</span>
-              <span class="lang-en">Contact</span>
-            </a>
-          </li>
-          <li>
-            <button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button>
-          </li>
-        </ul>
-      </nav>
+      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+      <ul>
+        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+        <li class="has-sub">
+          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
+          <div class="submenu">
+            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
+            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+          </div>
+        </li>
+        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
+        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
+        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
+        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
+      </ul>
+    </nav>
     </div>
   </header>
 
@@ -198,11 +191,11 @@
         <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
         <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
       </div>
-      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
     </div>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   </footer>
-
+  
   <script src="assets/site.js"></script>
 </body>
 </html>
