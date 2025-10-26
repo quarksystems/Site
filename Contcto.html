@@ -18,22 +18,28 @@
         <div class="brand-name">Quark‑Systems</div>
       </div>
       <nav id="nav">
-        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
         <ul>
-          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-          <li class="has-sub">
-            Q-Automation.htmlQ‑Automation ▾</a>
-            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
-              Q-PLCs.htmlQ‑PLCs</a>
-              Q-HMIs.htmlQ‑HMIs</a>
-            </div>
+          <li>
+            <a data-page="index.html class="lang-es">Inicio</span>
+              <span class="lang-en">Home</span>
+            </a>
           </li>
-          <li>Q-VFDs.htmlQ‑VFDs</a></li>
-          <li>Q-IIoT.htmlQ‑IIoT</a></li>
-          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-          <li>Blog.htmlBlog</a></li>
-          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+          <li class="has-sub">
+            <a data-page="Q-Automation.html" href="Q-Automation.html" aria-haspopup="true" aria-expanded="falseel="Submenú Q‑Automation">
+              <a data-page="Q-PLCs.html" href="Q-PLCs.htmlQ-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
+        <a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</-page="Q-IIoT.html" href="Q-IIoT.html"> <a data-page="Quines%20somos.html" href="Quines%20somos.htmlmos</span>
+              <span class="lang-en">About</span>
+            </a>
+          </li>
+          <li>
+            <a data-page="Blog.html" href="Blog.html">Blogdata-page="Contcto.html" href="lang-es">Contacto</span>
+              <span class="lang-en">Contact</span>
+            </a>
+          </li>
+          <li>
+            <button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button>
+          </li>
         </ul>
       </nav>
     </div>
