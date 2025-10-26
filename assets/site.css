@@ -1,57 +1,142 @@
-
-/* ===== Quark‑Systems Industrial Theme v2.1 ===== */
+/* ===== Quark‑Systems Industrial Theme v5 ===== */
 :root{
   --steel:#3A444C; --iron:#1F262D; --coal:#0B0F13; --galvan:#B0BEC5; --concrete:#ECEFF1;
   --signal:#0057B8; --safety:#FF6A00; --hazard:#FFC400; --success:#2E7D32;
   --text:#0E1525; --muted:#5B687A; --surface:#FFFFFF; --radius:12px;
   --shadow:0 14px 40px rgba(13,17,23,.12); --ring:rgba(0,87,184,.25);
 }
-@media (prefers-color-scheme:dark){ :root{ --surface:#121821; --text:#E8EEFC; --muted:#9FB0C7; --shadow:0 14px 40px rgba(0,0,0,.45);} body{ background:var(--coal);} }
-*{box-sizing:border-box} html,body{margin:0;padding:0} html{scroll-behavior:smooth}
-body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;color:var(--text); background:linear-gradient(180deg,#FAFBFD, #F3F6FA);} a{color:var(--signal);text-decoration:none} a:hover{opacity:.9} img{max-width:100%;display:block}
-html[lang="es"] .lang-en{display:none} html[lang="en"] .lang-es{display:none}
-.container{max-width:1160px;margin:0 auto;padding:0 20px} .section{padding:70px 0}
-.section .section-kicker{display:inline-block;padding:6px 10px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;font-weight:800;font-size:.8rem;background:linear-gradient(90deg,var(--hazard),var(--safety));color:#222}
-header{position:sticky;top:0;z-index:1000;background:var(--surface);box-shadow:var(--shadow)} .header-top{height:6px;background:linear-gradient(90deg,var(--signal) 0%, var(--safety) 60%, var(--hazard) 100%)}
+@media (prefers-color-scheme:dark){
+  :root{ --surface:#121821; --text:#E8EEFC; --muted:#9FB0C7; --shadow:0 14px 40px rgba(0,0,0,.45); }
+  body{ background:var(--coal); }
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Arial,sans-serif;
+  color:var(--text); background:linear-gradient(180deg,#FAFBFD,#F3F6FA);
+}
+a{color:var(--signal);text-decoration:none}
+a:hover{opacity:.9}
+img{max-width:100%;display:block}
+html[lang="es"] .lang-en{display:none}
+html[lang="en"] .lang-es{display:none}
+
+.container{max-width:1160px;margin:0 auto;padding:0 20px}
+.section{padding:70px 0}
+.section .section-kicker{
+  display:inline-block;padding:6px 10px;border-radius:999px;letter-spacing:.08em;text-transform:uppercase;
+  font-weight:800;font-size:.8rem;background:linear-gradient(90deg,var(--hazard),var(--safety));color:#222
+}
+
+/* ===== Header + dropdown ===== */
+header{position:sticky;top:0;z-index:1000;background:var(--surface);box-shadow:var(--shadow)}
+.header-top{height:6px;background:linear-gradient(90deg,var(--signal) 0%, var(--safety) 60%, var(--hazard) 100%)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
 .brand{display:flex;align-items:center;gap:.6rem}
 .logo-img{width:40px;height:40px;border-radius:10px;background:var(--iron);padding:2px}
 .brand-name{font-weight:900;letter-spacing:.2px}
+
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
 nav a{font-weight:700;color:inherit;opacity:.9;position:relative}
 nav a.active{color:var(--signal);opacity:1}
-nav a.active::after{content:"";position:absolute;left:0;right:0;bottom:-14px;height:3px;background:linear-gradient(90deg,var(--signal),var(--safety));border-radius:2px}
+nav a.active::after{
+  content:"";position:absolute;left:0;right:0;bottom:-14px;height:3px;
+  background:linear-gradient(90deg,var(--signal),var(--safety));border-radius:2px
+}
 .menu-btn{display:none;background:none;border:0;font-size:26px}
-/* Dropdown for Q‑Automation */
 .has-sub{position:relative}
-.submenu{position:absolute;left:0;top:100%;display:none;flex-direction:column;background:var(--surface);border:1px solid rgba(58,68,76,.18);border-radius:10px;padding:10px;box-shadow:var(--shadow);min-width:220px}
+.submenu{
+  position:absolute;left:0;top:100%;display:none;flex-direction:column;background:var(--surface);
+  border:1px solid rgba(58,68,76,.18);border-radius:10px;padding:10px;box-shadow:var(--shadow);min-width:220px
+}
 .has-sub:hover .submenu{display:flex}
 .submenu a{padding:6px 8px;white-space:nowrap}
-@media (max-width:900px){ nav ul{display:none;position:absolute;right:20px;top:72px;background:var(--surface);padding:14px 18px;border-radius:12px;box-shadow:var(--shadow);flex-direction:column}
-  nav.open ul{display:flex} .menu-btn{display:block} .submenu{position:static;display:flex;border:none;box-shadow:none;padding:0} }
+@media (max-width:900px){
+  nav ul{
+    display:none;position:absolute;right:20px;top:72px;background:var(--surface);
+    padding:14px 18px;border-radius:12px;box-shadow:var(--shadow);flex-direction:column
+  }
+  nav.open ul{display:flex}
+  .menu-btn{display:block}
+  .submenu{position:static;display:flex;border:none;box-shadow:none;padding:0}
+}
 
-/* Hero with optional background image */
-main.hero{padding:90px 0 50px;border-bottom:1px solid rgba(58,68,76,.15);
+/* ===== Hero ===== */
+main.hero{
+  padding:90px 0 50px;border-bottom:1px solid rgba(58,68,76,.15);
   background:
     linear-gradient(180deg,rgba(236,239,241,.95), rgba(236,239,241,.85)),
     repeating-linear-gradient(135deg, rgba(0,0,0,.06) 0 2px, rgba(0,0,0,0) 2px 8px),
     url('../images/hero.jpg'),
     url('../images/hero-fallback.svg');
-  background-size:auto, auto, cover, cover; background-position:center; background-blend-mode:normal,normal,soft-light,normal;}
+  background-size:auto, auto, cover, cover;
+  background-position:center;
+  background-blend-mode:normal,normal,soft-light,normal;
+}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
 .kicker{color:var(--signal);font-weight:900;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
 .lead{font-size:1.12rem;color:var(--muted)}
 
-.card{background:var(--surface);border:1px solid rgba(58,68,76,.18);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow);position:relative}
-.card::before{content:"";position:absolute;left:0;top:0;width:100%;height:6px;border-top-left-radius:var(--radius);border-top-right-radius:var(--radius);background:linear-gradient(90deg,var(--signal),var(--safety))}
-.grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)} @media (max-width:900px){.grid-3{grid-template-columns:1fr}}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;border:2px solid transparent;font-weight:800;cursor:pointer}
-.btn-primary{background:var(--signal);color:#fff} .btn-accent{background:var(--safety);color:#fff} .btn-outline{border-color:var(--signal);color:var(--signal);background:transparent} .btn:hover{transform:translateY(-1px)}
-.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-weight:800;font-size:.78rem;border:1px solid rgba(58,68,76,.2)} .badge.hazard{background:linear-gradient(90deg,var(--hazard),#FFD95A);color:#222} .badge.success{background:linear-gradient(90deg,#4CAF50,#2E7D32);color:#fff}
-label{font-weight:800;font-size:.95rem} input,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(58,68,76,.28);background:var(--surface);color:inherit;outline-color:var(--ring)} textarea{min-height:120px;resize:vertical}
-footer{padding:30px 0 54px;color:var(--muted);border-top:1px solid rgba(58,68,76,.2);background:linear-gradient(180deg,var(--surface), #f6f8fb)} .footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px} @media (max-width:700px){.footer-grid{grid-template-columns:1fr}} .small{font-size:.9rem}
-.muted{color:var(--muted)} .hrule{height:1px;background:linear-gradient(90deg,rgba(58,68,76,.12),rgba(58,68,76,.4),rgba(58,68,76,.12));margin:26px 0}
-/* Catalog banner */
-.catalog-banner{margin:20px 0; background:linear-gradient(90deg, rgba(0,87,184,.12), rgba(255,106,0,.12)); border:1px dashed rgba(58,68,76,.3); border-radius:14px; padding:16px; display:flex; align-items:center; justify-content:space-between; gap:12px}
+/* ===== Cards / utilidades ===== */
+.card{
+  background:var(--surface);border:1px solid rgba(58,68,76,.18);padding:20px;border-radius:var(--radius);
+  box-shadow:var(--shadow);position:relative
+}
+.card::before{
+  content:"";position:absolute;left:0;top:0;width:100%;height:6px;border-top-left-radius:var(--radius);border-top-right-radius:var(--radius);
+  background:linear-gradient(90deg,var(--signal),var(--safety))
+}
+.grid-3{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.grid-3{grid-template-columns:1fr}}
+
+.badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-weight:800;font-size:.78rem;border:1px solid rgba(58,68,76,.2)}
+.badge.hazard{background:linear-gradient(90deg,var(--hazard),#FFD95A);color:#222}
+
+.small{font-size:.9rem}
+.muted{color:var(--muted)}
+.hrule{height:1px;background:linear-gradient(90deg,rgba(58,68,76,.12),rgba(58,68,76,.4),rgba(58,68,76,.12));margin:26px 0}
+
+/* ===== Botones: shimmer/reflejo + flotado suave ===== */
+.btn{
+  position:relative;display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:12px;
+  border:2px solid transparent;font-weight:800;cursor:pointer;overflow:hidden;isolation:isolate;transform:translateZ(0)
+}
+.btn::after{
+  content:"";position:absolute;inset:-20%;
+  background:linear-gradient(115deg,transparent 0 40%,rgba(255,255,255,.35) 50%,transparent 60% 100%);
+  transform:translateX(-120%) skewX(-12deg);
+  transition:transform .6s cubic-bezier(.2,.6,.2,1);
+  mix-blend-mode:soft-light;pointer-events:none
+}
+.btn:hover::after{ transform:translateX(120%) skewX(-12deg) }
+.btn:hover{ filter:saturate(1.05) }
+@media (prefers-reduced-motion:no-preference){
+  .btn-primary{ animation:floatY 4s ease-in-out infinite }
+}
+@keyframes floatY{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-2px)} }
+
+.btn-primary{background:var(--signal);color:#fff}
+.btn-accent{background:var(--safety);color:#fff}
+.btn-outline{border-color:var(--signal);color:var(--signal);background:transparent}
+
+/* ===== Banner Catálogo ===== */
+.catalog-banner{
+  margin:20px 0; background:linear-gradient(90deg, rgba(255,196,0,.22), rgba(255,106,0,.18));
+  border:2px dashed rgba(58,68,76,.35); border-radius:14px; padding:18px; display:flex; align-items:center; justify-content:space-between; gap:12px
+}
 .catalog-banner strong{font-size:1.05rem}
+.catalog-media{display:flex;align-items:center;gap:16px}
+.catalog-media img{width:120px;height:auto;border-radius:10px;box-shadow:var(--shadow);border:1px solid rgba(58,68,76,.18)}
+
+/* ===== ¿Por qué Wecon? ===== */
+.why-wecon{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.why-wecon .point{display:flex;gap:12px;align-items:flex-start}
+.why-wecon .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(90deg,var(--signal),var(--safety));margin-top:7px}
+@media (max-width:900px){.why-wecon{grid-template-columns:1fr}}
+
+/* ===== Footer ===== */
+footer{padding:30px 0 54px;color:var(--muted);border-top:1px solid rgba(58,68,76,.2);background:linear-gradient(180deg,var(--surface), #f6f8fb)}
+.footer-grid{display:grid;grid-template-columns:1fr auto;gap:16px}
+@media (max-width:700px){.footer-grid{grid-template-columns:1fr}}
