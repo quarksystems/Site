@@ -1,0 +1,153 @@
+Listado de imágenes para /images/
+Identidad y hero
+
+-logo.svg
+Logo principal de Quark‑Systems (vectorial, fondo transparente).
+hero.jpg
+Imagen de portada para el hero de la Home (1920×1080 px, puede ser una planta, tablero, equipo, etc.).
+-hero-fallback.svg
+Fondo vectorial de respaldo si no hay hero.jpg (ya incluido como placeholder).
+
+
+Productos principales
+
+wecon-plc.svg
+Icono/imagen de PLC Wecon (placeholder, reemplazable por foto real).
+wecon-hmi.svg
+Icono/imagen de HMI Wecon (placeholder, reemplazable por foto real).
+wecon-vfd.svg
+Icono/imagen de VFD Wecon (placeholder, reemplazable por foto real).
+wecon-iiot.svg
+Icono/imagen de gateway IIoT Wecon (opcional, para V‑BOX).
+
+
+Galería de productos y aplicaciones
+
+gallery-plc-01.jpg
+Foto real de PLC Wecon instalado o en primer plano (1600×1200 px).
+gallery-hmi-01.jpg
+Foto real de HMI Wecon en uso o en tablero (1600×1200 px).
+gallery-iiot-01.jpg
+Foto real de V‑BOX o solución IIoT (1600×1200 px).
+
+
+Casos y tableros
+
+case-01.jpg
+Foto de tablero real, instalación o caso de éxito (1920×1080 px).
+case-02.jpg
+Foto “antes/después” de migración o mejora (1920×1080 px).
+case-03.jpg
+Foto de tablero con KPIs/OEE visibles (1920×1080 px).
+
+
+Certificaciones
+
+cert-iso9001.svg
+Logo/certificado ISO 9001 (vectorial, fondo transparente).
+cert-ce-fcc.svg
+Logo/certificado CE/FCC (vectorial, fondo transparente).
+cert-rohs.svg
+Logo/certificado RoHS (vectorial, fondo transparente).
+
+
+Equipo y soporte
+
+team-technical.jpg
+Foto del equipo técnico (1600×1200 px).
+team-support.jpg
+Foto del equipo de soporte o atención (1600×1200 px).
+team-projects.jpg
+Foto de tableros, proyectos o instalaciones (1600×1200 px).
+
+
+Contacto
+
+contact-support.jpg
+Foto de soporte técnico en acción (1600×1200 px).
+contact-panel.jpg
+Foto de tablero real o intervención técnica (1600×1200 px).
+contact-map.jpg
+Mapa de ubicación (puede ser captura de Google Maps o foto de la oficina).
+
+
+Blog y comunidad
+
+blog-banner.jpg
+Banner de comunidad/blog (1920×600 px, evento, equipo, clientes, etc.).
+blog-post-01.jpg
+Imagen para post destacado 1 (1920×1080 px).
+blog-post-02.jpg
+Imagen para post destacado 2 (1920×1080 px).
+blog-post-03.jpg
+Imagen para post destacado 3 (1920×1080 px).
+
+
+VFD y aplicaciones
+
+vfd-vm.jpg
+Foto real de VFD VM (1600×1200 px).
+vfd-vb.jpg
+Foto real de VFD VB (1600×1200 px).
+vfd-vc.jpg
+Foto real de VFD VC (1600×1200 px).
+vfd-pump-01.jpg
+Aplicación: bomba controlada por VFD (1920×1080 px).
+vfd-fan-01.jpg
+Aplicación: ventilador/aire controlado por VFD (1920×1080 px).
+vfd-conveyor-01.jpg
+Aplicación: cinta transportadora con VFD (1920×1080 px).
+
+
+HMI y IIoT
+
+hmi-pi3000i.jpg
+Foto de HMI PI3000i (1600×1200 px).
+hmi-pi3000ie.jpg
+Foto de HMI PI3000ie (1600×1200 px).
+hmi-pi3000ig.jpg
+Foto de HMI PI3000ig (1600×1200 px).
+vnet-dashboard.jpg
+Captura de dashboard V‑NET (1920×1080 px).
+vnet-alarms.jpg
+Captura de alarmas V‑NET (1920×1080 px).
+vnet-remote.jpg
+Captura de acceso remoto V‑NET (1920×1080 px).
+
+
+IIoT arquitecturas
+
+vbox-h.jpg
+Foto de V‑BOX H (1600×1200 px).
+vbox-e.jpg
+Foto de V‑BOX E (1600×1200 px).
+vbox-rh.jpg
+Foto de V‑BOX RH (1600×1200 px).
+arch-single.jpg
+Diagrama/foto de máquina individual conectada (1920×1080 px).
+arch-cell.jpg
+Diagrama/foto de célula o célula+nube (1920×1080 px).
+arch-multiplant.jpg
+Diagrama/foto de arquitectura multi-planta (1920×1080 px).
+
+
+Otros (placeholders, técnicos, etc.)
+
+plc-lx6v-front.jpg
+Foto frontal de PLC LX6V (1600×1200 px).
+plc-lx5v-front.jpg
+Foto frontal de PLC LX5V (1600×1200 px).
+plc-generic-01.jpg
+Foto de PLC genérico (1600×1200 px).
+app-packaging-01.jpg
+Aplicación: packaging con PLC Wecon (1920×1080 px).
+app-textile-01.jpg
+Aplicación: textil con PLC Wecon (1920×1080 px).
+app-motion-01.jpg
+Aplicación: motion/multi-eje con PLC Wecon (1920×1080 px).
+
+
+Placeholders técnicos
+
+.keep
+Archivo vacío para mantener la carpeta en el repo si está vacía.
