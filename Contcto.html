@@ -12,7 +12,7 @@
   <div class="header-top"></div>
   <div class="container nav">
     <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
+      <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
       <div class="brand-name">Quark‑Systems</div>
     </div>
     <nav id="nav">
@@ -36,16 +36,70 @@
     </nav>
   </div>
 </header>
-<main class="hero"><div class="container"><span class="section-kicker">Contacto</span><h1 class="lang-es">Contacto</h1><h1 class="lang-en">Contact</h1><p class="lead lang-es">Escribinos y respondemos hoy.</p><p class="lead lang-en">Write us — same‑day reply.</p></div></main>
-<section class="section"><div class="container" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px">
-  <form class="card" onsubmit="openMail(event)"><div style="display:grid;gap:12px">
-    <div><label class="lang-es" for="name">Tu nombre</label><label class="lang-en" for="name">Your name</label><input id="name" required placeholder="Jane Doe"/></div>
-    <div><label for="email">Email</label><input id="email" type="email" required placeholder="you@company.com"/></div>
-    <div><label class="lang-es" for="msg">Mensaje</label><label class="lang-en" for="msg">Message</label><textarea id="msg" required placeholder="Necesito 6x PLC + 6x HMI…"></textarea></div>
-    <button class="btn btn-primary" type="submit"><span class="lang-es">Enviar</span><span class="lang-en">Send</span></button>
-  </div></form>
-  <div class="card"><h3 class="lang-es">Directo</h3><h3 class="lang-en">Direct</h3><p class="muted">📧 <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br>📞 +54 9 341 (completar)</p></div>
-</div></section>
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Contacto</span>
+      <h1 class="lang-es">Contacto</h1>
+      <h1 class="lang-en">Contact</h1>
+      <p class="lead lang-es">Te respondemos en el día.</p>
+      <p class="lead lang-en">Same‑day reply.</p>
+    </div>
+  </main>
+
+  <!-- ============== FORM + DIRECTO ============== -->
+  <section class="section" aria-labelledby="contact-grid">
+    <div class="container" id="contact-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px">
+
+      <!-- Formulario -->
+      <form class="card" onsubmit="openMail(event)" aria-label="Formulario de contacto">
+        <div style="display:grid;gap:12px">
+          <div>
+            <label class="lang-es" for="name">Tu nombre</label>
+            <label class="lang-en" for="name">Your name</label>
+            <input id="name" name="name" required placeholder="Jane Doe" autocomplete="name" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
+          </div>
+
+          <div>
+            <label class="lang-es" for="msg">Mensaje</label>
+            <label class="lang-en" for="msg">Message</label>
+            <textarea id="msg" name="message" required placeholder="Necesito 6x PLC + 6x HMI…"></textarea>
+          </div>
+
+          <button class="btn btn-primary" type="submit">
+            <span class="lang-es">Enviar</span><span class="lang-en">Send</span>
+          </button>
+        </div>
+      </form>
+
+      <!-- Contacto directo -->
+      <aside class="card" aria-label="Contacto directo">
+        <h3 class="lang-es">Directo</h3>
+        <h3 class="lang-en">Direct</h3>
+        <p class="muted">
+          📧 mailto:contacto.quark.systems@gmail.comcontacto.quark.systems@gmail.com</a><br />
+          📞 +54 9 3476 201136
+        </p>
+        <div class="hrule"></div>
+        <p class="muted lang-es">
+          ¿Sos integrador u OEM y querés sumarte a la <strong>Comunidad Wecon Argentina</strong>? <br />
+          Pasá por el Blog.htmlBlog</a> y dejá tu mensaje.
+        </p>
+        <p class="muted lang-en">
+          Are you an integrator or OEM and want to join the <strong>Wecon Argentina Community</strong>? <br />
+          Visit the Blog.htmlBlog</a> and leave your message.
+        </p>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
 <footer>
   <div class="container footer-grid">
     <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
