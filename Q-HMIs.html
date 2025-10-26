@@ -4,57 +4,148 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑HMIs • Quark‑Systems</title>
-  <meta name="description" content="HMIs Wecon: intuitivas y robustas." />
+  <meta name="description" content="HMIs Wecon: PI3000i / ie / ig. V‑NET: device management, alarmas, Cloud SCADA, acceso remoto. Soporte local y garantía oficial." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+       <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Q‑HMIs</span>
+      <h1>HMIs Wecon</h1>
+      <p class="lead">
+        PI3000i / PI3000ie / PI3000ig — interfaz intuitiva, drivers multi‑marca y **V‑NET** para device management,
+        alarmas, **Cloud SCADA** y acceso remoto seguro.
+      </p>
+    </div>
+  </main>
+
+  <!-- ==================== SERIES HMI (grid) ==================== -->
+  <section class="section" aria-labelledby="hmi-series">
+    <div class="container grid-3" id="hmi-series">
+
+      <div class="card">
+        <h3>PI3000i</h3>
+        <p class="muted">
+          Paneles 4.3”/7”/10.2”; múltiples protocolos; ideal para tableros compactos y aplicaciones estándar.
+        </p>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/hmi-pi3000i.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">PI3000i</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>PI3000ie</h3>
+        <p class="muted">
+          Alto rendimiento: boot rápido, cambio de pantallas ágil, mejor estabilidad de comunicación.
+        </p>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/hmi-pi3000ie.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">PI3000ie</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>PI3000ig (IoT)</h3>
+        <p class="muted">
+          Integración nativa con <strong>V‑NET</strong>: device & users management, alarmas por e‑mail, data
+          record en nube, **Cloud SCADA** y app móvil. Acceso remoto a pantallas y actualización de proyecto.
+        </p>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/hmi-pi3000ig.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">PI3000ig</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================== INTEGRACIÓN V‑NET ======================== -->
+  <section class="section" aria-labelledby="vnet">
+    <div class="container card" id="vnet">
+      <h3>V‑NET: operación y servicio remoto</h3>
+      <ul class="muted">
+        <li>Gestión de dispositivos (HMI/PLC/V‑BOX), multiusuario y mapa geográfico.</li>
+        <li>Alarmas, registro de datos en nube y **Cloud SCADA** integrable.</li>
+        <li>App/cliente: acceso remoto a pantallas, actualización de firmware/proyecto.</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Q‑HMIs</span><h1>HMIs Wecon</h1><p class="lead">PI3000i • PI3000ie • PI3000ig</p></div></main>
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>PI3000i</h3><p class="muted">7" / 10.2" • <8W • multi‑protocolo</p></div>
-  <div class="card"><h3>PI3000ie</h3><p class="muted">Arranque 6 s • 100 ms cambio pantalla • LUA</p></div>
-  <div class="card"><h3>PI3000ig</h3><p class="muted">IIoT + V‑NET • nube • alarmas • SCADA</p></div>
-</div>
-<div class="container" style="margin-top:18px"><div class="card">
-  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
-  <p class="muted lang-es">Las primeras implementaciones fueron interfaces simples para tableros compactos. Con la serie ig incorporamos monitoreo remoto y analítica, mejorando OEE y tiempos de respuesta.</p>
-  <p class="muted lang-en">Our first deployments were simple panels for compact boards. With the ig series we added remote monitoring and analytics, improving OEE and response times.</p>
-</div></div>
-</section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+      <div class="hrule"></div>
+      <div class="grid-3">
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Frame</strong> — <code>images/vnet-dashboard.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">V‑NET dashboard</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Frame</strong> — <code>images/vnet-alarms.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">V‑NET alarms</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Frame</strong> — <code>images/vnet-remote.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">V‑NET remote</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Querés demos o plantillas HMI?</h3>
+        <h3 class="lang-en">Want HMI demos or templates?</h3>
+        <p class="muted lang-es">Te compartimos proyectos base y buenas prácticas.</p>
+        <p class="muted lang-en">We’ll share base projects and best practices.</p>
+      </div>
+      Contcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

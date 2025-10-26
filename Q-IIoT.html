@@ -1,60 +1,150 @@
-<!doctype html>
+v<!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑IIoT • Quark‑Systems</title>
-  <meta name="description" content="Gateways V‑BOX Wecon." />
+  <meta name="description" content="Gateways Wecon V‑BOX (H/E/RH): conectividad, telemetría y operación remota segura con V‑NET (app, alarmas, SCADA)." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Q‑IIoT</span><h1>Gateways V‑BOX</h1><p class="lead">H • E • RH</p></div></main>
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>H Series</h3><p class="muted">3x Ethernet • WVPN • modelos Wi‑Fi/4G/GPS</p></div>
-  <div class="card"><h3>E Series</h3><p class="muted">Delgado • bajo consumo • funciones esenciales</p></div>
-  <div class="card"><h3>RH Series</h3><p class="muted">HDMI • E/S integradas • alta compatibilidad</p></div>
-</div>
-<div class="container" style="margin-top:18px"><div class="card">
-  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
-  <p class="muted lang-es">La necesidad de asistencia remota pos‑pandemia aceleró la adopción de V‑BOX. Empezamos conectando máquinas individuales y hoy gestionamos células completas con dashboards en la nube.</p>
-  <p class="muted lang-en">Post‑pandemic remote assistance needs accelerated V‑BOX adoption. We started by connecting single machines and now manage full cells with cloud dashboards.</p>
-</div></div>
-</section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Q‑IIoT</span>
+      <h1>Gateways V‑BOX</h1>
+      <p class="lead">
+        H / E / RH — conectividad segura, telemetría y servicio remoto con V‑NET: app móvil, alarmas, data record y
+        **Cloud SCADA**. RS‑232/RS‑485/Ethernet y opciones Wi‑Fi/4G según modelo.
+      </p>
+    </div>
+  </main>
+
+  <!-- ============ SERIES IIoT ============ -->
+  <section class="section" aria-labelledby="iiot-series">
+    <div class="container grid-3" id="iiot-series">
+
+      <div class="card">
+        <h3>H Series</h3>
+        <ul class="muted">
+          <li>3× Ethernet (2×LAN + 1×WAN); COM1 RS‑232/422/485, COM2/COM3 RS‑485.</li>
+          <li>Variantes con Wi‑Fi o 4G (global); 2 E/S digitales; CPU Linux.</li>
+          <li>WVPN, HTTP/API, backup y actualización remota.</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/vbox-h.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">V‑BOX H</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>E Series</h3>
+        <ul class="muted">
+          <li>Formato delgado; Ethernet + series; opciones con 4G.</li>
+          <li>Data record, alarmas y monitoreo en V‑NET.</li>
+          <li>Passthrough hacia PLC y app móvil.</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/vbox-e.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">V‑BOX E</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>RH Series</h3>
+        <ul class="muted">
+          <li>Gateway + edge HMI; puertos y E/S integradas; alta compatibilidad.</li>
+          <li>HDMI para visualización local.</li>
+          <li>Ideal para armarios compactos y células.</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted">Subí <code>images/vbox-rh.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">V‑BOX RH</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== ARQUITECTURAS (FRAMES) =============== -->
+  <section class="section" aria-labelledby="arch">
+    <div class="container">
+      <span class="section-kicker" id="arch">Arquitecturas típicas</span>
+      <div class="grid-3" style="margin-top:16px">
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Máquina individual</strong> — <code>images/arch-single.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Single machine</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Célula / célula + nube</strong> — <code>images/arch-cell.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Cell + cloud</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Multi‑planta</strong> — <code>images/arch-multiplant.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Multi-plant</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Querés conectar ya una máquina?</h3>
+        <h3 class="lang-en">Want to connect a machine now?</h3>
+        <p class="muted lang-es">Te asistimos con sizing, V‑NET y plantillas de tags.</p>
+        <p class="muted lang-en">We’ll help with sizing, V‑NET and tag templates.</p>
+      </div>
+      Contcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

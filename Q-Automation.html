@@ -4,71 +4,196 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑Automation • Quark‑Systems</title>
-  <meta name="description" content="Unidad de hardware y soporte Wecon." />
+  <meta name="description" content="Venta e integración de hardware Wecon: PLCs, HMIs, IIoT (V‑BOX/V‑NET) y VFD. Asesoramiento, stock local, posventa y capacitación." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li><adex.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            <a data-page="Q-Automation.html" href="Q-A      <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑‑HMIs</a>
+            </div>
+          </li>
+          <li><a data-page="Q-VFDs.html" href="Q-VFDs.htmlIoT.htmlQ‑IIoT</a></li>
+          <li><a data-page="Quines somos.html" href="Quines%20somos.html"><span classs="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li><a data-page="Contcto.html" href="Contcto.html"><<span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Q‑Automation</span><h1 class="lang-es">Eficiencia y confiabilidad en cada proceso</h1><h1 class="lang-en">Efficiency and reliability in every process</h1><p class="lead lang-es">Tecnología Wecon con asesoramiento y soporte local.</p><p class="lead lang-en">Wecon technology with local advisory and support.</p></div></main>
-<section class="section"><div class="container grid-3">
-  <a class="card" href="Q-PLCs.html"><h3>Q‑PLCs</h3><p class="muted lang-es">PLCs de alta precisión.</p><p class="muted lang-en">High‑precision PLCs.</p></a>
-  <a class="card" href="Q-HMIs.html"><h3>Q‑HMIs</h3><p class="muted lang-es">HMIs intuitivas.</p><p class="muted lang-en">Intuitive HMIs.</p></a>
-  <a class="card" href="Q-VFDs.html"><h3>Q‑VFDs</h3><p class="muted lang-es">Variadores eficientes.</p><p class="muted lang-en">Efficient drives.</p></a>
-</div>
-  <!-- ======================== HISTORIA ======================== -->
-  <section class="section" aria-labelledby="qa-story">
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
     <div class="container">
-      <div class="card">
-        <h3 id="qa-story" class="lang-es">Nuestra historia en Q‑Automation</h3>
-        <h3 class="lang-en">Our Q‑Automation story</h3>
-        <p class="muted lang-es">
-          Comenzamos abasteciendo líneas pequeñas con PLC y HMI básicos. Con cada proyecto fuimos
-          ampliando stock, soporte y formación. Hoy acompañamos migraciones completas y
-          estandarizaciones con una cadena de repuestos local.
-        </p>
-        <p class="muted lang-en">
-          We started supplying small lines with basic PLC/HMI. With each project we expanded stock, support
-          and training. Today we support full migrations and standardization with a local spares chain.
-        </p>
+      <span class="section-kicker">Q‑Automation</span>
+      <h1 class="lang-es">Eficiencia y confiabilidad en cada proceso</h1>
+      <h1 class="lang-en">Efficiency and reliability in every process</h1>
+      <p class="lead lang-es">
+        Integración de PLC, HMI, IIoT y VFD Wecon con soporte local: ingeniería, stock, capacitación y posventa.
+      </p>
+      <p class="lead lang-en">
+        Wecon PLC, HMI, IIoT and VFD integration with local support: engineering, stock, training and after‑sales.
+      </p>
+    </div>
+  </main>
+
+  <!-- ======================== GRID PRINCIPAL ======================== -->
+  <section class="section" aria-labelledby="qa-grid">
+    <div class="container grid-3" id="qa-grid">
+
+      <a class="card" href="Q-PLCs.html">
+        <p class="muted lang-es">LX6V (EtherCAT, 5 MB), LX5V (0.01–0.03 μs, 200 kHz) y LX3VP.</p>
+        <p class="muted lang-en">LX6V (EtherCAT, 5 MB), LX5V (0.01–0.03 μs, 200 kHz) and LX3VP.</p>
+      </a>
+
+      Q-HMIs.html
+        <h3>Q‑HMIs</h3>
+        <p class="muted lang-es">PI series con V‑NET: gestión, alarmas y Cloud SCADA.</p>
+        <p class="muted lang-en">PI series with V‑NET: management, alarms and Cloud SCADA.</p>
+      </a>
+
+      Q-VFDs.html
+        <h3>Q‑VFDs</h3>
+        <p class="muted lang-es">VM/VB/VC: vector, PID optimizado, freno integrado (VB) y amplio rango de potencia.</p>
+        <p class="muted lang-en">VM/VB/VC: vector control, optimized PID, built‑in brake (VB) and wide power range.</p>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ======================== CÓMO TRABAJAMOS ======================== -->
+  <section class="section" aria-labelledby="workflow">
+    <div class="container">
+      <span class="section-kicker" id="workflow">Cómo trabajamos</span>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>1) Relevamiento</h3>
+          <p class="muted">Entendemos proceso, señales y restricciones. Elegimos arquitectura mínima viable.</p>
+        </div>
+        <div class="card">
+          <h3>2) Ingeniería</h3>
+          <p class="muted">Plano eléctrico, hardware, tag list, PLC/HMI y pruebas offline con plantillas reutilizables.</p>
+        </div>
+        <div class="card">
+          <h3>3) Puesta y soporte</h3>
+          <p class="muted">Comisionado, capacitación y posventa. Asistencia remota vía V‑BOX/V‑NET cuando aplica.</p>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- =============== FRAMES (espacios para imágenes reales) =============== -->
+  <section class="section" aria-labelledby="qa-frames">
+    <div class="container">
+      <span class="section-kicker" id="qa-frames">Portafolio</span>
+      <div class="grid-3" style="margin-top:16px">
+
+        <!-- Frame 1 -->
+        <figure class="card" style="aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>PLC LX6V</strong> — subí <code>images/plc-lx6v-front.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">PLC LX6V</figcaption>
+        </figure>
+
+        <!-- Frame 2 -->
+        <figure class="card" style="aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>PLC LX5V</strong> — subí <code>images/plc-lx5v-front.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">PLC LX5V</figcaption>
+        </figure>
+
+        <!-- Frame 3 -->
+        <figure class="card" style="aspect-ratio: 4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>Tablero</strong> — subí <code>images/plc-cabinet-01.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">Tablero</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ¿POR QUÉ WECON? ===================== -->
+  <section class="section" aria-labelledby="why-wecon">
+    <div class="container">
+      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
+      <h2 class="lang-es">Portafolio completo, performance y IIoT</h2>
+      <h2 class="lang-en">Complete portfolio, performance & IIoT</h2>
+
+      <div class="why-wecon" style="margin-top:12px">
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es"><strong>PLC LX6V</strong>: EtherCAT + Ethernet, 5 MB de programa; hasta 128 ejes. <em>Industria: packaging, textil, robots, elevadores.</em></p>
+          <p class="muted lang-en"><strong>PLC LX6V</strong>: EtherCAT + Ethernet, 5 MB program; up to 128 axes.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es"><strong>PLC LX5V</strong>: 0.01–0.03 μs, pulsos 200 kHz, E‑Cam/E‑Gear para motion.</p>
+          <p class="muted lang-en"><strong>PLC LX5V</strong>: 0.01–0.03 μs, 200 kHz pulses, E‑Cam/E‑Gear for motion.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es"><strong>HMI PI3000ig + V‑NET</strong>: gestión, alarmas, Cloud SCADA; acceso/app.</p>
+          <p class="muted lang-en"><strong>HMI PI3000ig + V‑NET</strong>: device/cloud management, alarms, cloud SCADA.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es"><strong>V‑BOX</strong>: 3×Ethernet, RS‑232/485, WVPN; datalogging y API.</p>
+          <p class="muted lang-en"><strong>V‑BOX</strong>: 3×Ethernet, RS‑232/485, WVPN; datalogging & API.</p>
+        </div>
+        <div class="point">
+          <div class="dot" aria-hidden="true"></div>
+          <p class="muted lang-es"><strong>VFD VM/VB/VC</strong>: SVC/VF, PID optimizado, freno integrado (VB) y amplio rango.</p>
+          <p class="muted lang-en"><strong>VFD VM/VB/VC</strong>: SVC/VF, optimized PID, built‑in brake (VB), wide range.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Tenés un proyecto en mente?</h3>
+        <h3 class="lang-en">Got a project in mind?</h3>
+        <p class="muted lang-es">Escribinos y lo revisamos en el día.</p>
+        <p class="muted lang-en">Drop us a line — same‑day reply.</p>
+      </div>
+      <ontcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
   <!-- ======================= FOOTER ======================= -->
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

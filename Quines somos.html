@@ -4,47 +4,192 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Quiénes somos • Quark‑Systems</title>
-  <meta name="description" content="Sobre Quark‑Systems." />
+  <meta name="description" content="Quark‑Systems: venta directa de hardware Wecon con garantía oficial, soporte local y acompañamiento técnico antes y después de la compra. Automatización, ahorro de energía y control remoto (IIoT) para PYMES industriales." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Quiénes somos</span>
+      <h1 class="lang-es">Tu partner Wecon en Argentina</h1>
+      <h1 class="lang-en">Your Wecon partner in Argentina</h1>
+      <p class="lead lang-es">
+        Venta directa de hardware Wecon (PLCs, HMIs, VFD, IIoT) con garantía oficial, soporte local y acompañamiento técnico antes y después de la compra.
+      </p>
+      <p class="lead lang-en">
+        Direct sales of Wecon hardware (PLCs, HMIs, VFD, IIoT) with official warranty, local support and technical guidance before and after purchase.
+      </p>
+    </div>
+  </main>
+
+  <!-- =================== QUIÉNES SOMOS =================== -->
+  <section class="section" aria-labelledby="about-body">
+    <div class="container card" id="about-body">
+      <h2 class="lang-es">Soluciones reales para la industria real</h2>
+      <h2 class="lang-en">Real solutions for real industry</h2>
+      <p class="muted lang-es">
+        Quark‑Systems nació para cerrar la brecha entre la tecnología de punta y la realidad de la industria argentina. Somos representantes oficiales de Wecon: vendemos hardware industrial robusto (PLCs, HMIs, variadores, IIoT) con garantía de fábrica y soporte local real.
+      </p>
+      <p class="muted lang-en">
+        Quark‑Systems was born to bridge the gap between cutting‑edge tech and the reality of Argentine industry. As official Wecon representatives, we sell robust industrial hardware (PLCs, HMIs, drives, IIoT) with factory warranty and real local support.
+      </p>
+      <p class="muted lang-es">
+        Nuestro diferencial: acompañamos antes y después de la venta. Te ayudamos a elegir el equipo correcto, evitamos sobre‑dimensionamientos y te damos soporte técnico inmediato ante cualquier consulta o incidente.
+      </p>
+      <p class="muted lang-en">
+        Our difference: we support you before and after the sale. We help you select the right equipment, avoid oversizing, and provide immediate technical support for any question or incident.
+      </p>
+    </div>
+  </section>
+
+  <!-- =================== QUÉ HACEMOS =================== -->
+  <section class="section" aria-labelledby="what-we-do">
+    <div class="container">
+      <span class="section-kicker" id="what-we-do">¿Qué hacemos?</span>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3 class="lang-es">Venta directa Wecon</h3>
+          <h3 class="lang-en">Direct Wecon sales</h3>
+          <p class="muted lang-es">
+            Acceso a PLCs, HMIs, variadores y gateways IIoT Wecon con garantía oficial y precios competitivos.
+          </p>
+          <p class="muted lang-en">
+            Access to Wecon PLCs, HMIs, drives and IIoT gateways with official warranty and competitive prices.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="lang-es">Soporte técnico local</h3>
+          <h3 class="lang-en">Local technical support</h3>
+          <p class="muted lang-es">
+            Asesoramiento previo, ayuda en la selección, soporte post‑venta y capacitación para que tu equipo aproveche al máximo cada producto.
+          </p>
+          <p class="muted lang-en">
+            Pre‑sales advice, selection help, after‑sales support and training so your team gets the most from every product.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="lang-es">Automatización, energía y IIoT</h3>
+          <h3 class="lang-en">Automation, energy & IIoT</h3>
+          <p class="muted lang-es">
+            Soluciones para automatizar procesos, ahorrar energía con VFD y habilitar control remoto seguro (V‑BOX, V‑NET).
+          </p>
+          <p class="muted lang-en">
+            Solutions to automate processes, save energy with VFDs and enable secure remote control (V‑BOX, V‑NET).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== NUESTRO FOCO =================== -->
+  <section class="section" aria-labelledby="focus">
+    <div class="container card" id="focus">
+      <h3 class="lang-es">Nuestro foco</h3>
+      <h3 class="lang-en">Our focus</h3>
+      <ul class="muted">
+        <li>Venta directa de hardware Wecon con garantía oficial.</li>
+        <li>Soporte técnico local antes y después de la compra.</li>
+        <li>Ayuda en la selección y dimensionamiento de equipos.</li>
+        <li>Automatización, ahorro de energía y control remoto (IIoT).</li>
+        <li>Capacitación y acompañamiento para que tu equipo sea autosuficiente.</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Quiénes somos</span><h1 class="lang-es">Quiénes somos</h1><h1 class="lang-en">About us</h1><p class="lead lang-es">Automatización, IIoT y mantenimiento predictivo con IA.</p><p class="lead lang-en">Automation, IIoT & AI‑based predictive maintenance.</p></div></main>
-<section class="section"><div class="container card"><p class="muted lang-es">Nacimos en el cordón industrial de San Lorenzo, acompañando a pymes e integradores a modernizar sus procesos. Crecimos de la mano de proyectos reales, stock local y un enfoque práctico: dimensionar bien, cotizar rápido y transferir conocimiento.</p><p class="muted lang-en">Born in the San Lorenzo industrial belt, we help SMEs and integrators modernize operations. We grew through real projects, local stock and a practical approach: right‑sizing, fast quoting and knowledge transfer.</p></div></section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+    </div>
+  </section>
+
+  <!-- =================== FRAMES DE EQUIPO Y SOPORTE =================== -->
+  <section class="section" aria-labelledby="frames">
+    <div class="container">
+      <span class="section-kicker" id="frames">Nuestro equipo y soporte</span>
+      <div class="grid-3" style="margin-top:16px">
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Equipo técnico</strong> — <code>images/team-technical.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">Equipo técnico</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Soporte local</strong> — <code>images/team-support.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">Soporte local</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Tableros y proyectos</strong> — <code>images/team-projects.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">Tableros y proyectos</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== VALORES =================== -->
+  <section class="section" aria-labelledby="valores">
+    <div class="container card" id="valores">
+      <h3 class="lang-es">Nuestros valores</h3>
+      <h3 class="lang-en">Our values</h3>
+      <ul class="muted">
+        <li>Soporte real: respuestas técnicas claras y ejecutables, sin vueltas.</li>
+        <li>Resultados medibles: menos paradas, mayor eficiencia, menor consumo.</li>
+        <li>Tecnología con propósito: solo lo que agrega valor, sin sobre‑ingeniería.</li>
+        <li>Capacitación continua: tu equipo aprende a usar y mantener lo que instalamos.</li>
+        <li>Transparencia: presupuestos cerrados, plazos claros y comunicación honesta.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Querés cotizar o tenés dudas técnicas?</h3>
+        <h3 class="lang-en">Want a quote or have technical questions?</h3>
+        <p class="muted lang-es">Te respondemos en el día, sin compromiso.</p>
+        <p class="muted lang-en">We’ll reply same day, no strings attached.</p>
+      </div>
+      Contcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

@@ -4,47 +4,203 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog • Quark‑Systems</title>
-  <meta name="description" content="Notas y casos de automatización e IIoT." />
+  <meta name="description" content="Comunidad Wecon Argentina: tutoriales, notas técnicas, casos y eventos para integradores, OEMs y entusiastas. Descargas directas de software y firmwares Wecon." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- =============== HEADER =============== -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </header>
+
+  <!-- ================ HERO ================ -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Blog</span>
+      <h1>Comunidad Wecon Argentina</h1>
+      <p class="lead">
+        Tutoriales, notas técnicas, casos y eventos para integradores, OEMs y entusiastas.  
+        <br>Sumate, compartí tu experiencia y accedé a recursos exclusivos.
+      </p>
+      <div style="margin-top:18px">
+        Contcto.html
+          <span class="lang-es">Quiero ser parte →</span>
+          <span class="lang-en">Join →</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============== BANNER/FRAME DE COMUNIDAD ============== -->
+  <section class="section" aria-labelledby="banner-comunidad">
+    <div class="container">
+      <figure class="card" style="aspect-ratio:16/5;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+        <div class="small muted">
+          <strong>Banner comunidad</strong> — <code>images/blog-banner.jpg</code> (1920×600).  
+          Subí una foto de evento, meetup, equipo o clientes.
+        </div>
+        <figcaption class="sr-only">Banner comunidad</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============== LISTADO DE POSTS ============== -->
+  <section class="section" aria-labelledby="blog-list">
+    <div class="container card" id="blog-list">
+      <h2 class="lang-es">Próximos contenidos</h2>
+      <h2 class="lang-en">Upcoming content</h2>
       <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
+        <li>Cómo elegir un PLC Wecon (LX6V, LX5V, LX3VP)</li>
+        <li>Primeros pasos con HMI PI3000ig y V‑NET</li>
+        <li>Guía rápida: puesta en marcha de V‑BOX IIoT</li>
+        <li>Mejores prácticas para tableros compactos</li>
+        <li>Casos de éxito: migración de controladores legados</li>
+        <li>Academia Quark: tutoriales, plantillas y checklists</li>
+        <li>Convocatoria: integradores y OEMs destacados</li>
       </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Blog</span><h1>Notas y casos</h1><p class="lead">Publicaremos tutoriales de Wecon, notas de PLC/HMI, y casos de IIoT.</p></div></main>
-<section class="section"><div class="container card"><p class="muted">Estamos preparando el blog en GitHub Pages (Jekyll). Mientras tanto, seguí las novedades en <a href="https://github.com/" target="_blank" rel="noopener">nuestro repositorio</a> o volvé pronto.</p></div></section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+      <div class="hrule"></div>
+      <p class="muted lang-es">
+        ¿Querés participar, proponer contenido o compartir tu caso? <br>
+        Escribinos desde Contcto.htmlContacto</a> o sumate a la comunidad.
+      </p>
+      <p class="muted lang-en">
+        Want to participate, suggest content or share your case? <br>
+        Write to us from Contcto.htmlContact</a> or join the community.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== CONVOCATORIA ============== -->
+  <section class="section" aria-labelledby="convocatoria">
+    <div class="container card" id="convocatoria">
+      <h3 class="lang-es">Convocatoria a integradores y OEMs</h3>
+      <h3 class="lang-en">Call for integrators and OEMs</h3>
+      <p class="muted lang-es">
+        ¿Sos integrador, OEM o usuario avanzado de Wecon?  
+        Compartí tu caso, publicá tu experiencia o sumate a nuestros eventos y webinars.  
+        <br>¡Tu historia puede inspirar a toda la comunidad!
+      </p>
+      <p class="muted lang-en">
+        Are you an integrator, OEM or advanced Wecon user?  
+        Share your case, publish your experience or join our events and webinars.  
+        <br>Your story can inspire the whole community!
+      </p>
+      Contcto.html<span class="lang-es">Postular →</span><span class="lang-en">Apply →</span></a>
+    </div>
+  </section>
+
+  <!-- ============== CTA CATÁLOGO Y CONTACTO ============== -->
+  <section class="section" aria-labelledby="catalog-cta">
+    <div class="container card" id="catalog-cta">
+      <h3 class="lang-es">Catálogo y tienda online</h3>
+      <h3 class="lang-en">Online catalog & store</h3>
+      <p class="muted lang-es">
+        Descubrí el catálogo completo de PLC, HMI, VFD y IIoT en https://store.quark-systems.ar
+      </p>
+      <p class="muted lang-en">
+        Explore the full catalog of PLC, HMI, VFD and IIoT at https://store.quark-systems.ar
+      </p>
+      https://store.quark-systems.ar
+        <span class="lang-es">Ir al catálogo →</span>
+        <span class="lang-en">Go to catalog →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============== DESCARGAS DIRECTAS ============== -->
+  <section class="section" aria-labelledby="descargas">
+    <div class="container card" id="descargas">
+      <h3 class="lang-es">Descargas directas Wecon</h3>
+      <h3 class="lang-en">Direct Wecon downloads</h3>
+      <ul>
+        <li>
+          <strong>PIStudio (HMI):</strong>
+          https://www.we-con.com.cn/en/download/PIStudio.htmlDescargar PIStudio</a>
+        </li>
+        <li>
+          <strong>PLC Editor2:</strong>
+          https://www.we-con.com.cn/en/download/PLC_Editor2.htmlDescargar PLC Editor2</a>
+        </li>
+        <li>
+          <strong>V‑NET Client (IIoT):</strong>
+          https://www.we-con.com.cn/en/download/V-NET_Client.htmlDescargar V‑NET Client</a>
+        </li>
+        <li>
+          <strong>Firmwares Wecon:</strong>
+          https://www.we-con.com.cn/en/download/Firmware.htmlDescargar firmwares</a>
+        </li>
+        <li>
+          <strong>Catálogo Wecon (PDF):</strong>
+          <a href="https://n.com.cn/en/download/Catalog.html
+        </li>
+      </ul>
+      <div class="hrule"></div>
+      <p class="small muted">
+        Todos los links son directos a la web oficial de Wecon. Si necesitás drivers, manuales o versiones anteriores, escribinos y te los enviamos.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============== FRAMES PARA POSTS DESTACADOS ============== -->
+  <section class="section" aria-labelledby="blog-frames">
+    <div class="container">
+      <span class="section-kicker" id="blog-frames">Posts destacados / galería</span>
+      <div class="grid-3" style="margin-top:16px">
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Post 1</strong> — <code>images/blog-post-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Post 1</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Post 2</strong> — <code>images/blog-post-02.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Post 2</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Post 3</strong> — <code>images/blog-post-03.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Post 3</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FOOTER =============== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

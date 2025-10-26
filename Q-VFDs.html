@@ -4,57 +4,176 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑VFDs • Quark‑Systems</title>
-  <meta name="description" content="VFDs Wecon: control y eficiencia energética." />
+  <meta name="description" content="Drives Wecon VM · VB · VC: control vectorial, PID optimizado, freno integrado (VB) y amplio rango de potencia. Soporte local y garantía oficial." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Q‑VFDs</span><h1>Drives Wecon</h1><p class="lead">VM • VB • VC</p></div></main>
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>VM</h3><p class="muted">0–400 Hz • 150%/60 s • compacto</p></div>
-  <div class="card"><h3>VB</h3><p class="muted">SVC/VF • freno hasta 22 kW • PID</p></div>
-  <div class="card"><h3>VC</h3><p class="muted">Modular • encoder • motores síncronos/AS</p></div>
-</div>
-<div class="container" style="margin-top:18px"><div class="card">
-  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
-  <p class="muted lang-es">Sumamos VFDs para resolver variaciones de carga y mejorar eficiencia energética en bombas y ventiladores. La familia VB nos permitió integraciones con frenado regenerativo y control vectorial.</p>
-  <p class="muted lang-en">We added VFDs to handle load variations and improve energy efficiency on pumps and fans. The VB family enabled integrations with regenerative braking and vector control.</p>
-</div></div>
-</section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Q‑VFDs</span>
+      <h1>Drives Wecon</h1>
+      <p class="lead lang-es">VM · VB · VC — control vectorial, PID optimizado y opciones de frenado; rango de 0.75 kW a 400 kW según serie.</p>
+      <p class="lead lang-en">VM · VB · VC — vector control, optimized PID and braking options; range from 0.75 kW up to 400 kW depending on series.</p>
+    </div>
+  </main>
+
+  <!-- ============ SERIES VFD ============ -->
+  <section class="section" aria-labelledby="vfd-series">
+    <div class="container grid-3" id="vfd-series">
+
+      <!-- VM -->
+      <div class="card">
+        <h3>VM (económico)</h3>
+        <ul class="muted">
+          <li>Salida 0–400 Hz.</li>
+          <li>150% de sobrecarga por 60 s.</li>
+          <li>Instalación compacta, guía DIN.</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#FAFBFD">
+          <div class="small muted">Subí <code>images/vfd-vm.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">VFD VM</figcaption>
+        </figure>
+      </div>
+
+      <!-- VB -->
+      <div class="card">
+        <h3>VB (alto desempeño)</h3>
+        <ul class="muted">
+          <li>Control SVC: máx. 320 Hz; modo VF: máx. 1000 Hz.</li>
+          <li>Freno integrado 0.75–22 kW (modelos seleccionados).</li>
+          <li>PID optimizado; alto par a baja velocidad.</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#FAFBFD">
+          <div class="small muted">Subí <code>images/vfd-vb.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">VFD VB</figcaption>
+        </figure>
+      </div>
+
+      <!-- VC -->
+      <div class="card">
+        <h3>VC (flexible/modular)</h3>
+        <ul class="muted">
+          <li>Soporta expansión flexible (comunicaciones / I/O / encoder).</li>
+          <li>Compatible con motores síncronos/asincrónicos.</li>
+          <li>Diseño compacto y rango hasta 37 kW (según modelo).</li>
+        </ul>
+        <figure style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#FAFBFD">
+          <div class="small muted">Subí <code>images/vfd-vc.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">VFD VC</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== CARACTERÍSTICAS TÉCNICAS =============== -->
+  <section class="section" aria-labelledby="vfd-tech">
+    <div class="container">
+      <span class="section-kicker" id="vfd-tech">Características técnicas</span>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Control</h3>
+          <p class="muted">
+            Modos V/F y Vectorial (SVC), salida hasta 1000 Hz (VB en V/F), respuesta mejorada y par a baja velocidad.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Frenado & PID</h3>
+          <p class="muted">
+            VB integra unidad de frenado hasta 22 kW; PID optimizado para lazos de velocidad/caudal/presión.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Aplicaciones</h3>
+          <p class="muted">
+            Bombas y ventiladores (ahorro energético), cintas, mezcladores, HVAC, máquinas generales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============== FRAMES DE APLICACIÓN =============== -->
+  <section class="section" aria-labelledby="vfd-frames">
+    <div class="container">
+      <span class="section-kicker" id="vfd-frames">Aplicaciones típicas</span>
+      <div class="grid-3" style="margin-top:16px">
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Pumps</strong> — <code>images/vfd-pump-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Bombeo</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Fans</strong> — <code>images/vfd-fan-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Ventilación</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#EEF3F9">
+          <div class="small muted"><strong>Conveyors</strong> — <code>images/vfd-conveyor-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Cintas</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Querés dimensionar un VFD?</h3>
+        <h3 class="lang-en">Need to size a VFD?</h3>
+        <p class="muted lang-es">Te ayudamos a elegir serie, potencia y configuración.</p>
+        <p class="muted lang-en">We’ll help you choose series, power and config.</p>
+      </div>
+      Contcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
+
 </body>
 </html>

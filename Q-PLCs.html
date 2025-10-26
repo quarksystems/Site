@@ -4,57 +4,206 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Q‑PLCs • Quark‑Systems</title>
-  <meta name="description" content="PLCs Wecon: precisión y conectividad." />
+  <meta name="description" content="PLCs Wecon: LX6V (EtherCAT, 5 MB), LX5V (0.01–0.03 μs, 200 kHz), LX3VP. Motion, expansión modular y comunicaciones." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              <a data-page="Q-PLCs.html           Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero"><div class="container"><span class="section-kicker">Q‑PLCs</span><h1>PLCs Wecon</h1><p class="lead lang-es">LX6V • LX5V • LX3VP</p><p class="lead lang-en">LX6V • LX5V • LX3VP</p></div></main>
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>Serie LX6V</h3><ul class="muted lang-es"><li>5MB de almacenamiento</li><li>EtherCAT y USB‑C</li><li>Ladder / tabla / FB / FC</li></ul><ul class="muted lang-en"><li>5MB storage</li><li>EtherCAT & USB‑C</li><li>Ladder / table / FB / FC</li></ul></div>
-  <div class="card"><h3>Serie LX5V</h3><ul class="muted lang-es"><li>Pulsos alta velocidad (8 ejes)</li><li>Ciclo 0.01–0.03 μs</li><li>Interrupciones externas y de conteo</li></ul><ul class="muted lang-en"><li>High‑speed pulses (8 axes)</li><li>0.01–0.03 μs basic scan</li><li>External & count interrupts</li></ul></div>
-  <div class="card"><h3>Serie LX3VP</h3><ul class="muted lang-es"><li>Programa 64k steps</li><li>4 salidas 200 kHz</li><li>Red “N” 2–8 PLCs</li></ul><ul class="muted lang-en"><li>Program 64k steps</li><li>4 outputs 200 kHz</li><li>“N” network 2–8 PLCs</li></ul></div>
-</div>
-<div class="container" style="margin-top:18px"><div class="card">
-  <h3 class="lang-es">Historia</h3><h3 class="lang-en">History</h3>
-  <p class="muted lang-es">Adoptamos Wecon cuando buscábamos una opción robusta y accesible para reemplazar controladores legados. Empezamos con pruebas piloto en líneas de envasado y hoy soportamos arquitecturas con múltiples ejes y comunicación avanzada.</p>
-  <p class="muted lang-en">We adopted Wecon while looking for a robust, cost‑effective option to replace legacy controllers. We started with pilot packaging lines and now support multi‑axis architectures with advanced comms.</p>
-</div></div>
-</section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container">
+      <span class="section-kicker">Q‑PLCs</span>
+      <h1>PLCs Wecon</h1>
+      <p class="lead lang-es">LX6V • LX5V • LX3VP — confiabilidad, velocidad y expansión modular.</p>
+      <p class="lead lang-en">LX6V • LX5V • LX3VP — reliability, speed and modular expansion.</p>
+    </div>
+  </main>
+
+  <!-- ===================== SERIES (cards) ===================== -->
+  <section class="section" aria-labelledby="plc-series">
+    <div class="container grid-3" id="plc-series">
+
+      <div class="card">
+        <h3>Serie LX6V</h3>
+        <ul class="muted">
+          <li>EtherCAT + Ethernet, USB‑C; 5 MB programa.</li>
+          <li>8× entradas 150 kHz, 4× AB 150 kHz; 4× salidas 200 kHz.</li>
+          <li>Hasta 128 ejes vía EtherCAT (según módulo). </li>
+        </ul>
+        <!-- Frame para imagen real -->
+        <figure style="aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">Subí <code>images/plc-lx6v-front.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">LX6V</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>Serie LX5V</h3>
+        <ul class="muted">
+          <li>0.01–0.03 μs de ejecución básica.</li>
+          <li>Pulsos de alta velocidad hasta 200 kHz (motion, E‑Cam/E‑Gear).</li>
+          <li>Comunicación RS‑422/485; opción Ethernet según modelo.</li>
+        </ul>
+        <!-- Frame -->
+        <figure style="aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">Subí <code>images/plc-lx5v-front.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">LX5V</figcaption>
+        </figure>
+      </div>
+
+      <div class="card">
+        <h3>Serie LX3VP</h3>
+        <ul class="muted">
+          <li>Arquitectura probada con expansión modular.</li>
+          <li>AB phase encoder y redes entre PLCs.</li>
+          <li>Excelente costo/beneficio para líneas compactas.</li>
+        </ul>
+        <!-- Frame genérico -->
+        <figure style="aspect-ratio:4/3; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">Subí <code>images/plc-generic-01.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">LX3VP</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============== CARACTERÍSTICAS TÉCNICAS CLAVE =============== -->
+  <section class="section" aria-labelledby="plc-tech">
+    <div class="container">
+      <span class="section-kicker" id="plc-tech">Características técnicas</span>
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h3>Motion & Pulsos</h3>
+          <p class="muted">
+            LX6V/LX5V admiten salidas de pulso de alta velocidad (hasta 200 kHz) y entradas a 150 kHz para
+            encoders y ejes; E‑Cam/E‑Gear para perfiles. 
+          </p>
+        </div>
+        <div class="card">
+          <h3>Comunicación</h3>
+          <p class="muted">
+            RS‑485/422, Ethernet (según modelo). LX6V agrega **EtherCAT** para sincronía multi‑eje.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Programación</h3>
+          <p class="muted">
+            Editor compatible con LX5V/LX6V (PLC Editor/LEVI Studio); descarga por USB/Ethernet según equipo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FRAMES DE APLICACIÓN ==================== -->
+  <section class="section" aria-labelledby="plc-frames">
+    <div class="container">
+      <span class="section-kicker" id="plc-frames">Aplicaciones</span>
+      <div class="grid-3" style="margin-top:16px">
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted"><strong>Packaging</strong> — <code>images/app-packaging-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Packaging</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted"><strong>Textil</strong> — <code>images/app-textile-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Textil</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted"><strong>Multi‑eje</strong> — <code>images/app-motion-01.jpg</code> (1920×1080).</div>
+          <figcaption class="sr-only">Motion</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ¿POR QUÉ WECON EN PLCs? ===================== -->
+  <section class="section" aria-labelledby="why-wecon-plc">
+    <div class="container">
+      <span class="section-kicker" id="why-wecon-plc">¿Por qué Wecon en PLCs?</span>
+      <h2 class="lang-es">Performance, EtherCAT y ecosistema</h2>
+      <h2 class="lang-en">Performance, EtherCAT & ecosystem</h2>
+
+      <div class="why-wecon" style="margin-top:12px">
+        <div class="point">
+          <div class="dot"></div>
+          <p class="muted lang-es"><strong>LX6V</strong>: EtherCAT + 5 MB, entradas/salidas HS y hasta 128 ejes.</p>
+          <p class="muted lang-en"><strong>LX6V</strong>: EtherCAT + 5 MB, HS IO and up to 128 axes.</p>
+        </div>
+        <div class="point">
+          <div class="dot"></div>
+          <p class="muted lang-es"><strong>LX5V</strong>: 0.01–0.03 μs, 200 kHz, E‑Cam/E‑Gear; opción Ethernet.</p>
+          <p class="muted lang-en"><strong>LX5V</strong>: 0.01–0.03 μs, 200 kHz, E‑Cam/E‑Gear; Ethernet on models.</p>
+        </div>
+        <div class="point">
+          <div class="dot"></div>
+          <p class="muted lang-es">Ecosistema con **HMI PI**, **V‑BOX/V‑NET** y **VFD** para soluciones completas.</p>
+          <p class="muted lang-en">Ecosystem with **PI HMI**, **V‑BOX/V‑NET** and **VFD** for complete solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Consultas de hardware o migraciones?</h3>
+        <h3 class="lang-en">Hardware or migration questions?</h3>
+        <p class="muted lang-es">Escribinos y te ayudamos a elegir la serie y el tamaño correctos.</p>
+        <p class="muted lang-en">Write us and we’ll help you choose the right series and size.</p>
+      </div>
+      Contcto.html<span class="lang-es">Contacto →</span><span class="lang-en">Contact →</span></a>
+    </div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>

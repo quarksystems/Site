@@ -4,52 +4,55 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto • Quark‑Systems</title>
-  <meta name="description" content="Contacto con Quark‑Systems." />
+  <meta name="description" content="Contactanos: soporte local real, cotizaciones, asesoramiento y postventa en hardware Wecon, IIoT y VFD. Respuesta en el día. WhatsApp, mail, formulario y más." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo." alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
+<body id="top">
+
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li>index.html<span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
+          <li class="has-sub">
+            Q-Automation.htmlQ‑Automation ▾</a>
+            <div class="submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              Q-HMIs.htmlQ‑HMIs</a>
+            </div>
+          </li>
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li>Q-IIoT.htmlQ‑IIoT</a></li>
+          <li>Quines%20somos.html<span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
+          <li>Blog.htmlBlog</a></li>
+          <li>Contcto.html<span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
+          <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
+
   <!-- ======================== HERO ======================== -->
   <main class="hero">
     <div class="container">
       <span class="section-kicker">Contacto</span>
       <h1 class="lang-es">Contacto</h1>
       <h1 class="lang-en">Contact</h1>
-      <p class="lead lang-es">Te respondemos en el día.</p>
-      <p class="lead lang-en">Same‑day reply.</p>
+      <p class="lead lang-es">Soporte real, respuesta en el día. ¡Hablá directo con técnicos, no con bots!</p>
+      <p class="lead lang-en">Real support, same‑day reply. Talk to real engineers, not bots!</p>
     </div>
   </main>
 
-  <!-- ============== FORM + DIRECTO ============== -->
+  <!-- ============== FORM + DIRECTO + WHATSAPP ============== -->
   <section class="section" aria-labelledby="contact-grid">
-    <div class="container" id="contact-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:20px">
+    <div class="container" id="contact-grid" style="display:grid;grid-template-columns:1.2fr 1fr;gap:24px">
 
       <!-- Formulario -->
       <form class="card" onsubmit="openMail(event)" aria-label="Formulario de contacto">
@@ -59,21 +62,27 @@
             <label class="lang-en" for="name">Your name</label>
             <input id="name" name="name" required placeholder="Jane Doe" autocomplete="name" />
           </div>
-
           <div>
             <label for="email">Email</label>
             <input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email" />
           </div>
-
           <div>
             <label class="lang-es" for="msg">Mensaje</label>
             <label class="lang-en" for="msg">Message</label>
             <textarea id="msg" name="message" required placeholder="Necesito 6x PLC + 6x HMI…"></textarea>
           </div>
-
           <button class="btn btn-primary" type="submit">
             <span class="lang-es">Enviar</span><span class="lang-en">Send</span>
           </button>
+        </div>
+        <div class="hrule"></div>
+        <div class="small muted lang-es">
+          ¿Sos integrador, OEM o usuario final? Te respondemos en el día.<br>
+          <strong>Confidencialidad garantizada.</strong>
+        </div>
+        <div class="small muted lang-en">
+          Integrator, OEM or end user? We reply same day.<br>
+          <strong>Confidentiality guaranteed.</strong>
         </div>
       </form>
 
@@ -82,31 +91,81 @@
         <h3 class="lang-es">Directo</h3>
         <h3 class="lang-en">Direct</h3>
         <p class="muted">
-          <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a>
-          <br>📞 +54 9 3476 201136 </p>
+          <span style="display:inline-block;margin-bottom:6px">
+            <strong>WhatsApp:</strong>
+            https://wa.me/543416594559+54 9 341 659‑4559</a>
+          </span><br>
+          <span style="display:inline-block;margin-bottom:6px">
+            <strong>Email:</strong>
+            mailto:contacto.quark.systems@gmail.comcontacto.quark.systems@gmail.com</a>
+          </span><br>
+          <span style="display:inline-block;margin-bottom:6px">
+            <strong>Oficina:</strong> Córdón Industrial San Lorenzo, Santa Fe, Argentina
+          </span>
         </p>
         <div class="hrule"></div>
-        <p class="muted lang-es">
-          ¿Sos integrador u OEM y querés sumarte a la <strong>Comunidad Wecon Argentina</strong>? <br />
-          Pasá por el Blog.htmlBlog</a> y dejá tu mensaje.
-        </p>
-        <p class="muted lang-en">
-          Are you an integrator or OEM and want to join the <strong>Wecon Argentina Community</strong>? <br />
-          Visit the Blog.htmlBlog</a> and leave your message.
-        </p>
+        <div class="small muted">
+          <strong>Horario:</strong> Lunes a viernes 8:30–18:00<br>
+          <strong>Respuesta:</strong> en el día hábil, por mail o WhatsApp.
+        </div>
+        <div class="hrule"></div>
+        <div class="small muted">
+          <strong>Links rápidos:</strong><br>
+          https://store.quark-systems.arCatálogo online</a> ·
+          Blog.htmlComunidad</a> ·
+          https://www.we-con.com.cn/EN/Wecon Global</a>
+        </div>
       </aside>
+    </div>
+  </section>
 
+  <!-- ============== MAPA Y FRAMES DE SOPORTE ============== -->
+  <section class="section" aria-labelledby="contact-frames">
+    <div class="container">
+      <span class="section-kicker" id="contact-frames">Soporte real, equipo real</span>
+      <div class="grid-3" style="margin-top:16px">
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Equipo soporte</strong> — <code>images/contact-support.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">Equipo soporte</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Tablero real</strong> — <code>images/contact-panel.jpg</code> (1600×1200).</div>
+          <figcaption class="sr-only">Tablero real</figcaption>
+        </figure>
+        <figure class="card" style="aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;border:1px dashed rgba(58,68,76,.35);background:#F6F8FB">
+          <div class="small muted"><strong>Ubicación</strong> — <code>images/contact-map.jpg</code> (1600×1200). Podés insertar un mapa de Google aquí.</div>
+          <figcaption class="sr-only">Ubicación</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA FINAL ============== -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Querés cotizar, consultar o sumarte a la comunidad?</h3>
+        <h3 class="lang-en">Want a quote, advice or to join the community?</h3>
+        <p class="muted lang-es">¡Mandanos tu mensaje y te respondemos en el día!</p>
+        <p class="muted lang-en">Send your message and we’ll reply same day!</p>
+      </div>
+      Blog.html<span class="lang-es">Comunidad →</span><span class="lang-en">Community →</span></a>
     </div>
   </section>
 
   <!-- ======================= FOOTER ======================= -->
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
-<script src="assets/site.js"></script>
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
+
+  <script src="assets/site.js"></script>
 </body>
 </html>
