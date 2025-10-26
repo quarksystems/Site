@@ -1,4 +1,4 @@
-/* ===== Quark‑Systems Industrial Theme v5.1 ===== */
+/* ===== Quarkâ€‘Systems Industrial Theme v5.1 ===== */
 :root{
   --coal:#0B0F13; --iron:#1F262D; --steel:#3A444C; --zinc:#5B687A; --galvan:#B0BEC5; --concrete:#ECEFF1; --paper:#FFFFFF;
   --signal:#0057B8; --safety:#FF6A00; --hazard:#FFC400; --success:#2E7D32; --danger:#D32F2F; --info:#0288D1;
@@ -123,7 +123,7 @@ main.hero{
 .badge{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:999px;font-weight:800;font-size:.9rem;border:1px solid rgba(58,68,76,.2)}
 .badge.hazard{background:linear-gradient(90deg,var(--hazard),#FFD95A);color:#222}
 
-/* Banner Catálogo */
+/* Banner CatÃ¡logo */
 .catalog-banner{
   margin:20px 0;background:linear-gradient(90deg,rgba(255,196,0,.22),rgba(255,106,0,.18));
   border:2px dashed rgba(58,68,76,.35);border-radius:14px;padding:18px;display:flex;align-items:center;justify-content:space-between;gap:12px
@@ -131,7 +131,7 @@ main.hero{
 .catalog-media{display:flex;align-items:center;gap:16px}
 .catalog-media img{width:120px;height:auto;border-radius:10px;box-shadow:var(--shadow);border:1px solid rgba(58,68,76,.18)}
 
-/* ¿Por qué Wecon? */
+/* Â¿Por quÃ© Wecon? */
 .why-wecon{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .why-wecon .point{display:flex;gap:12px;align-items:flex-start}
 .why-wecon .dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(90deg,var(--signal),var(--safety));margin-top:7px}
