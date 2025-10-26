@@ -1,0 +1,21 @@
+{
+  "name": "Web Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ritwickdey.LiveServer",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [5500],
+  "postCreateCommand": "npm install -g live-server",
+  "portsAttributes": {
+    "5500": {
+      "label": "Live Server",
+      "onAutoForward": "openPreview"
+    }
+  }
+}
