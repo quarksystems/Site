@@ -7,106 +7,216 @@
   <meta name="description" content="Quark‑Systems: hardware industrial, soluciones Wecon y formación." />
   <link rel="stylesheet" href="assets/site.css" />
 </head>
-<body>
-<header>
-  <div class="header-top"></div>
-  <div class="container nav">
-    <div class="brand">
-      <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-      <div class="brand-name">Quark‑Systems</div>
-    </div>
-    <nav id="nav">
-      <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-      <ul>
-        <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-        <li class="has-sub">
-          <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-          <div class="submenu">
-            <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-            <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-          </div>
-        </li>
-        <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-        <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-        <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-        <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-        <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-        <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-<main class="hero">
-  <div class="container hero-grid">
-    <div>
-      <span class="kicker">Industrial • Wecon • Networking</span>
-      <h1 class="lang-es">Impulsá la transformación digital</h1>
-      <h1 class="lang-en">Drive your digital transformation</h1>
-      <p class="lead lang-es">Automatización, IIoT y mantenimiento predictivo con foco en plataformas Wecon. Soporte local, tiempos ágiles y transferencia de conocimiento.</p>
-      <p class="lead lang-en">Automation, IIoT and predictive maintenance focused on Wecon platforms. Local support, fast lead times and knowledge transfer.</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
-        <a class="btn btn-primary" href="Q-Automation.html">Q‑Automation</a>
-        <a class="btn btn-accent" href="Blog.html">Blog</a>
-      </div>
-      <div class="catalog-banner">
-        <strong class="lang-es">Nuevo: Catálogo y tienda online</strong>
-        <strong class="lang-en">New: Online catalog & store</strong>
-        <div>
-          <a class="btn btn-outline" href="https://store.quark-systems.ar" target="_blank" rel="noopener">store.quark-systems.ar →</a>
-        </div>
-      </div>
-      <div class="hrule"></div>
-      <div class="badge hazard">Industria 4.0</div> <div class="badge">Wecon Partner</div>
-    </div>
-      <div class="card">
-        <strong>Quark‑Systems</strong>
-        <p class="muted lang-es">
-          Socio estratégico para PYMES argentinas. Distribución oficial de Wecon + llave en mano y soporte local desde el cordón industrial de San Lorenzo.
-        </p>
-        <p class="muted lang-en">
-          Strategic partner for Argentine SMEs. Official Wecon distribution + turn‑key methodology and local support from the San Lorenzo industrial belt.
-        </p>
-      </div>
-  </div>
-</main>
-<!-- ===================== ¿POR QUÉ WECON? ===================== -->
-  <section class="section" aria-labelledby="why-wecon">
-    <div class="container">
-      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
-      <h2 class="lang-es">Wecon: calidad, soporte y IIoT integrados</h2>
-      <h2 class="lang-en">Wecon: quality, support and integrated IIoT</h2>
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quark‑Systems</title>
+  <meta name="description" content="Quark‑Systems: Q‑Automation, IIoT y VFD con Wecon — importación directa y garantía oficial." />
+  <link rel="stylesheet" href="assets/site.css" />
+<body id="top">
 
-      <div class="why-wecon" style="margin-top:12px">
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Calidad industrial probada (ISO9001, CE, FCC, RoHS) para entornos exigentes.</p>
-          <p class="muted lang-en">Proven industrial quality (ISO9001, CE, FCC, RoHS) for harsh environments.</p>
+  <!-- ======================= HEADER ======================= -->
+  <header>
+    <div class="header-top"></div>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Subí tu logo real a /images/logo.svg o .png y cambiá el src si es PNG -->
+        images/logo.svg
+        <div class="brand-name">Quark‑Systems</div>
+      </div>
+
+      <nav id="nav">
+        <button class="menu-btn" aria-label="Abrir menú" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+        <ul>
+          <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><spanli>
+
+          <li class="has-sub">
+            <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑submenu" role="menu" aria-label="Submenú Q‑Automation">
+              Q-PLCs.htmlQ‑PLCs</a>
+              <a data-page="Q-HMIs.html" href=" </div>
+          </li>
+
+          <li>Q-VFDs.htmlQ‑VFDs</a></li>
+          <li><a data-page="Q-IIoa></li>
+          <!-- Archivo con espacio: data-page sin codificar; href codificado -->
+          <li><a data-page="Quines somos.html" href="Quines%20somos.html"><span class="lang-es">Quiénes somos</a></li>
+          <li><a data-page="/a></li>
+          <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="       <li><button class="btn btn-outline" type="button" onclick="toggleLang()">ES / EN</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
+  <main class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="kicker">Industrial • Wecon • Networking</span>
+        <h1 class="lang-es">Impulsá la transformación digital</h1>
+        <h1 class="lang-en">Drive your digital transformation</h1>
+
+        <p class="lead lang-es">
+          Automatización (Q‑Automation), IIoT y VFD con Wecon. Soporte local, importación directa y garantía oficial.
+        </p>
+        <p class="lead lang-en">
+          Automation (Q‑Automation), IIoT and VFD powered by Wecon. Local support, factory‑direct import and official warranty.
+        </p>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
+          <a class="on.htmlQ‑Automation</a>
+          Blog.htmlBlog</a>
         </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Soporte local y garantía oficial: importación directa y respuesta inmediata.</p>
-          <p class="muted lang-en">Local support & official warranty: factory‑direct import and swift response.</p>
+
+        <!-- ===== Banner Catálogo / Tienda ===== -->
+        <div class="catalog-banner" aria-label="Catálogo y tienda online">
+          <div class="catalog-media">
+            <img src="images/wecon-plc.svg" alt="Wecon PLC" />
+vg
+          </div>
+          <strong class="lang-es">Nuevo: Catálogo y tienda online</strong>
+          <strong class="lang-en">New: Online catalog & store</strong>
+          <div>
+            <a class="btn btn-outline" href="httpsark-systems.ar →</a>
+          </div>
         </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Innovación IIoT: V‑BOX y V‑NET para conectividad remota y telemetría.</p>
-          <p class="muted lang-en">IIoT innovation: V‑BOX & V‑NET for remote connectivity and telemetry.</p>
+
+        <div class="hrule"></div>
+        <div class="badge hazard" aria-label="Industria 4.0">Industria 4.0</div>
+        <div class="badge" aria-label="Partner Wecon">Wecon Partner</div>
+      </div>
+
+      <!-- Frame del hero para subir imagen de portada -->
+      <div class="card" style="aspect-ratio: 16/9; display:flex; align-items:center; justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F3F6FA">
+        <div class="small muted">
+          <strong>Frame hero</strong> — subí <code>images/hero.jpg</code> (1920×1080).<br/>
+          Si no está, se usa <code>images/hero-fallback.svg</code>.
         </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Excelente costo/beneficio y curva de aprendizaje amigable.</p>
-          <p class="muted lang-en">Excellent value and friendly learning curve.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================== HIGHLIGHTS TÉCNICOS (Wecon) ================== -->
+  <section class="section" aria-labelledby="highlights">
+    <div class="container">
+      <span class="section-kicker" id="highlights">Highlights técnicos</span>
+      <div class="grid-3" style="margin-top:16px">
+
+        <div class="card">
+          <h3>PLC LX6V (EtherCAT)</h3>
+          <p class="muted">
+            EtherCAT + Ethernet, 5 MB de programa y hasta 128 ejes por bus.
+            Ideal para packaging, textil, robots y elevadores. [1](https://www.we-con.com.cn/en/product_page/2480.html)
+          </p>
+          Q-PLCs.htmlVer PLCs →</a>
         </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Capacitación y documentación para integradores, OEMs y usuarios finales.</p>
-          <p class="muted lang-en">Training & docs for integrators, OEMs and end‑users.</p>
+
+        <div class="card">
+          <h3>PLC LX5V (Motion)</h3>
+          <p class="muted">
+            0.01–0.03 μs, pulsos alta velocidad (hasta 200 kHz), E‑Cam y E‑Gear,
+            perfecto para control de movimiento. [2](https://www.we-con.com.cn/en/product_page/2474.html)[3](https://www.jofas.com.au/plc-controller-for-motion-control-lx5v/)
+          </p>
+          Q-PLCs.htmlVer PLCs →</a>
         </div>
+
+        <div class="card">
+          <h3>HMI PI3000ig + V‑NET</h3>
+          <p class="muted">
+            Gestión de dispositivos, alarmas y **Cloud SCADA** vía V‑NET; acceso
+            remoto y actualización por app/cliente. [4](https://www.we-con.com.cn/en/news_page/1776.html)[5](https://www.we-con.com.cn/en/news_page/1747.html)
+          </p>
+          <a class="btn btn-outline" href="Q-HMIs.html">Ver HMIs →</a>
+"card">
+          <h3>IIoT V‑BOX</h3>
+          <p class="muted">
+            3×Ethernet, RS‑232/485, **WVPN** y apps; datalogger, alarmas y API para
+            integración cloud. [6](https://www.we-con.com.cn/en/product_page/244.html)[7](https://www.charter-controls.com/Blog/Manufacturers/WECON/V-BOX-H-Series-Comparison)
+          </p>
+          <a class="btn btn-outline" href=" </div>
+
+        <div class="card">
+          <h3>VFD VM / VB / VC</h3>
+          <p class="muted">
+            VM (0–400 Hz, 150%/60 s); VB (SVC hasta 320 Hz, VF hasta 1000 Hz, freno
+            0.75–22 kW, PID optimizado); VC (módulos y encoder). [8](https://www.we-con.com.cn/en/product_s/89.html)[9](https://www.directindustry.com/prod/wecon-technology-coltd/product-121853-2468068.html)
+          </p>
+          Q-VFDs.htmlVer VFDs →</a>
+        </div>
+
+        <div class="card">
+          <h3>Calidad y certificaciones</h3>
+          <p class="muted">
+            R&D y producción bajo **ISO 9001**; productos **CE/FCC** y cumplimiento
+            **RoHS** en HMI/PLC. [10](https://www.we-con.com.cn/en/about.html)[11](https://www.we-con.com.cn/en/news_page/2491.html)
+          </p>
+          <a class="btn btn-outline" href="Quines%20somos.html">Quiénes somos →   </div>
+  </section>
+
+  <!-- ================== GALERÍA DE PRODUCTOS (FRAMES) ================== -->
+  <section class="section" aria-labelledby="galeria">
+    <div class="container">
+      <span class="section-kicker" id="galeria">Galería de productos</span>
+      <div class="grid-3" style="margin-top:16px">
+
+        <figure class="card" style="aspect-ratio: 4/3; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>Frame PLC</strong> — subí <code>images/gallery-plc-01.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">Frame PLC</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio: 4/3; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>Frame HMI</strong> — subí <code>images/gallery-hmi-01.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">Frame HMI</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio: 4/3; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#F6F8FB">
+          <div class="small muted">
+            <strong>Frame V‑BOX</strong> — subí <code>images/gallery-iiot-01.jpg</code> (1600×1200).
+          </div>
+          <figcaption class="sr-only">Frame V‑BOX</figcaption>
+        </figure>
+
       </div>
     </div>
   </section>
 
-  <!-- ======================= COMUNIDAD ======================= -->
+  <!-- ================== CASOS / TABLEROS (FRAMES) ================== -->
+  <section class="section" aria-labelledby="casos">
+    <div class="container">
+      <span class="section-kicker" id="casos">Casos y tableros</span>
+      <div class="grid-3" style="margin-top:16px">
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted">
+            <strong>Case 01</strong> — <code>images/case-01.jpg</code> (1920×1080). Señalá PLC/HMI/VFD usados.
+          </div>
+          <figcaption class="sr-only">Caso 01</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted">
+            <strong>Case 02</strong> — <code>images/case-02.jpg</code> (1920×1080). Antes / Después.
+          </div>
+          <figcaption class="sr-only">Caso 02</figcaption>
+        </figure>
+
+        <figure class="card" style="aspect-ratio:16/9; display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#EEF3F9">
+          <div class="small muted">
+            <strong>Case 03</strong> — <code>images/case-03.jpg</code> (1920×1080). KPIs / OEE.
+          </div>
+          <figcaption class="sr-only">Caso 03</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================= COMUNIDAD / BLOG ======================= -->
   <section class="section" aria-labelledby="community">
     <div class="container card">
       <h3 id="community" class="lang-es">Construyamos la Comunidad Wecon Argentina</h3>
@@ -119,22 +229,82 @@
         For integrators, OEMs and enthusiasts: technical content, training, support and collaboration.
         The community lives in our <strong>Blog</strong>.
       </p>
-      Blog.html<span class="lang-es">Quiero ser parte →</span><span class="lang-en">Join →</span></a>
+      <a class="btn btn-primary" href="Blog.html"><span class="lang-es">Quiero ser parte →</span><span    </div>
+  </section>
+
+  <!-- ===================== ACCESOS RÁPIDOS ===================== -->
+  <section class="section" aria-labelledby="quick-links">
+    <div class="container grid-3" id="quick-links">
+      <div class="card">
+        <h3>Q‑PLCs</h3>
+        <p class="muted lang-es">Rendimiento y precisión.</p>
+        <p class="muted lang-en">Performance and precision.</p>
+        images/wecon-plc.svg
+        <-PLCs.html→</a>
+      </div>
+
+      <div class="card">
+        <h3>Q‑HMIs</h3>
+        <p class="muted lang-es">Interfaz clara y robusta.</p>
+        <p class="muted lang-en">Clear, robust interface.</p>
+        <img src="images/wecon-hmi.svg" alt="Wecon/a>
+      </div>
+
+      <div class="card">
+        <h3>Q‑VFDs</h3>
+        <p class="muted lang-es">Control y eficiencia energética.</p>
+        <p class="muted lang-en">Control & energy efficiency.</p>
+        images/wecon-vfd.svg
+        Q-VFDs.html→</a>
+      </div>
     </div>
   </section>
-<!-- ===================== ACCESOS RÁPIDOS ===================== -->
-<section class="section"><div class="container grid-3">
-  <div class="card"><h3>Q‑PLCs</h3><p class="muted lang-es">Rendimiento y precisión.</p><p class="muted lang-en">Performance and precision.</p><a class="btn btn-outline" href="Q-PLCs.html">→</a></div>
-  <div class="card"><h3>Q‑HMIs</h3><p class="muted lang-es">Interfaz clara y robusta.</p><p class="muted lang-en">Clear, robust interface.</p><a class="btn btn-outline" href="Q-HMIs.html">→</a></div>
-  <div class="card"><h3>Q‑VFDs</h3><p class="muted lang-es">Control y eficiencia energética.</p><p class="muted lang-en">Control & energy efficiency.</p><a class="btn btn-outline" href="Q-VFDs.html">→</a></div>
-</div></section>
-<footer>
-  <div class="container footer-grid">
-    <div class="small">© <span id="y"></span> Quark‑Systems • <span class="lang-es">Hardware Industrial & Soluciones Wecon</span><span class="lang-en">Industrial Hardware & Wecon Solutions</span></div>
-    <div><a href="index.html">↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-</footer>
+
+  <!-- =================== CERTIFICACIONES / PARTNERS (FRAMES) =================== -->
+  <section class="section" aria-labelledby="certs">
+    <div class="container">
+      <span class="section-kicker" id="certs">Certificaciones</span>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card" style="display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#FAFBFD; aspect-ratio: 3/2">
+          <div class="small muted"><strong>ISO 9001</strong> — frame: <code>images/cert-iso9001.svg</code></div>
+        </div>
+        <div class="card" style="display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#FAFBFD; aspect-ratio: 3/2">
+          <div class="small muted"><strong>CE/FCC</strong> — frame: <code>images/cert-ce-fcc.svg</code></div>
+        </div>
+        <div class="card" style="display:flex;align-items:center;justify-content:center; border:1px dashed rgba(58,68,76,.35); background:#FAFBFD; aspect-ratio: 3/2">
+          <div class="small muted"><strong>RoHS</strong> — frame: <code>images/cert-rohs.svg</code></div>
+        </div>
+      </div>
+      <p class="small muted" style="margin-top:10px">
+        Basado en documentación oficial y comunicados de Wecon. [10](https://www.we-con.com.cn/en/about.html)[11](https://www.we-con.com.cn/en/news_page/2491.html)
+      </p>
+    </div>
+  </section>
+
+  <!-- ======================= CTA CONTACTO ======================= -->
+  <section class="section">
+    <div class="container card" style="display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <h3 class="lang-es">¿Tenés un proyecto en mente?</h3>
+        <h3 class="lang-en">Got a project in mind?</h3>
+        <p class="muted lang-es">Escribinos y lo revisamos en el día.</p>
+        <p class="muted lang-en">Drop us a line — same‑day reply.</p>
+      </div>
+      <a class="btn btn-primary" href="Contcto.html"><span class="lang-es">Contacto →</span><span class="/div>
+  </section>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="small">
+        © <span id="y"></span> Quark‑Systems •
+        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
+        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
+      </div>
+      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
+    </div>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </footer>
 <script src="assets/site.js"></script>
 </body>
 </html>
