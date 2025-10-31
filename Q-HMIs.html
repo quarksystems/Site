@@ -1,146 +1,44 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Q‑HMIs • Quark‑Systems</title>
-  <meta name="description"
-        content="HMIs Wecon: interfaz intuitiva, drivers multi‑marca e IIoT nativo (V‑NET). Soporte local y garantía oficial." />
-  <link rel="stylesheet" href="assets/site.css" />
+  <meta name="description" content="Automatización, IIoT y mantenimiento predictivo con plataformas Wecon. Soporte local y tiempos ágiles.">
+  <link rel="canonical" href="https://www.quark-systems.ar/">
+  <meta property="og:title" content="Q‑HMIs • Quark‑Systems">
+  <meta property="og:description" content="Automatización, IIoT y mantenimiento predictivo con Wecon.">
+  <meta property="og:image" content="/images/placeholder.svg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-
-  <!-- ======================= HEADER ======================= -->
-  <header>
-    <div class="header-top"></div>
-    <div class="container nav">
-        <div class="brand">
-          <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-          <div class="brand-name">Quark‑Systems</div>
-        </div>
-        <nav id="nav">
-          <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-          <ul>
-            <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-            <li class="has-sub">
-              <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-              <div class="submenu">
-                <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-                <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-              </div>
-            </li>
-            <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-            <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-            <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-            <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-            <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-            <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-          </ul>
-        </nav>
-    </div>
-  </header>
-
-  <!-- ======================== HERO ======================== -->
-  <main class="hero">
-    <div class="container">
-      <span class="section-kicker">Q‑HMIs</span>
-      <h1>HMIs Wecon</h1>
-      <p class="lead">PI3000i • PI3000ie • PI3000ig — interfaz intuitiva, drivers multi‑marca e IIoT nativo.</p>
-    </div>
-  </main>
-
-  <!-- ==================== SERIES HMI (grid) ==================== -->
-  <section class="section" aria-labelledby="hmi-series">
-    <div class="container grid-3" id="hmi-series">
-
-      <div class="card">
-        <h3>PI3000i</h3>
-        <p class="muted">
-          7" / 10.2" • &lt;8W • múltiples protocolos • panel robusto para tableros compactos.
-        </p>
-        images/wecon-hmi.svg
-      </div>
-
-      <div class="card">
-        <h3>PI3000ie</h3>
-        <p class="muted">
-          Arranque ~6 s • ~100 ms cambio de pantalla • scripting LUA • alto rendimiento para líneas exigentes.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>PI3000ig</h3>
-        <p class="muted">
-          IIoT + V‑NET • nube • alarmas • diagnóstico remoto • base sólida para analítica y SCADA.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================== HISTORIA ======================== -->
-  <section class="section" aria-labelledby="hmi-story">
-    <div class="container">
-      <div class="card">
-        <h3 id="hmi-story" class="lang-es">Historia</h3>
-        <h3 class="lang-en">History</h3>
-        <p class="muted lang-es">
-          Las primeras implementaciones fueron interfaces simples para tableros compactos.
-          Con la serie <strong>ig</strong> incorporamos monitoreo remoto y analítica, mejorando OEE y tiempos de respuesta.
-        </p>
-        <p class="muted lang-en">
-          Our first deployments were simple panels for compact boards.
-          With the <strong>ig</strong> series we added remote monitoring and analytics, improving OEE and response times.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ¿POR QUÉ WECON? ===================== -->
-  <section class="section" aria-labelledby="why-wecon">
-    <div class="container">
-      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
-      <h2 class="lang-es">Wecon: calidad, soporte y IIoT integrados</h2>
-      <h2 class="lang-en">Wecon: quality, support and integrated IIoT</h2>
-
-      <div class="why-wecon" style="margin-top:12px">
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Interfaz intuitiva y drivers multi‑marca para integraciones rápidas.</p>
-          <p class="muted lang-en">Intuitive UI with multi‑brand drivers for fast integrations.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Arranque veloz y scripting (LUA) para lógica de pantalla y eventos.</p>
-          <p class="muted lang-en">Fast boot and scripting (LUA) for screen logic and events.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Conectividad IIoT nativa (V‑NET/V‑BOX) para monitoreo remoto seguro.</p>
-          <p class="muted lang-en">Native IIoT (V‑NET/V‑BOX) for secure remote monitoring.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Soporte local, garantía oficial y documentación clara para tu equipo.</p>
-          <p class="muted lang-en">Local support, official warranty and clear documentation for your team.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= FOOTER ======================= -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="small">
-        © <span id="y"></span> Quark‑Systems •
-        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
-        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
-      </div>
-      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-    </div>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  </footer>
-
-  <script src="assets/site.js"></script>
+<body id="top">
+  <div data-include="header.html"></div>
+  <main id="main">
+<section class="section container">
+  <h1>Q‑HMIs</h1>
+  <h2>HMIs Wecon · PI3000i • PI3000ie • PI3000ig</h2>
+  <div class="grid-3">
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="PI3000i" class="img-cover"></figure>
+      <h3>PI3000i</h3>
+      <p class="small">7"/10.2" · &lt;8W · multi‑protocolo</p>
+    </article>
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="PI3000ie" class="img-cover"></figure>
+      <h3>PI3000ie</h3>
+      <p class="small">Arranque 6 s · 100 ms cambio pantalla · LUA</p>
+    </article>
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="PI3000ig" class="img-cover"></figure>
+      <h3>PI3000ig</h3>
+      <p class="small">IIoT + V‑NET · nube · alarmas · SCADA</p>
+    </article>
+  </div>
+</section>
+</main>
+  <div data-include="footer.html"></div>
+  <script src="site.js"></script>
 </body>
 </html>

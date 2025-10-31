@@ -1,191 +1,80 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quark‑Systems</title>
-  <meta name="description" content="Quark‑Systems: Q‑Automation, IIoT y VFD con Wecon — importación directa y garantía oficial." />
-  <link rel="stylesheet" href="assets/site.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quark‑Systems — Industrial • Wecon • Networking</title>
+  <meta name="description" content="Automatización, IIoT y mantenimiento predictivo con plataformas Wecon. Soporte local y tiempos ágiles.">
+  <link rel="canonical" href="https://www.quark-systems.ar/">
+  <meta property="og:title" content="Quark‑Systems — Industrial • Wecon • Networking">
+  <meta property="og:description" content="Automatización, IIoT y mantenimiento predictivo con Wecon.">
+  <meta property="og:image" content="/images/placeholder.svg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-
-  <!-- ======================= HEADER ======================= -->
-  <header>
-    <div class="header-top"></div>
-    <div class="container nav">
-        <div class="brand">
-          <img class="logo-img" src="images/logo.png" alt="Quark‑Systems logo"/>
-          <div class="brand-name">Quark‑Systems</div>
-        </div>
-        <nav id="nav">
-          <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-          <ul>
-            <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-            <li class="has-sub">
-              <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-              <div class="submenu">
-                <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-                <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-              </div>
-            </li>
-            <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-            <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-            <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-            <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-            <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-            <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-          </ul>
-        </nav>
+<body id="top">
+  <div data-include="header.html"></div>
+  <main id="main">
+<section class="section container">
+  <div class="grid-3" style="grid-template-columns:1.2fr 1fr; align-items:center;">
+    <div>
+      <p class="kicker">Industrial • Wecon • Networking</p>
+      <h1><span class="lang-es">Impulsá la transformación digital</span><span class="lang-en">Drive your digital transformation</span></h1>
+      <p class="lead lang-es">Automatización, IIoT y mantenimiento predictivo con foco en plataformas Wecon. Soporte local, tiempos ágiles y transferencia de conocimiento.</p>
+      <p class="lead lang-en">Automation, IIoT and predictive maintenance focused on Wecon platforms. Local support, fast lead times and knowledge transfer.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="Contacto.html">Hablar con un ingeniero</a>
+        <a class="btn btn-outline" href="https://store.quark-systems.ar/" target="_blank" rel="noopener">Ver catálogo</a>
       </div>
-  </header>
+    </div>
+    <figure class="img-frame aspect-16x9">
+      <picture>
+        <source type="image/avif" srcset="/images/placeholder.svg">
+        <source type="image/webp" srcset="/images/placeholder.svg">
+        <img src="/images/placeholder.svg" alt="Tablero industrial con HMI Wecon" class="img-cover">
+      </picture>
+    </figure>
+  </div>
+</section>
 
-  <!-- ======================== HERO ======================== -->
-  <main class="hero">
-    <div class="container hero-grid">
+<section class="section container">
+  <div class="grid-3">
+    <article class="card product-card">
+      <h3>Q‑PLCs</h3>
+      <p>Rendimiento y precisión.</p>
+      <a class="btn btn-accent" href="Q-PLCs.html">→ Ver PLCs</a>
+    </article>
+    <article class="card product-card">
+      <h3>Q‑HMIs</h3>
+      <p>Interfaz clara y robusta.</p>
+      <a class="btn btn-accent" href="Q-HMIs.html">→ Ver HMIs</a>
+    </article>
+    <article class="card product-card">
+      <h3>Q‑VFDs</h3>
+      <p>Control y eficiencia energética.</p>
+      <a class="btn btn-accent" href="Q-VFDs.html">→ Ver VFDs</a>
+    </article>
+  </div>
+</section>
+
+<section class="section container">
+  <div class="card cta-card">
+    <div class="cta-content">
       <div>
-        <span class="kicker">Industrial • Wecon • Networking</span>
-        <h1 class="lang-es">Impulsá la transformación digital</h1>
-        <h1 class="lang-en">Drive your digital transformation</h1>
-
-        <p class="lead lang-es">
-          Automatización (Q‑Automation), IIoT y VFD con Wecon. Soporte local, importación directa y garantía oficial.
-        </p>
-        <p class="lead lang-en">
-          Automation (Q‑Automation), IIoT and VFD powered by Wecon. Local support, factory‑direct import and official warranty.
-        </p>
-
-        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:10px">
-          Q-Automation.htmlQ‑Automation</a>
-          <log.htmlBlog</a>
-        </div>
-
-        <!-- ===== Banner Catálogo / Tienda ===== -->
-        <div class="catalog-banner" aria-label="Catálogo y tienda online">
-          <div class="catalog-media">
-            <!-- Reemplazá por .jpg/.png reales cuando quieras -->
-            <mages/wecon-plc.svg
-            images/wecon-hmi.svg
-          </div>
-          <strong class="lang-es">Nuevo: Catálogo y tienda online</strong>
-          <strong class="lang-en">New: Online catalog & store</strong>
-          <div>
-            https://store.quark-systems.ar
-          </div>
-        </div>
-
-        <div class="hrule"></div>
-        <div class="badge hazard" aria-label="Industria 4.0">Industria 4.0</div>
-        <div class="badge" aria-label="Partner Wecon">Wecon Partner</div>
+        <h3 class="lang-es">¿Tenés un proyecto en mente?</h3>
+        <h3 class="lang-en">Got a project in mind?</h3>
+        <p class="muted lang-es">Escribinos y lo revisamos en el día.</p>
+        <p class="muted lang-en">Drop us a line — same‑day reply.</p>
       </div>
-
-      <div class="card">
-        <strong>Quark‑Systems</strong>
-        <p class="muted lang-es">
-          Socio estratégico para PYMES argentinas. Distribución oficial de Wecon + llave en mano y soporte local desde el cordón industrial de San Lorenzo.
-        </p>
-        <p class="muted lang-en">
-          Strategic partner for Argentine SMEs. Official Wecon distribution + turn‑key methodology and local support from the San Lorenzo industrial belt.
-        </p>
+      <div>
+        <a class="btn btn-primary" href="Contacto.html">Contacto</a>
       </div>
     </div>
-  </main>
-
-  <!-- ===================== ¿POR QUÉ WECON? ===================== -->
-  <section class="section" aria-labelledby="why-wecon">
-    <div class="container">
-      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
-      <h2 class="lang-es">Wecon: calidad, soporte y IIoT integrados</h2>
-      <h2 class="lang-en">Wecon: quality, support and integrated IIoT</h2>
-
-      <div class="why-wecon" style="margin-top:12px">
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Calidad industrial probada (ISO9001, CE, FCC, RoHS) para entornos exigentes.</p>
-          <p class="muted lang-en">Proven industrial quality (ISO9001, CE, FCC, RoHS) for harsh environments.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Soporte local y garantía oficial: importación directa y respuesta inmediata.</p>
-          <p class="muted lang-en">Local support & official warranty: factory‑direct import and swift response.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Innovación IIoT: V‑BOX y V‑NET para conectividad remota y telemetría.</p>
-          <p class="muted lang-en">IIoT innovation: V‑BOX & V‑NET for remote connectivity and telemetry.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Excelente costo/beneficio y curva de aprendizaje amigable.</p>
-          <p class="muted lang-en">Excellent value and friendly learning curve.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Capacitación y documentación para integradores, OEMs y usuarios finales.</p>
-          <p class="muted lang-en">Training & docs for integrators, OEMs and end‑users.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= COMUNIDAD ======================= -->
-  <section class="section" aria-labelledby="community">
-    <div class="container card">
-      <h3 id="community" class="lang-es">Construyamos la Comunidad Wecon Argentina</h3>
-      <h3 class="lang-en">Let’s build the Wecon Argentina Community</h3>
-      <p class="muted lang-es">
-        Para integradores, OEMs y entusiastas: contenidos técnicos, capacitación, soporte y colaboración.
-        La comunidad vive en nuestro <strong>Blog</strong>.
-      </p>
-      <p class="muted lang-en">
-        For integrators, OEMs and enthusiasts: technical content, training, support and collaboration.
-        The community lives in our <strong>Blog</strong>.
-      </p>
-      Blog.html<span class="lang-es">Quiero ser parte →</span><span class="lang-en">Join →</span></a>
-    </div>
-  </section>
-
-  <!-- ===================== ACCESOS RÁPIDOS ===================== -->
-  <section class="section" aria-labelledby="quick-links">
-    <div class="container grid-3" id="quick-links">
-      <div class="card">
-        <h3>Q‑PLCs</h3>
-        <p class="muted lang-es">Rendimiento y precisión.</p>
-        <p class="muted lang-en">Performance and precision.</p>
-        <mages/wecon-plc.svg
-        Q-PLCs.html→</a>
-      </div>
-
-      <div class="card">
-        <h3>Q‑HMIs</h3>
-        <p class="muted lang-es">Interfaz clara y robusta.</p>
-        <p class="muted lang-en">Clear, robust interface.</p>
-        images/wecon-hmi.svg
-        Q-HMIs.html→</a>
-      </div>
-
-      <div class="card">
-        <h3>Q‑VFDs</h3>
-        <p class="muted lang-es">Control y eficiencia energética.</p>
-        <p class="muted lang-en">Control & energy efficiency.</p>
-        images/wecon-vfd.svg
-        Q-VFDs.html→</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= FOOTER ======================= -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="small">
-        © <span id="y"></span> Quark‑Systems •
-        <span class="lang-es">Hardware Industrial & Soluciones Wecon</span>
-        <span class="lang-en">Industrial Hardware & Wecon Solutions</span>
-      </div>
-      <div>index.html↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-    </div>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  </footer>
-
-<script src="assets/site.js"></script>
+  </div>
+</section>
+</main>
+  <div data-include="footer.html"></div>
+  <script src="site.js"></script>
 </body>
 </html>

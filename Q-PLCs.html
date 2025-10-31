@@ -1,168 +1,53 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Q‑PLCs • Quark‑Systems</title>
-  <meta name="description" content="PLCs Wecon: confiabilidad, velocidad y expansión modular, con soporte local y garantía oficial." />
-  <link rel="stylesheet" href="assets/site.css" />
+  <meta name="description" content="Automatización, IIoT y mantenimiento predictivo con plataformas Wecon. Soporte local y tiempos ágiles.">
+  <link rel="canonical" href="https://www.quark-systems.ar/">
+  <meta property="og:title" content="Q‑PLCs • Quark‑Systems">
+  <meta property="og:description" content="Automatización, IIoT y mantenimiento predictivo con Wecon.">
+  <meta property="og:image" content="/images/placeholder.svg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body>
-
-  <!-- ======================= HEADER ======================= -->
-  <header>
-    <div class="header-top"></div>
-    <div class="container nav">
-        <div class="brand">
-          <img class="logo-img" src="images/logo.svg" alt="Quark‑Systems logo"/>
-          <div class="brand-name">Quark‑Systems</div>
-        </div>
-        <nav id="nav">
-          <button class="menu-btn" aria-label="Toggle menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
-          <ul>
-            <li><a data-page="index.html" href="index.html"><span class="lang-es">Inicio</span><span class="lang-en">Home</span></a></li>
-            <li class="has-sub">
-              <a data-page="Q-Automation.html" href="Q-Automation.html">Q‑Automation ▾</a>
-              <div class="submenu">
-                <a data-page="Q-PLCs.html" href="Q-PLCs.html">Q‑PLCs</a>
-                <a data-page="Q-HMIs.html" href="Q-HMIs.html">Q‑HMIs</a>
-              </div>
-            </li>
-            <li><a data-page="Q-VFDs.html" href="Q-VFDs.html">Q‑VFDs</a></li>
-            <li><a data-page="Q-IIoT.html" href="Q-IIoT.html">Q‑IIoT</a></li>
-            <li><a data-page="Quines somos.html" href="Quines somos.html"><span class="lang-es">Quiénes somos</span><span class="lang-en">About</span></a></li>
-            <li><a data-page="Blog.html" href="Blog.html">Blog</a></li>
-            <li><a data-page="Contcto.html" href="Contcto.html"><span class="lang-es">Contacto</span><span class="lang-en">Contact</span></a></li>
-            <li><button class="btn btn-outline" onclick="toggleLang()">ES / EN</button></li>
-          </ul>
-        </nav>
-    </div>
-  </header>
-
-  <!-- ======================== HERO ======================== -->
-  <main class="hero">
-    <div class="container">
-      <span class="section-kicker">Q‑PLCs</span>
-      <h1>PLCs Wecon</h1>
-      <p class="lead lang-es">LX6V • LX5V • LX3VP — confiabilidad, velocidad y expansión modular.</p>
-      <p class="lead lang-en">LX6V • LX5V • LX3VP — reliability, speed and modular expansion.</p>
-    </div>
-  </main>
-
-  <!-- ============== SERIES (LX6V / LX5V / LX3VP) ============== -->
-  <section class="section" aria-labelledby="plc-series">
-    <div class="container grid-3" id="plc-series">
-
-      <div class="card">
-        <h3>Serie LX6V</h3>
-        <ul class="muted lang-es">
-          <li>5&nbsp;MB de almacenamiento</li>
-          <li>EtherCAT y USB‑C</li>
-          <li>Ladder / tabla / FB / FC</li>
-        </ul>
-        <ul class="muted lang-en">
-          <li>5&nbsp;MB storage</li>
-          <li>EtherCAT &amp; USB‑C</li>
-          <li>Ladder / table / FB / FC</li>
-        </ul>
-        <!-- Cuando tengas foto real, reemplazá por images/wecon-plc.jpg -->
-        <!-- images/wecon-plc.svg -->
-      </div>
-
-      <div class="card">
-        <h3>Serie LX5V</h3>
-        <ul class="muted lang-es">
-          <li>Pulsos alta velocidad (hasta 8 ejes)</li>
-          <li>Ciclo básico 0.01–0.03&nbsp;μs</li>
-          <li>Interrupciones externas y de conteo</li>
-        </ul>
-        <ul class="muted lang-en">
-          <li>High‑speed pulses (up to 8 axes)</li>
-          <li>0.01–0.03&nbsp;μs basic scan</li>
-          <li>External &amp; count interrupts</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Serie LX3VP</h3>
-        <ul class="muted lang-es">
-          <li>Programa 64k steps</li>
-          <li>4 salidas 200&nbsp;kHz</li>
-          <li>Red “N” 2–8 PLCs</li>
-        </ul>
-        <ul class="muted lang-en">
-          <li>Program 64k steps</li>
-          <li>4 outputs 200&nbsp;kHz</li>
-          <li>“N” network 2–8 PLCs</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ======================== HISTORIA ======================== -->
-  <section class="section" aria-labelledby="plc-story">
-    <div class="container">
-      <div class="card">
-        <h3 id="plc-story" class="lang-es">Historia</h3>
-        <h3 class="lang-en">History</h3>
-        <p class="muted lang-es">
-          Adoptamos Wecon para reemplazar controladores legados con una plataforma robusta y accesible.
-          Pasamos de pilotos en líneas de envasado a arquitecturas multi‑eje con comunicaciones avanzadas.
-        </p>
-        <p class="muted lang-en">
-          We adopted Wecon to replace legacy controllers with a robust, cost‑effective platform.
-          We moved from packaging pilots to multi‑axis architectures with advanced comms.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== ¿POR QUÉ WECON? ===================== -->
-  <section class="section" aria-labelledby="why-wecon">
-    <div class="container">
-      <span class="section-kicker" id="why-wecon">¿Por qué Wecon?</span>
-      <h2 class="lang-es">Wecon: calidad, soporte y IIoT integrados</h2>
-      <h2 class="lang-en">Wecon: quality, support and integrated IIoT</h2>
-
-      <div class="why-wecon" style="margin-top:12px">
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Calidad industrial probada (ISO9001, CE, FCC, RoHS) para entornos exigentes.</p>
-          <p class="muted lang-en">Proven industrial quality (ISO9001, CE, FCC, RoHS) for harsh environments.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Soporte local y garantía oficial: importación directa y respuesta inmediata.</p>
-          <p class="muted lang-en">Local support &amp; official warranty: factory‑direct import and swift response.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Integración sencilla con drivers y protocolos industriales estándar.</p>
-          <p class="muted lang-en">Easy integration with standard industrial drivers &amp; protocols.</p>
-        </div>
-        <div class="point">
-          <div class="dot" aria-hidden="true"></div>
-          <p class="muted lang-es">Excelente costo/beneficio y curva de aprendizaje amigable.</p>
-          <p class="muted lang-en">Excellent value and a friendly learning curve.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======================= FOOTER ======================= -->
-  <footer>
-    <div class="container footer-grid">
-      <div class="small">
-        © <span id="y"></span> Quark‑Systems •
-        <span class="lang-es">Hardware Industrial &amp; Soluciones Wecon</span>
-        <span class="lang-en">Industrial Hardware &amp; Wecon Solutions</span>
-      </div>
-      <div>#top↑ <span class="lang-es">Inicio</span><span class="lang-en">Top</span></a></div>
-    </div>
-    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  </footer>
-
-  <script src="assets/site.js"></script>
+<body id="top">
+  <div data-include="header.html"></div>
+  <main id="main">
+<section class="section container">
+  <h1>Q‑PLCs</h1>
+  <h2>PLCs Wecon · LX6V • LX5V • LX3VP</h2>
+  <div class="grid-3">
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="Wecon LX6V" class="img-cover"></figure>
+      <h3>Serie LX6V</h3>
+      <ul class="small">
+        <li>5MB de almacenamiento · EtherCAT · USB‑C</li>
+        <li>Ladder / table / FB / FC</li>
+      </ul>
+    </article>
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="Wecon LX5V" class="img-cover"></figure>
+      <h3>Serie LX5V</h3>
+      <ul class="small">
+        <li>Pulsos alta velocidad (8 ejes)</li>
+        <li>Ciclo 0.01–0.03 µs · Interrupciones externas/conteo</li>
+      </ul>
+    </article>
+    <article class="card">
+      <figure class="img-frame aspect-4x3"><img src="/images/placeholder.svg" alt="Wecon LX3VP" class="img-cover"></figure>
+      <h3>Serie LX3VP</h3>
+      <ul class="small">
+        <li>Programa 64k steps · 4 salidas 200 kHz</li>
+        <li>Red “N” 2–8 PLCs</li>
+      </ul>
+    </article>
+  </div>
+</section>
+</main>
+  <div data-include="footer.html"></div>
+  <script src="site.js"></script>
 </body>
 </html>
