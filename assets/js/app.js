@@ -1,1 +1,4 @@
-document.addEventListener('DOMContentLoaded',()=>{console.log('QS site loaded');});
+
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('QS site loaded');
+});
