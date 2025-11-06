@@ -1,75 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quark-Systems | Q-Automation</title>
-<link rel="stylesheet" href="assets/css/styles.css">
-<link rel="manifest" href="site.webmanifest">
-<link rel="icon" href="favicon.ico">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quark‑Systems.ar | Hardware industrial con soporte local</title>
+  <meta name="description" content="PLC, HMI, VFD e IIoT con stock local, asesoramiento técnico y soporte especializado." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta property="og:title" content="Quark‑Systems.ar" />
+  <meta property="og:description" content="Automatización e IIoT: PLC, HMI, VFD con soporte local." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/assets/img/hero-3d.png" />
 </head>
 <body>
-<header>
-  <nav>
-    <a href="index.html"><img src="assets/img/logo.png" alt="Quark-Systems Logo" class="logo"></a>
-    <ul>
-      <li><a href="#productos">Productos</a></li>
-      <li><a href="plc.html">PLC</a></li>
-      <li><a href="hmi.html">HMI</a></li>
-      <li><a href="iiot.html">IIoT</a></li>
-      <li><a href="vfd.html">VFD</a></li>
-      <li><a href="contacto-simple.html">Contacto</a></li>
-      <li><a href="comunidad.html">Comunidad</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="https://quarksystems.mitiendanube.com/" class="catalogo-btn">Catálogo</a></li>
-    </ul>
-  </nav>
-</header>
+  <div id="header" role="navigation" aria-label="Encabezado del sitio"></div>
 
-<section class="hero">
-  <img src="assets/img/hero-3d.png" alt="Hero 3D" class="hero-img">
-  <div class="hero-text">
-    <h1>Q-Automation: Hardware para la Industria</h1>
-    <p>PLC, HMI y V-BOX para transformar datos en decisiones.</p>
-    <a href="contacto-simple.html" class="btn-primary">Cotizar ahora</a>
-  </div>
-</section>
+  <main>
+    <section id="inicio" class="hero" aria-label="Hero">
+      <img src="/assets/img/hero-3d.png" alt="Tecnología industrial futurista" class="bg" />
+      <div class="hero__content">
+        <img src="/assets/img/logo-lockup.png" alt="Quark‑Systems" style="height:44px; margin-bottom:.5rem" />
+        <h1>Hardware industrial, con soporte que resuelve</h1>
+        <p>Seleccionamos y entregamos <strong>PLC, HMI, VFD e IIoT</strong> con <strong>stock local</strong>, <strong>asesoramiento técnico</strong> y <strong>puesta en marcha</strong>.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary neon" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver Catálogo</a>
+          <a class="btn btn-ghost" href="/contacto.html">Hablar con un especialista</a>
+        </div>
+      </div>
+    </section>
 
-<section id="productos">
-  <h2>Productos</h2>
-  <div class="product-grid">
-    <a href="plc.html"><img src="assets/img/plc.png" alt="PLC"><span>PLC</span></a>
-    <a href="hmi.html"><img src="assets/img/hmi.png" alt="HMI"><span>HMI</span></a>
-    <a href="iiot.html"><img src="assets/img/vbox.png" alt="V-BOX"><span>IIoT</span></a>
-    <a href="vfd.html"><img src="assets/img/flow.png" alt="VFD"><span>VFD</span></a>
-  </div>
-</section>
+    <section id="diferenciales" class="value">
+      <div class="container">
+        <h2>Lo que nos diferencia</h2>
+        <ul class="cards">
+          <li class="card">
+            <img src="/assets/img/card-plc.jpg" alt="PLC" />
+            <h3>Asesoramiento previo</h3>
+            <p>Dimensionamos bien desde el inicio para evitar sobrecostos e incompatibilidades.</p>
+          </li>
+          <li class="card">
+            <img src="/assets/img/card-hmi.jpg" alt="HMI" />
+            <h3>Stock y agilidad</h3>
+            <p>Entrega rápida para mantenimiento y producción crítica.</p>
+          </li>
+          <li class="card">
+            <img src="/assets/img/card-vfd.jpg" alt="VFD" />
+            <h3>Soporte postventa</h3>
+            <p>Resolución por especialistas en automatización e IIoT.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<!-- Banner Catálogo -->
-<section class="catalogo-banner">
-  <img src="assets/img/catalogo-banner.png" alt="Catálogo" class="catalogo-img">
-  <div class="catalogo-text">
-    <h2>Descubre nuestro Catálogo Completo</h2>
-    <p>Encuentra PLC, HMI, V-BOX y más soluciones para tu industria.</p>
-    <a href="https://quarksystems.mitiendanube.com/" class="btn-primary">Ver Catálogo Online</a>
-    <a href="contacto-simple.html" class="btn-secondary">Solicitar Asesoramiento</a>
-  </div>
-</section>
+    <section id="catalogo" class="highlight">
+      <div class="container">
+        <h2>Catálogo técnico</h2>
+        <p>Especificaciones, hojas de datos y compatibilidades. Todo en un solo lugar.</p>
+        <a class="btn btn-primary neon" href="https://catalogo.quark-systems.ar" target="_blank" rel="noopener">Abrir catálogo</a>
+      </div>
+    </section>
 
-<!-- Integradores -->
-<section class="integradores">
-  <img src="assets/img/integradores-banner.png" alt="Integradores" class="integradores-img">
-  <div class="integradores-text">
-    <h2>¿Eres integrador o empresa de automatización?</h2>
-    <p>Únete a nuestra comunidad y accede a beneficios exclusivos, soporte y oportunidades de negocio.</p>
-    <a href="comunidad.html" class="btn-primary">Unirme a la Comunidad</a>
-    <a href="blog.html" class="btn-secondary">Ver Blog Técnico</a>
-  </div>
-</section>
+    <section id="contacto" class="cta-bottom">
+      <div class="container">
+        <h2>¿Proyecto en marcha?</h2>
+        <p>Contanos tu aplicación y te sugerimos la arquitectura óptima.</p>
+        <a class="btn btn-primary" href="/contacto.html">Contactanos</a>
+      </div>
+    </section>
+  </main>
 
-<footer>
-  <p>&copy; 2025 Quark-Systems. Todos los derechos reservados.</p>
-</footer>
-<script src="assets/js/app.js"></script>
+  <div id="footer"></div>
+
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>
