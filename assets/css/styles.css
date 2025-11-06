@@ -74,6 +74,18 @@ section{padding:3.5rem 1rem}
 .highlight{background:linear-gradient(135deg,var(--bg-alt),#031a2b);color:#fff;text-align:center}
 .cta-bottom{text-align:center}
 
+/* logo contacto */
+.logo-glow {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  max-width: 110px;
+  filter: drop-shadow(0 0 18px #00d1b2) drop-shadow(0 0 8px #fff);
+  transition: filter .3s;
+}
+.logo-glow:hover {
+  filter: drop-shadow(0 0 32px #00d1b2) drop-shadow(0 0 16px #fff);
+}
+
 /* Footer */
 .site-footer{padding:1.5rem 1rem;border-top:1px solid #e5e7eb;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .site-footer a{text-decoration:none;color:var(--ink)}

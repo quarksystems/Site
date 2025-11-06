@@ -4,12 +4,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto | Quark‑Systems.ar</title>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  /assets/css/styles.css
 </head>
 <body>
   <div id="header"></div>
   <main class="container narrow">
-    <h1>Contactanos</h1>
+    <!-- Logo alternativo con efecto glow -->
+    /assets/img/logo-alt.png
+    <h1 style="text-align:center; margin-bottom:.5rem;">¿Hablamos?</h1>
+    <p style="text-align:center; color:#0d2a45; margin-bottom:2rem;">
+      Te respondemos rápido y con soporte real.<br>
+      <span class="badge">Automatización sin vueltas</span> · <span class="badge">Resultados con respaldo</span>
+    </p>
     <form class="contact-form" id="contactForm" novalidate>
       <label>Nombre y empresa
         <input type="text" name="name" required minlength="3" placeholder="Ej: Ana — Fábrica XYZ" />
@@ -18,39 +24,42 @@
         <input type="email" name="email" required placeholder="nombre@empresa.com" />
       </label>
       <label>Teléfono
-        <input type="tel" name="phone" pattern="^[0-9+()\s-]{7,}$" placeholder="+54 341 ..." />
+        <input type="tel" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
       </label>
       <label>¿Qué necesitás?
         <select name="topic" required>
-          <option value="" selected disabled>Seleccioná</option>
+          <option value="" selected disabled>Selecciona</option>
           <option>PLC</option><option>HMI</option><option>VFD</option>
           <option>IIoT</option><option>Proyecto llave en mano</option>
+          <option>Capacitación</option>
           <option>Otro</option>
         </select>
       </label>
       <label>Mensaje
-        <textarea name="message" required rows="5" placeholder="Contanos la aplicación, potencia, protocolo, etc."></textarea>
+        <textarea name="message" required rows="5" placeholder="Cuéntanos la aplicación, potencia, protocolo, etc."></textarea>
       </label>
       <button class="btn btn-primary" type="submit">Enviar</button>
       <p class="form-feedback" role="status" aria-live="polite"></p>
     </form>
-    <div class="contact-data">
-      <h2>También podés escribirnos</h2>
-      <p><strong>Email:</strong> contacto.quark.systems@gmail.com</p>
-      <p><strong>Ubicación:</strong> Pto. Gral. San Martín, Santa Fe</p>
+    <div class="contact-data" style="margin-top:2rem;">
+      <h2>También puedes escribirnos</h2>
+      <p><strong>Email:</strong> hola@quark-systems.ar</p>
+      <p><strong>Ubicación:</strong> Cordón Industrial San Lorenzo, Santa Fe</p>
+      <p><strong>Teléfono:</strong> (0341) 6594559</p>
     </div>
   </main>
   <div id="footer"></div>
-  <script src="/assets/js/includes.js"></script>
-  <script src="/assets/js/main.js"></script>
+  /assets/js/includes.js</script>
+  /assets/js/main.js</script>
   <script>
+    // Validación simple con efecto feedback
     (function(){
       const form = document.getElementById('contactForm');
       if(!form) return;
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         if (!form.checkValidity()){
-          form.querySelector('.form-feedback').textContent = 'Revisá los campos requeridos.';
+          form.querySelector('.form-feedback').textContent = 'Revisa los campos requeridos.';
           form.reportValidity();
           return;
         }
