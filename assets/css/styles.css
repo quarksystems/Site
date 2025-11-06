@@ -81,53 +81,20 @@ section{padding:3.5rem 1rem}
 /* Smooth anchor scroll */
 html{scroll-behavior:smooth}
 
-.badge {
-  display:inline-block; padding:.25rem .5rem; border-radius:999px;
-  background:rgba(97,242,209,.18); color:#0d2a45; font-weight:700; font-size:.85rem;
+.firma-glow {
+  font-size:2.1rem;
+  font-weight:900;
+  letter-spacing:1px;
+  color:#fff;
+  text-shadow:0 0 8px #00d1b2, 0 0 24px #0d2a45;
+  transition: text-shadow .6s cubic-bezier(.4,0,.2,1);
 }
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.firma-glow.glow-anim {
+  text-shadow:
+    0 0 24px #61f2d1,
+    0 0 48px #00d1b2,
+    0 0 80px #fff,
+    0 0 8px #00d1b2;
+  color:#61f2d1;
+  filter:brightness(1.2);
 }
-main {
-  flex: 1 0 auto;
-}
-.site-footer {
-  margin-top: auto;
-  padding: 1.5rem 1rem;
-  border-top: 1px solid #e5e7eb;
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: #fff;
-}
-.footer-nav {
-  display: flex;
-  gap: 1.25rem;
-}
-.footer-link {
-  text-decoration: none;
-  color: var(--ink);
-  font-weight: 600;
-  position: relative;
-  transition: color .2s, text-shadow .2s;
-}
-.footer-link.glow::after {
-  content: "";
-  position: absolute;
-  left: 0; right: 0; bottom: -6px; height: 2px;
-  background: linear-gradient(90deg, transparent, var(--accent), transparent);
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform .25s;
-  filter: drop-shadow(0 0 6px var(--accent));
-}
-.footer-link.glow:hover {
-  color: #062235;
-  text-shadow: 0 0 12px rgba(0,209,178,.55), 0 0 24px rgba(0,209,178,.35);
-}
-.footer-link.glow:hover::after {
-  transform: scaleX(1);
