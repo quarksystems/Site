@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   include('#header', '/partials/header.html');
   include('#footer', '/partials/footer.html');
 
-  // Scroll Glow (IntersectionObserver)
+  // Scroll Glow (IntersectionObserver) en home
   const sectionIds = ['inicio','diferenciales','catalogo','contacto'];
   const linkSel = (id) => `.site-nav a.nav-link[href$="#${id}"]`;
 

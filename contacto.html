@@ -18,7 +18,7 @@
         <input type="email" name="email" required placeholder="nombre@empresa.com" />
       </label>
       <label>Teléfono
-        <input type="tel" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
+        <input type="tel" name="phone" pattern="^[0-9+()\s-]{7,}$" placeholder="+54 341 ..." />
       </label>
       <label>¿Qué necesitás?
         <select name="topic" required>
@@ -44,7 +44,6 @@
   <script src="/assets/js/includes.js"></script>
   <script src="/assets/js/main.js"></script>
   <script>
-    // Validación simple
     (function(){
       const form = document.getElementById('contactForm');
       if(!form) return;
