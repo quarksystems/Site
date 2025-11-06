@@ -85,6 +85,15 @@ section{padding:3.5rem 1rem}
 .logo-glow:hover {
   filter: drop-shadow(0 0 32px #00d1b2) drop-shadow(0 0 16px #fff);
 }
+.badge {
+  display: inline-block;
+  padding: .25rem .5rem;
+  border-radius: 999px;
+  background: rgba(97,242,209,.18);
+  color: #0d2a45;
+  font-weight: 700;
+  font-size: .85rem;
+}
 
 /* Footer */
 .site-footer{padding:1.5rem 1rem;border-top:1px solid #e5e7eb;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}

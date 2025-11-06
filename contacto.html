@@ -4,39 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto | Quark‑Systems.ar</title>
-  /assets/css/styles.css
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
   <div id="header"></div>
   <main class="container narrow">
     <!-- Logo alternativo con efecto glow -->
-    /assets/img/logo-alt.png
+    <img src="/assets/img/logo-alt.png" alt="Quark-Systems Logo Alternativo" class="logo-glow" />
     <h1 style="text-align:center; margin-bottom:.5rem;">¿Hablamos?</h1>
     <p style="text-align:center; color:#0d2a45; margin-bottom:2rem;">
       Te respondemos rápido y con soporte real.<br>
       <span class="badge">Automatización sin vueltas</span> · <span class="badge">Resultados con respaldo</span>
     </p>
     <form class="contact-form" id="contactForm" novalidate>
-      <label>Nombre y empresa
-        <input type="text" name="name" required minlength="3" placeholder="Ej: Ana — Fábrica XYZ" />
+      <label for="name">Nombre y empresa
+        <input type="text" id="name" name="name" required minlength="3" placeholder="Ej: Ana — Fábrica XYZ" />
       </label>
-      <label>Email
-        <input type="email" name="email" required placeholder="nombre@empresa.com" />
+      <label for="email">Email
+        <input type="email" id="email" name="email" required placeholder="nombre@empresa.com" />
       </label>
-      <label>Teléfono
-        <input type="tel" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
+      <label for="phone">Teléfono
+        <input type="tel" id="phone" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
       </label>
-      <label>¿Qué necesitás?
-        <select name="topic" required>
+      <label for="topic">¿Qué necesitás?
+        <select id="topic" name="topic" required>
           <option value="" selected disabled>Selecciona</option>
-          <option>PLC</option><option>HMI</option><option>VFD</option>
-          <option>IIoT</option><option>Proyecto llave en mano</option>
+          <option>PLC</option>
+          <option>HMI</option>
+          <option>VFD</option>
+          <option>IIoT</option>
+          <option>Proyecto llave en mano</option>
           <option>Capacitación</option>
           <option>Otro</option>
         </select>
       </label>
-      <label>Mensaje
-        <textarea name="message" required rows="5" placeholder="Cuéntanos la aplicación, potencia, protocolo, etc."></textarea>
+      <label for="message">Mensaje
+        <textarea id="message" name="message" required rows="5" placeholder="Cuéntanos la aplicación, potencia, protocolo, etc."></textarea>
       </label>
       <button class="btn btn-primary" type="submit">Enviar</button>
       <p class="form-feedback" role="status" aria-live="polite"></p>
@@ -49,24 +52,25 @@
     </div>
   </main>
   <div id="footer"></div>
-  /assets/js/includes.js</script>
-  /assets/js/main.js</script>
+  <script src="/assets/js/includes.js"></script>
+  <script src="/assets/js/main.js"></script>
   <script>
     // Validación simple con efecto feedback
-    (function(){
+    document.addEventListener('DOMContentLoaded', function() {
       const form = document.getElementById('contactForm');
       if(!form) return;
-      form.addEventListener('submit', (e) => {
+      form.addEventListener('submit', function(e) {
         e.preventDefault();
+        const feedback = form.querySelector('.form-feedback');
         if (!form.checkValidity()){
-          form.querySelector('.form-feedback').textContent = 'Revisa los campos requeridos.';
+          feedback.textContent = 'Revisa los campos requeridos.';
           form.reportValidity();
           return;
         }
-        form.querySelector('.form-feedback').textContent = '¡Gracias! Te contactamos a la brevedad.';
+        feedback.textContent = '¡Gracias! Te contactamos a la brevedad.';
         form.reset();
       });
-    })();
+    });
   </script>
 </body>
 </html>
