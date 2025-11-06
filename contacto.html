@@ -4,73 +4,135 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contacto | Quark‑Systems.ar</title>
+  <meta name="description" content="Contactanos: soporte real, ingeniería y capacitación sobre PLC, HMI, VFD, IIoT y V‑Net.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/assets/img/favicon-48.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body>
+  <!-- Header inyectado -->
   <div id="header"></div>
-  <main class="container narrow">
-    <!-- Logo alternativo con efecto glow -->
-    <img src="/assets/img/logo-alt.png" alt="Quark-Systems Logo Alternativo" class="logo-glow" />
-    <h1 style="text-align:center; margin-bottom:.5rem;">¿Hablamos?</h1>
-    <p style="text-align:center; color:#0d2a45; margin-bottom:2rem;">
-      Te respondemos rápido y con soporte real.<br>
-      <span class="badge">Automatización sin vueltas</span> · <span class="badge">Resultados con respaldo</span>
-    </p>
-    <form class="contact-form" id="contactForm" novalidate>
-      <label for="name">Nombre y empresa
-        <input type="text" id="name" name="name" required minlength="3" placeholder="Ej: Ana — Fábrica XYZ" />
-      </label>
-      <label for="email">Email
-        <input type="email" id="email" name="email" required placeholder="nombre@empresa.com" />
-      </label>
-      <label for="phone">Teléfono
-        <input type="tel" id="phone" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
-      </label>
-      <label for="topic">¿Qué necesitás?
-        <select id="topic" name="topic" required>
-          <option value="" selected disabled>Selecciona</option>
-          <option>PLC</option>
-          <option>HMI</option>
-          <option>VFD</option>
-          <option>IIoT</option>
-          <option>Proyecto llave en mano</option>
-          <option>Capacitación</option>
-          <option>Otro</option>
-        </select>
-      </label>
-      <label for="message">Mensaje
-        <textarea id="message" name="message" required rows="5" placeholder="Cuéntanos la aplicación, potencia, protocolo, etc."></textarea>
-      </label>
-      <button class="btn btn-primary" type="submit">Enviar</button>
-      <p class="form-feedback" role="status" aria-live="polite"></p>
-    </form>
-    <div class="contact-data" style="margin-top:2rem;">
-      <h2>También puedes escribirnos</h2>
-      <p><strong>Email:</strong> hola@quark-systems.ar</p>
-      <p><strong>Ubicación:</strong> Cordón Industrial San Lorenzo, Santa Fe</p>
-      <p><strong>Teléfono:</strong> (0341) 6594559</p>
-    </div>
+
+  <main>
+    <!-- Hero compacto para dar identidad a la página de contacto -->
+    <section class="hero" aria-label="Contacto – Hero" style="min-height:40vh;">
+      <img src="/assets/img/hero-3d.png" alt="Fondo tecnológico" class="bg" />
+      <div class="hero__content" style="text-align:center;">
+        <!-- LOGO ALTERNATIVO con efecto -->
+        <img src="/assets/img/logo-alt.png" alt="Quark‑Systems" class="logo-glow" style="max-width:110px;margin:0 auto 1rem auto;" />
+        <h1>¿Hablamos?</h1>
+        <p style="margin:.25rem 0 0 0">
+          Respuesta técnica rápida · <strong>Soporte real</strong> · <strong>Capacitación</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Tarjeta de contacto con efecto glass + highlight lateral -->
+    <section class="container narrow" style="position:relative; margin-top:-2rem;">
+      <div class="contact-card">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="grid-2">
+            <label>Nombre y empresa
+              <input type="text" name="name" required minlength="3" placeholder="Ej: Ana — Fábrica XYZ" />
+            </label>
+            <label>Email
+              <input type="email" name="email" required placeholder="nombre@empresa.com" />
+            </label>
+            <label>Teléfono
+              <input type="tel" name="phone" pattern="^[0-9+()\\s-]{7,}$" placeholder="+54 341 ..." />
+            </label>
+            <label>¿Qué necesitás?
+              <select name="topic" required>
+                <option value="" selected disabled>Seleccioná</option>
+                <option>PLC</option><option>HMI</option><option>VFD</option>
+                <option>IIoT</option><option>V‑Net / Acceso remoto</option>
+                <option>Proyecto llave en mano</option>
+                <option>Capacitación</option>
+                <option>Otro</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Mensaje
+            <textarea name="message" required rows="5" placeholder="Contanos la aplicación, potencia, protocolo, ambiente, etc."></textarea>
+          </label>
+
+          <div class="cta-row" style="justify-content:flex-start;margin-top:.5rem;">
+            <button class="btn btn-primary ripple" type="submit" data-analytics="contacto_enviar">Enviar</button>
+            <a class="btn btn-secondary" href="mailto:hola@quark-systems.ar" data-analytics="contacto_mailto">Escribir por email</a>
+          </div>
+          <p class="form-feedback" role="status" aria-live="polite" style="margin-top:.5rem;"></p>
+        </form>
+
+        <!-- Panel lateral con datos y promesa de valor -->
+        <aside class="contact-side">
+          <h3 style="margin-top:0;">Soporte & Capacitación</h3>
+          <p style="margin:.5rem 0 1rem;">
+            Te acompañamos desde la <strong>selección</strong> hasta la <strong>puesta en marcha</strong>.  
+            Capacitaciones <strong>pagas</strong> y soporte en <strong>horas de ingeniería</strong>.
+          </p>
+          <ul class="ticks">
+            <li>Checklists de arranque</li>
+            <li>Bloques y plantillas PLC/HMI</li>
+            <li>Buenas prácticas VFD/EMC</li>
+            <li>IIoT & V‑Net: telemetría y acceso remoto seguro</li>
+          </ul>
+          <div style="margin-top:1rem;">
+            <span class="badge">Próximamente: Q‑Academy</span>
+          </div>
+
+          <hr style="margin:1.25rem 0;border:none;border-top:1px solid #e5e7eb;" />
+
+          <h4>Contacto directo</h4>
+          <p style="margin:.25rem 0;"><strong>Email:</strong> hola@quark-systems.ar</p>
+          <p style="margin:.25rem 0;"><strong>Teléfono:</strong> (0341) 6594559</p>
+          <p style="margin:.25rem 0;color:#6b7280;">Cordón Industrial San Lorenzo, Santa Fe</p>
+        </aside>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer inyectado -->
   <div id="footer"></div>
+
   <script src="/assets/js/includes.js"></script>
   <script src="/assets/js/main.js"></script>
   <script>
-    // Validación simple con efecto feedback
-    document.addEventListener('DOMContentLoaded', function() {
+    // Validación + feedback + pequeño efecto ripple (si no existe GA, no pasa nada)
+    (function(){
       const form = document.getElementById('contactForm');
       if(!form) return;
-      form.addEventListener('submit', function(e) {
+
+      // Ripple básico en botones con clase .ripple (puro JS, sin dependencias)
+      document.body.addEventListener('click', (e) => {
+        const btn = e.target.closest('.ripple');
+        if(!btn) return;
+        const circle = document.createElement('span');
+        const d = Math.max(btn.clientWidth, btn.clientHeight);
+        circle.style.width = circle.style.height = d + 'px';
+        circle.style.left = (e.clientX - btn.getBoundingClientRect().left - d/2) + 'px';
+        circle.style.top  = (e.clientY - btn.getBoundingClientRect().top  - d/2) + 'px';
+        circle.className = 'ripple-circle';
+        btn.appendChild(circle);
+        setTimeout(() => circle.remove(), 600);
+      });
+
+      form.addEventListener('submit', (e) => {
         e.preventDefault();
         const feedback = form.querySelector('.form-feedback');
         if (!form.checkValidity()){
-          feedback.textContent = 'Revisa los campos requeridos.';
+          feedback.textContent = 'Revisá los campos requeridos.';
           form.reportValidity();
           return;
         }
         feedback.textContent = '¡Gracias! Te contactamos a la brevedad.';
         form.reset();
       });
-    });
+    })();
   </script>
 </body>
 </html>

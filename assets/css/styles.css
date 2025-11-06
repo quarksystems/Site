@@ -119,3 +119,72 @@ html{scroll-behavior:smooth}
   color:#61f2d1;
   filter:brightness(1.2);
 }
+
+.footer-glow{
+  background:
+    radial-gradient(120px 40px at 15% -20%, rgba(0,209,178,.22), transparent 70%),
+    radial-gradient(120px 40px at 85% 120%, rgba(97,242,209,.18), transparent 70%),
+    linear-gradient(90deg, #0d2a45 0%, #031a2b 100%);
+  color:#fff;
+}
+.footer-glow a{ color:#fff; }
+
+/* --- Contact card (glass + layout mixto) --- */
+.contact-card{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.4fr .9fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 18px;
+  background: rgba(255,255,255,.66);
+  box-shadow: 0 10px 30px rgba(13,42,69,.12);
+  backdrop-filter: blur(6px);
+}
+.contact-card::before{
+  /* resaltado lateral disruptivo */
+  content:""; position:absolute; left:-2px; top:10%; bottom:10%; width:6px;
+  background: linear-gradient(180deg, #00d1b2, #61f2d1);
+  border-radius: 6px;
+  filter: drop-shadow(0 0 10px rgba(0,209,178,.45));
+}
+.contact-side{
+  background:#fff; border:1px solid #eef2f7; border-radius:14px; padding:1rem;
+  box-shadow: var(--shadow);
+}
+.grid-2{ display:grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 900px){
+  .contact-card{ grid-template-columns: 1fr; }
+  .grid-2{ grid-template-columns: 1fr; }
+}
+
+/* --- Logo glow (si no lo añadiste antes) --- */
+.logo-glow{
+  filter: drop-shadow(0 0 18px #00d1b2) drop-shadow(0 0 8px #ffffff);
+  transition: filter .3s;
+}
+.logo-glow:hover{ filter: drop-shadow(0 0 32px #00d1b2) drop-shadow(0 0 16px #ffffff); }
+
+/* --- Efecto focus en inputs (más “disruptivo” pero elegante) --- */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  outline: none;
+  border-color: #00d1b2;
+  box-shadow: 0 0 0 4px rgba(0,209,178,.18);
+}
+
+/* --- Ripple del botón --- */
+.ripple{ position: relative; overflow: hidden; }
+.ripple-circle{
+  position:absolute; border-radius:50%; opacity:.25; pointer-events:none;
+  transform: scale(0); animation: ripple .6s ease-out forwards;
+  background: radial-gradient(circle, #fff 0%, rgba(255,255,255,0) 70%);
+}
+@keyframes ripple{ to { transform: scale(3); opacity: 0; } }
+
+/* --- Lista con tildes --- */
+.ticks{ list-style:none; padding:0; margin:0; }
+.ticks li{ padding-left:1.25rem; position:relative; margin:.25rem 0; }
+.ticks li::before{
+  content:"✓"; position:absolute; left:0; top:0; color:#00b89c; font-weight:700;
