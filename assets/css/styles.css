@@ -80,3 +80,8 @@ section{padding:3.5rem 1rem}
 
 /* Smooth anchor scroll */
 html{scroll-behavior:smooth}
+
+.badge {
+  display:inline-block; padding:.25rem .5rem; border-radius:999px;
+  background:rgba(97,242,209,.18); color:#0d2a45; font-weight:700; font-size:.85rem;
+}
