@@ -1,47 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>Quiénes Somos | QuarkSystems.ar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quiénes somos | Quark‑Systems.ar</title>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta name="description" content="QuarkSystems.ar: automatización industrial e inteligencia operativa para PYMES. Resultados medibles, soporte local y tecnología con propósito." />
+  <link rel="preload" href="styles.css" as="style" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="header"></div>
-  <main class="container narrow">
-    /assets/img/logo-mark.png
-    <h1 style="margin-top:1rem;">Quiénes somos</h1>
-    <p>
-      <strong>Quark‑Systems.ar</strong> es una empresa argentina especializada en <strong>automatización industrial</strong> e <strong>inteligencia operativa</strong> para PYMES. Nacimos para cerrar la brecha entre la tecnología de punta y la realidad productiva local, con <strong>productos robustos</strong>, <strong>soporte inmediato</strong> y <strong>resultados medibles</strong>.
-    </p>
-    <h2>Nuestra diferencia</h2>
-    <ul>
-      <li><strong>Soporte real:</strong> Respuestas técnicas claras y soluciones ejecutables.</li>
-      <li><strong>Resultados medibles:</strong> Menos paradas, mayor eficiencia, menor consumo.</li>
-      <li><strong>Tecnología con propósito:</strong> Solo lo que agrega valor. Sin sobreingeniería.</li>
-      <li><strong>Capacitación continua:</strong> Transferencia de conocimiento para autonomía del cliente.</li>
-      <li><strong>Transparencia:</strong> Presupuestos cerrados, plazos claros y comunicación honesta.</li>
-    </ul>
-    <h2>Fundador</h2>
-    <p>
-      <strong>Mg. Guillermo Espósito</strong> — Más de 20 años liderando automatización y mantenimiento en plantas industriales (DOW, Arauco, Celulosa Argentina). Experiencia técnica y visión de negocio (MBA), con enfoque práctico y soluciones adaptadas a la región.
-    </p>
-    <h2>Soluciones y portafolio</h2>
-    <ul>
-      <li><strong>Hardware WECON:</strong> PLC, HMI, VFD, IIoT y V‑Net con stock local y garantía de fábrica.</li>
-      <li><strong>QNexus:</strong> Plataforma propia de inteligencia operativa con IA para diagnóstico y gestión proactiva.</li>
-      <li><strong>QAcademy:</strong> Formación práctica y aplicada en automatización y IIoT (próximamente).</li>
-    </ul>
-    <h2>Compromiso local</h2>
-    <p>
-      Desde el <strong>cordón industrial de San Lorenzo, Santa Fe</strong>, acompañamos a pymes e integradores en la modernización de sus procesos, con soluciones ágiles y soporte cercano.
-    </p>
-    <div style="margin-top:2rem;">
-      /contacto.htmlContacta con nosotros</a>
+  <!-- Header -->
+  <header class="site-header">
+    <button class="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">☰</button>
+
+    <a class="brand" href="/" aria-label="Ir al inicio">
+      <!-- Logo alternativo con efectos -->
+      <img
+        src="logo-alt.png"
+        alt="QuarkSystems.ar"
+        class="logo-hero logo-glow"
+        width="132"
+        height="40"
+        fetchpriority="high"
+      />
+      <span class="firma-glow">QuarkSystems.ar</span>
+    </a>
+
+    <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
+      <a class="nav-link glow" href="/">Inicio</a>
+      <a class="nav-link glow is-active" href="/quienes-somos.html">Quiénes Somos</a>
+      <a class="nav-link glow" href="/soluciones.html">Soluciones</a>
+      <a class="nav-link glow" href="/contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Presentación">
+    <!-- Si tienes una imagen hero, colócala aquí -->
+    <!-- <img class="bg" src="/assets/img/hero-industria.jpg" alt="" aria-hidden="true" /> -->
+    <div class="hero__content">
+      <h1>Automatización sin vueltas. Resultados con respaldo.</h1>
+      <p>
+        QuarkSystems.ar es el socio estratégico de las PYMES industriales argentinas en su proceso de
+        Transformación Digital. Combinamos hardware robusto, tecnología propia y soporte local para
+        entregar control, eficiencia y ventaja competitiva.
+      </p>
+      <div class="cta-row">
+        <a class="btn btn-primary neon ripple" href="/contacto.html">Contacta con nosotros</a>
+        <a class="btn btn-ghost ripple" href="/soluciones.html">Ver soluciones</a>
+      </div>
     </div>
-  </main>
-  <div id="footer"></div>
-  <script src="/assets/js/includes.js"></script>
-  <script src="/assets/js/main.js"></script>
+  </section>
+
+  <!-- Nuestra diferencia -->
+  <section class="value">
+    <div class="container narrow">
+      <h2>Nuestra Diferencia</h2>
+      <ul class="ticks">
+        <li>Soporte real: respuestas técnicas claras y soluciones ejecutables.</li>
+        <li>Resultados medibles: menos paradas, mayor eficiencia, menor consumo.</li>
+        <li>Tecnología con propósito: solo lo que agrega valor. Sin sobreingeniería.</li>
+        <li>Capacitación continua: transferencia de conocimiento para autonomía del cliente.</li>
+        <li>Transparencia: presupuestos cerrados, plazos claros y comunicación honesta.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Fundador -->
+  <section class="highlight">
+    <div class="container narrow">
+      <h2>Fundador</h2>
+      <p>
+        <strong>Mg. Guillermo Espósito</strong> — Más de 20 años liderando automatización y mantenimiento en
+        plantas industriales (DOW, Arauco, Celulosa Argentina). Experiencia técnica y visión de negocio (MBA),
+        con enfoque práctico y soluciones adaptadas a la región.
+      </p>
+      <span class="badge">Compromiso local</span>
+    </div>
+  </section>
+
+  <!-- Soluciones y Portafolio -->
+  <section aria-labelledby="soluciones-title">
+    <div class="container narrow">
+      <h2 id="soluciones-title">Soluciones y Portafolio</h2>
+      <ul class="cards">
+        <li class="card">
+          <img src="/assets/img/wecon-plc.jpg" alt="Hardware WECON" />
+          <h3>Hardware WECON</h3>
+          <p>PLC, HMI, VFD, IIoT y V-Net con stock local y garantía de fábrica.</p>
+          <a href="/soluciones.html#wecon">Saber más →</a>
+        </li>
+        <li class="card">
+          <img src="/assets/img/qnexus.jpg" alt="Plataforma QNexus" />
+          <h3>QNexus</h3>
+          <p>Inteligencia operativa con IA para diagnóstico asistido y gestión proactiva.</p>
+          <a href="/soluciones.html#qnexus">Saber más →</a>
+        </li>
+        <li class="card">
+          <img src="/assets/img/qacademy.jpg" alt="QAcademy" />
+          <h3>QAcademy</h3>
+          <p>Formación práctica en automatización e IIoT (próximamente).</p>
+          <a href="/soluciones.html#qacademy">Saber más →</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Compromiso local -->
+  <section class="cta-bottom highlight">
+    <div class="container narrow">
+      <h2>Compromiso local</h2>
+      <p>
+        Desde el cordón industrial de San Lorenzo, Santa Fe, acompañamos a pymes e integradores en la modernización
+        de sus procesos, con soluciones ágiles y soporte cercano.
+      </p>
+      <a class="btn btn-primary neon ripple" href="/contacto.html">Contacta con nosotros</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer footer-glow">
+    <div class="container">
+      <span>© 2025 QuarkSystems.ar</span>
+      <a href="mailto:guillermo.esposito@quarksystems.com.ar">guillermo.esposito@quarksystems.com.ar</a>
+      <span>Oficina: Cordón Industrial San Lorenzo, Santa Fe</span>
+    </div>
+  </footer>
+
+  <!-- JS mínimo: tarjetas reveal + burger -->
+  <script>
+    // Tarjetas reveal
+    document.querySelectorAll('.card').forEach((card, i) => {
+      setTimeout(() => card.classList.add('reveal'), 150 + i * 180);
+    });
+
+    // Ripple (si no hay un handler global)
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.ripple');
+      if (!btn) return;
+      const circle = document.createElement('span');
+      circle.className = 'ripple-circle';
+      const rect = btn.getBoundingClientRect();
+      circle.style.width = circle.style.height = Math.max(rect.width, rect.height) + 'px';
+      circle.style.left = (e.clientX - rect.left - rect.width / 2) + 'px';
+      circle.style.top = (e.clientY - rect.top - rect.height / 2) + 'px';
+      btn.appendChild(circle);
+      setTimeout(() => circle.remove(), 600);
+    });
+
+    // Burger / menú móvil
+    const burger = document.querySelector('.burger');
+    const nav = document.getElementById('site-nav');
+    if (burger && nav) {
+      burger.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  </script>
 </body>
 </html>

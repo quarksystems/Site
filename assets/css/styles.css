@@ -99,6 +99,17 @@ section{padding:3.5rem 1rem}
 .site-footer{padding:1.5rem 1rem;border-top:1px solid #e5e7eb;display:flex;gap:1rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
 .site-footer a{text-decoration:none;color:var(--ink)}
 
+
+.footer-glow{
+  background:
+    radial-gradient(120px 40px at 15% -20%, rgba(0,209,178,.22), transparent 70%),
+    radial-gradient(120px 40px at 85% 120%, rgba(97,242,209,.18), transparent 70%),
+    linear-gradient(90deg, #0d2a45 0%, #031a2b 100%);
+  color:#fff;
+}
+.footer-glow a{ color:#fff; } 
+
+
 /* Smooth anchor scroll */
 html{scroll-behavior:smooth}
 
@@ -120,14 +131,6 @@ html{scroll-behavior:smooth}
   filter:brightness(1.2);
 }
 
-.footer-glow{
-  background:
-    radial-gradient(120px 40px at 15% -20%, rgba(0,209,178,.22), transparent 70%),
-    radial-gradient(120px 40px at 85% 120%, rgba(97,242,209,.18), transparent 70%),
-    linear-gradient(90deg, #0d2a45 0%, #031a2b 100%);
-  color:#fff;
-}
-.footer-glow a{ color:#fff; }
 
 /* --- Contact card (glass + layout mixto) --- */
 .contact-card{
@@ -188,3 +191,91 @@ html{scroll-behavior:smooth}
 .ticks li{ padding-left:1.25rem; position:relative; margin:.25rem 0; }
 .ticks li::before{
   content:"✓"; position:absolute; left:0; top:0; color:#00b89c; font-weight:700;
+
+  /* --- Ajustes menores de tipografía y contenedor --- */
+.container { padding: 0 1rem; }
+.site-header .brand { text-decoration: none; }
+
+/* --- Navegación móvil: accesibilidad visual del botón burger --- */
+.burger {
+  line-height: 1;
+  padding: .35rem .55rem;
+  border-radius: 10px;
+  color: var(--ink);
+}
+.burger:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,209,178,.35);
+}
+
+/* --- Hero logo espectacular (logo-alt.png) --- */
+.logo-hero {
+  position: relative;
+  display: inline-block;
+  isolation: isolate;
+  transform: translateZ(0);
+  transition: transform .25s ease, filter .25s ease;
+}
+
+/* Halo animado detrás del logo */
+.logo-hero::before,
+.logo-hero::after {
+  content: "";
+  position: absolute;
+  inset: -18px -22px;
+  z-index: -1;
+  border-radius: 18px;
+  pointer-events: none;
+  opacity: .9;
+  filter: blur(18px);
+  background:
+    radial-gradient(120px 40px at 20% 0%, rgba(97,242,209,.55), transparent 65%),
+    radial-gradient(120px 40px at 80% 100%, rgba(0,209,178,.35), transparent 65%);
+  animation: logoPulse 3.2s ease-in-out infinite;
+}
+.logo-hero::after {
+  inset: -8px -10px;
+  filter: blur(10px);
+  opacity: .55;
+  background:
+    conic-gradient(from 0deg, rgba(97,242,209,.35), rgba(0,209,178,.25), transparent 40%, transparent 60%, rgba(97,242,209,.35));
+  animation: logoSweep 6s linear infinite;
+}
+
+/* Pulso suave + barrido */
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); opacity: .85; }
+  50% { transform: scale(1.02); opacity: 1; }
+}
+@keyframes logoSweep {
+  0% { transform: rotate(0deg); opacity: .4; }
+  50% { opacity: .6; }
+  100% { transform: rotate(360deg); opacity: .4; }
+}
+
+/* Interacción */
+.logo-hero:hover {
+  transform: translateZ(0) scale(1.03);
+  filter: drop-shadow(0 0 22px #00d1b2) drop-shadow(0 0 10px #ffffff);
+}
+
+/* --- Hero: mejor lectura en fondos sin imagen de fondo --- */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 50% 120%, rgba(0,209,178,.12), transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #f9fbfe 100%);
+}
+
+/* --- Tarjetas: ligera elevación al hacer hover --- */
+.card { will-change: transform, opacity; }
+.card:hover { transform: translateY(-4px); }
+
+/* --- Enlaces en highlight para contraste AA --- */
+.highlight a { color: #d8fff6; text-decoration: underline; text-underline-offset: 3px; }
+
+/* --- Accesibilidad: foco visible en enlaces y botones --- */
+a:focus-visible, .btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,209,178,.35);
+  border-radius: 10px;
+}
