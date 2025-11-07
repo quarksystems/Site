@@ -414,3 +414,44 @@ a:focus-visible, .btn:focus-visible {
     transform: none !important;
   }
 }
+/* === vBox_01: mini + zoom suave al hover === */
+.figure-center {
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+.figcaption-muted {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+/* Imagen reducida por defecto */
+.vbox-zoom {
+  display: block;
+  margin: 0 auto;
+  max-width: 220px;                 /* tamaño reducido */
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(13,42,69,.10);
+  transition: transform .35s cubic-bezier(.25,.8,.25,1),
+              box-shadow .25s ease-out, filter .25s ease-out;
+  will-change: transform;
+}
+
+/* Zoom + glow consistente con tu look and feel */
+.vbox-zoom:hover {
+  transform: scale(1.18);
+  box-shadow: 0 12px 32px rgba(0,209,178,.18), 0 0 24px #61f2d1;
+  filter: drop-shadow(0 0 10px rgba(0,209,178,.25));
+}
+
+/* Respeto a usuarios con movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .vbox-zoom { transition: none !important; }
+  .vbox-zoom:hover { transform: none !important; }
+}
+
+/* En pantallas grandes podés aumentar un pelín el tamaño base si querés */
+@media (min-width: 1120px) {
+  .vbox-zoom { max-width: 240px; }
+}
