@@ -3,19 +3,29 @@
     <p style="font-weight:700; font-size:1.15rem; margin-bottom:.5rem;">¿Hablamos?</p>
     <p>
       <a href="/contacto.html" style="font-size:1.05rem; color:#fff; text-decoration:none; font-weight:600;">Contacto</a><br>
-      <span style="color:#b8e6e1;">Cordón Industrial San Lorenzo, Santa Fe</span>
+      <span style="color:#b8e6e1;">Cordón Industrial San Lorenzo, Santa Fe</span><br>
+      <span style="color:#b8e6e1;">Email: contacto.quark.systems@gmail.com</span><br>
+      <span style="color:#b8e6e1;">Teléfono: (0341) 6594559</span>
     </p>
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/543416594559" target="_blank" rel="noopener" class="btn btn-primary neon ripple" style="display:inline-flex; align-items:center; gap:.5rem; margin-top:.75rem;">
+      <img src="/img/icono-whats.png" alt="WhatsApp" style="height:28px; width:28px; filter:drop-shadow(0 0 8px #00d1b2);">
+      WhatsApp directo
+    </a>
   </div>
-  <div style="text-align:right;">
-    <span id="firma-quark" class="firma-glow">Quark‑Systems</span>
+  <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end;">
+    <div style="position:relative; display:inline-block;">
+      <img src="/img/logo-alt.png" alt="Quark‑Systems logo" style="height:54px; filter:drop-shadow(0 0 18px #00d1b2) drop-shadow(0 0 8px #fff);">
+      <!-- Reflejo debajo -->
+      <img src="/img/logo-alt.png" alt="Reflejo Quark‑Systems" style="height:38px; opacity:.35; filter:blur(2px) drop-shadow(0 0 8px #00d1b2); transform:scaleY(-1); position:absolute; left:0; top:54px; pointer-events:none;">
+    </div>
+    <span id="firma-quark" class="firma-glow" style="margin-top:.5rem;">Quark‑Systems</span>
     <p style="font-size:.85rem; color:#e0f7fa; margin-top:.5rem;">
       © <span id="year"></span> Quark‑Systems.ar
     </p>
-    <!-- Aquí a futuro: <img src="/assets/img/sello-arca.png" alt="Sello ARCA/AFIP" style="height:32px;vertical-align:middle;"> -->
   </div>
 </footer>
 
-<!-- JS para animar el glow/deslumbre -->
 <script>
   // Año dinámico
   document.getElementById('year').textContent = new Date().getFullYear();
@@ -30,5 +40,5 @@
     } else {
       firma.classList.remove('glow-anim');
     }
-  }, 3200); // cada 3.2 segundos
+  }, 3200);
 </script>
