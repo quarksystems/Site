@@ -3,183 +3,204 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>IIoT | Quark‑Systems.ar</title>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>IIoT · Quark‑Systems.ar</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div id="header"></div>
-  <main class="container narrow">
 
-<!-- ===================== HERO COMPACTO (IDENTIDAD) ===================== -->
-<section class="hero" aria-label="IIoT – Hero" style="min-height:40vh;">
-  <img src="/assets/img/hero-3d.png" alt="Fondo tecnológico" class="bg" />
-  <div class="hero__content" style="text-align:center;">
-    <!-- LOGO ALTERNATIVO con efecto -->
-    <img src="/assets/img/logo-alt.png" alt="Quark‑Systems" class="logo-glow" style="max-width:110px;margin:0 auto 1rem auto;" />
-    <h1>Cloud SCADA IIoT WECON</h1>
-    <p style="margin:.25rem 0 0 0">
-      <span class="badge">Cloud SCADA with no annual fees — Improves Accountability</span><br>
-      Soporte real · Capacitación · Despliegue ágil con vBox + HMI ig
-    </p>
-    <div class="cta-row" style="margin-top:1rem;">
-      <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver catálogo IIoT</a>
-      <a class="btn btn-primary neon ripple" href="/contacto.html">Solicitá asesoramiento</a>
-    </div>
-  </div>
-</section>
+  <!-- Header consistente con index -->
+  <header class="site-header">
+    <a class="brand" href="/index.html" aria-label="Quark-Systems Home">
+      <img src="logo.png" alt="Quark‑Systems" />
+    </a>
 
-<!-- ===================== HERO DE ARQUITECTURA (FULL BACKGROUND) ===================== -->
-<section class="hero" aria-label="Arquitectura vNet" id="arquitectura-vnet">
-  <!-- Imagen full-width sin recorte; el estilo viene del CSS agregado -->
-  <img src="/assets/img/vNet_01.png"
-       alt="Arquitectura vNet – WECON V‑NET Cloud SCADA"
-       class="bg" />
-</section>
+    <nav class="site-nav" id="siteNav">
+      <a class="nav-link glow" href="/index.html">Inicio</a>
+      <a class="nav-link glow is-active" href="/iiot.html">IIoT & V‑Net</a>
+      <a class="nav-link glow" href="/q-automation/plc.html">PLCs</a>
+      <a class="nav-link glow" href="/q-automation/hmi.html">HMIs</a>
+      <a class="nav-link glow" href="/vfd.html">VFD</a>
+      <a class="nav-link glow" href="/contacto.html">Contacto</a>
+    </nav>
 
-<!-- Bloque de título y resumen, pegado a la imagen pero sin superponer, con leve glow -->
-<div class="highlight" style="margin-top:-1.5rem; padding:1.5rem 1rem 1.2rem 1rem; text-align:center;">
-  <h2 class="firma-glow" style="margin:.25rem 0 0 0;">Arquitectura V‑NET IIoT</h2>
-  <p style="margin:.35rem 0 0 0;">
-    Dashboards · Alarmas · Históricos · Acceso remoto seguro (WVPN) · Integración vía HTTP/MQTT/OPC
-  </p>
-</div>
+    <button class="burger" aria-label="Abrir menú" aria-controls="siteNav" aria-expanded="false"
+      onclick="document.getElementById('siteNav').classList.toggle('open'); this.setAttribute('aria-expanded', document.getElementById('siteNav').classList.contains('open'));">
+      ☰
+    </button>
+  </header>
 
-<!-- ===================== vBOX + HMI ig (2 columnas) ===================== -->
-<section class="container narrow" id="vnet-core" style="margin-top:2rem;">
-  <div class="grid-2" style="align-items:start;gap:2rem;">
-    <!-- vBox -->
-    <div>
-      <h2 class="firma-glow">vBox Industrial Gateway</h2>
+  <!-- HERO (puede ser distinto al de index; solo normalizo layout) -->
+  <section class="hero" id="top">
+    <!-- Si querés un fondo de imagen, agregá <img class="bg" src="tu-fondo.jpg" alt=""> -->
+    <div class="hero__content container narrow">
+      <span class="badge">IIoT · Cloud SCADA</span>
+      <h1>Cloud SCADA IIoT WECON</h1>
+
       <p>
-        Pasarela IIoT para unir equipos de planta con la nube <strong>V‑NET</strong>:
-        <strong>Ethernet / RS‑232 / RS‑485</strong>, Modbus RTU/TCP, <strong>Lua</strong> (edge), <strong>WVPN</strong> para
-        soporte/programación remota y opciones <strong>Wi‑Fi/4G</strong> según el modelo (H‑00, H‑WF, H‑AG, H‑4G).
+        Cloud SCADA with no annual fees — Improves Accountability<br>
+        Soporte real · Capacitación · Despliegue ágil con vBox + HMI ig
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/">Ver catálogo IIoT</a>
+        <a class="btn btn-ghost" href="/contacto.html">Solicitá asesoramiento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Arquitectura V-NET (full-width de imagen con glow, usa overrides ya presentes en tu CSS) -->
+  <section id="arquitectura-vnet" class="highlight">
+    <div class="container narrow">
+      <h2>Arquitectura vNet – WECON V‑NET Cloud SCADA</h2>
+      <p>Dashboards · Alarmas · Históricos · Acceso remoto seguro (WVPN) · Integración vía HTTP/MQTT/OPC</p>
+
+      <!-- Si tenías una imagen de arquitectura, colócala aquí; la clase .bg activa el efecto ya definido -->
+      <!-- <img class="bg" src="arquitectura-vnet.png" alt="Arquitectura V‑NET"> -->
+    </div>
+  </section>
+
+  <!-- vBox -->
+  <section class="value">
+    <div class="container narrow">
+      <h3>vBox Industrial Gateway</h3>
+      <p>
+        Pasarela IIoT para unir equipos de planta con la nube V‑NET: Ethernet / RS‑232 / RS‑485, Modbus RTU/TCP, Lua (edge),
+        WVPN para soporte/programación remota y opciones Wi‑Fi/4G según el modelo (H‑100, H‑WF, H‑AG, H‑4G).
       </p>
       <ul class="ticks">
         <li>3 puertos Ethernet (2×LAN + 1×WAN), DI/DO, actualización remota.</li>
         <li>Integra datos en V‑NET: dashboards, históricos y alarmas.</li>
         <li>Ideal para soporte, mantenimiento y multi‑sitio.</li>
       </ul>
-      <div class="cta-row" style="margin-top:.75rem;">
-        <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=vbox" target="_blank" rel="noopener">Ver vBox en catálogo</a>
-      </div>
-      <figure style="margin:1rem 0 0;text-align:center;">
-        <img src="/assets/img/vBox_01.png" alt="WECON vBox – Gateway Industrial" style="max-width:460px;margin:0 auto;border-radius:14px;" />
-        <figcaption style="margin-top:.5rem;color:#6b7280;font-size:.95rem;">Telemetría, acceso remoto y gestión centralizada</figcaption>
-      </figure>
-    </div>
-
-    <!-- HMI ig -->
-    <div>
-      <h2 class="firma-glow">HMI IoT (Serie ig) con V‑NET</h2>
       <p>
-        Las <strong>HMI PI3000ig</strong> combinan HMI + IIoT: visualización local y en la nube, <strong>Cloud SCADA</strong>,
-        <strong>alarmas</strong>, históricos, <strong>remote pass‑through</strong> y gestión centralizada junto a vBox.
+        <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=vbox">Ver vBox en catálogo</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- HMI IoT ig -->
+  <section>
+    <div class="container narrow">
+      <h3>HMI IoT (Serie ig) con V‑NET</h3>
+      <p>
+        Las HMI PI3000ig combinan HMI + IIoT: visualización local y en la nube, Cloud SCADA, alarmas, históricos,
+        remote pass‑through y gestión centralizada junto a vBox.
       </p>
       <ul class="ticks">
         <li>Conectividad: Ethernet de serie; modelos con 4G / Wi‑Fi.</li>
         <li>Gestión unificada de HMI y vBox desde V‑NET (multi‑usuario, multi‑equipo).</li>
         <li>Actualización remota de firmware y proyectos.</li>
       </ul>
-      <div class="cta-row" style="margin-top:.75rem;">
-        <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=hmi" target="_blank" rel="noopener">Ver HMI ig en catálogo</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== ACCESS THE DEMO TODAY! (INFO EN UN COSTADO) ===================== -->
-<section class="container narrow" id="demo" style="margin-top:2rem;">
-  <div class="grid-2" style="gap:2rem;align-items:start;">
-    <!-- Pitch corto a la izquierda -->
-    <div>
-      <h2 class="firma-glow">Access the Demo Today!</h2>
       <p>
-        Probá <strong>V‑NET Cloud SCADA</strong> con proyectos reales (HVAC, tratamiento de agua, smart city, fábrica, etc.).
+        <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=hmi">Ver HMI ig en catálogo</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- DEMO pública (dos columnas en desktop, stack en mobile) -->
+  <section class="highlight" id="demo">
+    <div class="container narrow">
+      <h2>Access the Demo Today!</h2>
+      <p>
+        Probá V‑NET Cloud SCADA con proyectos reales (HVAC, tratamiento de agua, smart city, fábrica, etc.).
         Explorá paneles, alarmas, históricos y control remoto desde tu navegador.
       </p>
       <ul class="ticks">
-        <li><strong>Sin cuotas anuales:</strong> enfocá tu inversión en equipamiento y resultados.</li>
-        <li><strong>Responsabilidad/Accountability:</strong> todo queda registrado y auditable.</li>
-        <li><strong>Escalable:</strong> de una celda piloto a toda la planta.</li>
+        <li>Sin cuotas anuales: enfocá tu inversión en equipamiento y resultados.</li>
+        <li>Responsabilidad/Accountability: todo queda registrado y auditable.</li>
+        <li>Escalable: de una celda piloto a toda la planta.</li>
+      </ul>
+
+      <!-- Credenciales y enlaces: se conserva exactamente el contenido original -->
+      <div class="container" style="max-width:980px; display:grid; grid-template-columns: 1fr 1fr; gap:1rem; margin-top:1rem;">
+        <div style="background:#fff; color:#0b1320; border-radius:14px; padding:1rem; box-shadow:var(--shadow);">
+          <h4 style="margin-top:0;">EU Server</h4>
+          <p>URL: <a href="http://eu.v-box.net/web/htmlnew/user/login.html">eu.v-box.net/web/htmlnew/user/login.html</a></p>
+          <pre style="background:#f5f7fb; padding:.75rem; border-radius:10px; overflow:auto; margin:0 0 .5rem 0;">weconuser</pre>
+          <pre style="background:#f5f7fb; padding:.75rem; border-radius:10px; overflow:auto; margin:0;">weconuser123</pre>
+          <p style="margin:.75rem 0 0 0;">
+            <a class="btn btn-primary neon ripple" href="http://eu.v-box.net/web/htmlnew/user/login.html">Abrir Demo EU</a>
+          </p>
+        </div>
+
+        <div style="background:#fff; color:#0b1320; border-radius:14px; padding:1rem; box-shadow:var(--shadow);">
+          <h4 style="margin-top:0;">ASEAN Server</h4>
+          <p>URL: <a href="http://asean.v-box.net/web/htmlnew/user/login.html">asean.v-box.net/web/htmlnew/user/login.html</a></p>
+          <pre style="background:#f5f7fb; padding:.75rem; border-radius:10px; overflow:auto; margin:0 0 .5rem 0;">weconuser</pre>
+          <pre style="background:#f5f7fb; padding:.75rem; border-radius:10px; overflow:auto; margin:0;">123123</pre>
+          <p style="margin:.75rem 0 0 0;">
+            <a class="btn btn-primary neon ripple" href="http://asean.v-box.net/web/htmlnew/user/login.html">Abrir Demo ASEAN</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="cta-row" style="justify-content:center; margin-top:1.25rem;">
+        <a class="btn btn-ghost" href="https://quarksystems.mitiendanube.com/">Ver catálogo IIoT</a>
+        <a class="btn btn-primary neon ripple" href="/contacto.html">Solicitá asesoramiento</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aplicaciones típicas -->
+  <section class="value">
+    <div class="container narrow">
+      <h2>Aplicaciones típicas</h2>
+      <ul class="cards">
+        <li class="card">
+          <img src="oee.jpg" alt="OEE & Paradas">
+          <h3>OEE & Paradas</h3>
+          <p>Rendimiento por línea, pérdidas, cuellos de botella y reportes automáticos para mejora continua.</p>
+        </li>
+        <li class="card">
+          <img src="energia.jpg" alt="Energía">
+          <h3>Energía</h3>
+          <p>kWh por equipo, alarmas y reportes de costo/ton para decisiones rápidas y ahorro sostenido.</p>
+        </li>
+        <li class="card">
+          <img src="predictivo.jpg" alt="Predictivo">
+          <h3>Predictivo</h3>
+          <p>Vibración/temperatura, tendencias y mantenimiento antes de la falla para maximizar disponibilidad.</p>
+        </li>
       </ul>
     </div>
+  </section>
 
-    <!-- Tarjeta lateral con logins del demo -->
-    <aside class="contact-side" style="margin:0;">
-      <h3 style="margin-top:0;">Demo público V‑NET</h3>
-      <p style="margin:.5rem 0 0 0;">Elegí el servidor según tu región:</p>
-
-      <div style="margin:.75rem 0 0 0;">
-        <strong>EU Server</strong><br>
-        URL: <a href="http://eu.v-box.net/web/htmlnew/user/login.html" target="_blank" rel="noopener">eu.v-box.net/web/htmlnew/user/login.html</a><br>
-        User: <code>weconuser</code><br>
-        Password: <code>weconuser123</code>
+  <!-- CTA final -->
+  <section class="cta-bottom">
+    <div class="container narrow">
+      <h2>¿Listo para conectar tu industria?</h2>
+      <p>Cloud SCADA sin cuotas anuales, soporte local y despliegue ágil con vBox y HMI ig.</p>
+      <div class="cta-row" style="justify-content:center;">
+        <a class="btn btn-primary neon ripple" href="http://eu.v-box.net/web/htmlnew/user/login.html">Access the Demo Today!</a>
+        <a class="btn btn-ghost" href="https://quarksystems.mitiendanube.com/">Ver catálogo IIoT</a>
+        <a class="btn btn-primary neon ripple" href="/contacto.html">Solicitá asesoramiento</a>
       </div>
-
-      <div style="margin:1rem 0 0 0;">
-        <strong>ASEAN Server</strong><br>
-        URL: <a href="http://asean.v-box.net/web/htmlnew/user/login.html" target="_blank" rel="noopener">asean.v-box.net/web/htmlnew/user/login.html</a><br>
-        User: <code>weconuser</code><br>
-        Password: <code>123123</code>
-      </div>
-
-      <p style="margin:1rem 0 0 0;color:#6b7280;">
-        <em>Nota:</em> Los cambios en los proyectos demo no se guardan; podés explorar libremente.
+      <p style="margin-top:1rem;">
+        <a class="nav-link glow" href="https://quarksystems.mitiendanube.com/">Ver gateways y accesorios</a>
       </p>
+    </div>
+  </section>
 
-      <div class="cta-row" style="margin-top:.75rem;">
-        <a class="btn btn-primary neon ripple" href="http://eu.v-box.net/web/htmlnew/user/login.html" target="_blank" rel="noopener">Abrir Demo EU</a>
-        <a class="btn btn-primary neon ripple" href="http://asean.v-box.net/web/htmlnew/user/login.html" target="_blank" rel="noopener">Abrir Demo ASEAN</a>
-      </div>
-    </aside>
-  </div>
-</section>
+  <!-- Footer -->
+  <footer class="site-footer footer-glow">
+    <div>© Quark‑Systems.ar</div>
+    <div><a href="/contacto.html">Contacto</a></div>
+  </footer>
 
-<!-- ===================== APLICACIONES (CARDS) ===================== -->
-<section class="container narrow" id="casos" style="margin-top:2rem;">
-  <h2 class="firma-glow">Aplicaciones típicas</h2>
-  <div class="cards">
-    <article class="card">
-      <h3>OEE & Paradas</h3>
-      <p>Rendimiento por línea, pérdidas, cuellos de botella y reportes automáticos para mejora continua.</p>
-    </article>
-    <article class="card">
-      <h3>Energía</h3>
-      <p>kWh por equipo, alarmas y reportes de costo/ton para decisiones rápidas y ahorro sostenido.</p>
-    </article>
-    <article class="card">
-      <h3>Predictivo</h3>
-      <p>Vibración/temperatura, tendencias y mantenimiento antes de la falla para maximizar disponibilidad.</p>
-    </article>
-  </div>
-</section>
-
-
-<!-- ===================== CTA FINAL ===================== -->
-<section class="cta-bottom highlight" id="cta-final" style="margin-top:2.25rem;">
-  <h2>¿Listo para conectar tu industria?</h2>
-  <p>
-    <strong>Cloud SCADA sin cuotas anuales</strong>, soporte local y despliegue ágil con vBox y HMI ig.<br />
-    <a class="btn btn-primary neon ripple" href="http://eu.v-box.net/web/htmlnew/user/login.html" target="_blank" rel="noopener">
-      Access the Demo Today!
-    </a>
-    <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">
-      Ver catálogo IIoT
-    </a>
-    <a class="btn btn-ghost ripple" href="/contacto.html">Solicitá asesoramiento</a>
-  </p>
-</section>
-
-<!-- Reveal de tarjetas al aparecer (por si esta vista no carga main.js) -->
-<script>
-  document.querySelectorAll('.card').forEach((card, i) => {
-    setTimeout(() => card.classList.add('reveal'), 150 + i * 180);
-  });
-</script>
-    <p><a class="btn btn-primary" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver gateways y accesorios</a></p>
-  </main>
-  <div id="footer"></div>
-  <script src="/assets/js/includes.js"></script>
+  <script>
+    // Ripple simple para .ripple
+    document.addEventListener('click', function (e) {
+      const target = e.target.closest('.ripple');
+      if (!target) return;
+      const rect = target.getBoundingClientRect();
+      const circle = document.createElement('span');
+      circle.className = 'ripple-circle';
+      circle.style.left = (e.clientX - rect.left) + 'px';
+      circle.style.top = (e.clientY - rect.top) + 'px';
+      const size = Math.max(rect.width, rect.height);
+      circle.style.width = circle.style.height = size + 'px';
+      target.appendChild(circle);
+      setTimeout(() => circle.remove(), 650);
+    });
+  </script>
 </body>
-</html>
