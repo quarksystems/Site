@@ -63,10 +63,28 @@
       <div class="cta-row" style="margin-top:.75rem;">
         <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=vbox" target="_blank" rel="noopener">Ver vBox en catálogo</a>
       </div>
-      <figure style="margin:1rem 0 0;text-align:center;">
-        <img src="/assets/img/vBox_01.png" alt="WECON vBox – Gateway Industrial" style="max-width:460px;margin:0 auto;border-radius:14px;" />
-        <figcaption style="margin-top:.5rem;color:#6b7280;font-size:.95rem;">Telemetría, acceso remoto y gestión centralizada</figcaption>
-      </figure>
+      <div class="container narrow" style="text-align:center; margin:1.5rem auto 0;">
+        <style>
+          .vbox-zoom {
+            max-width: 220px;
+            transition: transform .35s cubic-bezier(.25,.8,.25,1), box-shadow .25s;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(13,42,69,.10);
+            will-change: transform;
+            margin: 0 auto;
+            display: block;
+          }
+          .vbox-zoom:hover {
+            transform: scale(1.18);
+            box-shadow: 0 12px 32px rgba(0,209,178,.18), 0 0 24px #61f2d1;
+            z-index: 2;
+          }
+        </style>
+        /assets/img/vBox_01.png
+        <div style="margin-top:.5rem;color:#6b7280;font-size:.95rem;">
+          Telemetría, acceso remoto y gestión centralizada
+        </div>
+      </div>
     </div>
 
     <!-- HMI ig -->
@@ -179,7 +197,7 @@
 
       <!-- E Series -->
       <li class="card">
-        <img src="/img/iiot/e-series.jpg" alt="V-BOX E Series - Compacto, simple y eficiente">
+        <img src="/img/iiot/e-series.png" alt="V-BOX E Series - Compacto, simple y eficiente">
         <h3>V-BOX E Series</h3>
         <p><strong>Compacto, simple y eficiente</strong></p>
         <p>“La solución ideal para necesidades básicas de monitoreo remoto.”</p>
