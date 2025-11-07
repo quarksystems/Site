@@ -8,17 +8,122 @@
 </head>
 <body>
   <div id="header"></div>
-  <main class="container narrow">
-    <h1>HMIs industriales (Q‑Automation)</h1>
-    <p><strong>Interfaz clara para operación segura.</strong> Paneles con drivers nativos, librerías gráficas y recetas; integrables con PLCs multi‑marca.</p>
-    <h2>Beneficios</h2>
-    <ul>
-      <li><strong>UX industrial:</strong> pantallas con jerarquía visual y alarmas priorizadas.</li>
-      <li><strong>Registro de eventos:</strong> data logging para trazabilidad en mantenimiento.</li>
-      <li><strong>Soporte postventa:</strong> respaldo para cambios y actualizaciones.</li>
-    </ul>
-    <p><a class="btn btn-primary" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver HMIs en catálogo</a></p>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <a href="/index.html" class="brand">
+      <img src="/img/logo.png" alt="Quark-Systems Logo" />
+    </a>
+    <nav class="site-nav" id="siteNav">
+      <a href="/index.html">Inicio</a>
+      <a href="/q-automation/plc.html">PLCs</a>
+      <a href="/q-automation/hmi.html" class="nav-link glow is-active">HMIs</a>
+      <a href="/vfd.html">VFD</a>
+      <a href="/iiot.html">IIoT & V‑Net</a>
+      <a href="/contacto.html">Contacto</a>
+    </nav>
+    <button class="burger" aria-label="Abrir menú" aria-controls="siteNav" aria-expanded="false"
+      onclick="document.getElementById('siteNav').classList.toggle('open'); this.setAttribute('aria-expanded', document.getElementById('siteNav').classList.contains('open'));">
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero" id="top">
+      <div class="hero__content container narrow">
+        <span class="badge">HMIs industriales</span>
+        <h1>HMIs industriales Wecon</h1>
+        <p>
+          Interfaz clara para operación segura.<br>
+          Paneles con drivers nativos, librerías gráficas y recetas; integrables con PLCs multi-marca.
+        </p>
+        <div class="cta-row">
+          <a href="https://quarksystems.mitiendanube.com/" class="btn btn-primary" target="_blank">Ver HMIs en catálogo</a>
+          <a href="/contacto.html" class="btn btn-ghost">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="value">
+      <div class="container narrow">
+        <h2>Beneficios clave</h2>
+        <ul class="ticks">
+          <li>UX industrial: pantallas con jerarquía visual y alarmas priorizadas.</li>
+          <li>Registro de eventos: data logging para trazabilidad en mantenimiento.</li>
+          <li>Soporte postventa: respaldo para cambios y actualizaciones.</li>
+          <li>Compatibilidad con múltiples protocolos y PLCs de distintas marcas.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cards de series HMI -->
+    <section>
+      <div class="container narrow">
+        <h2>Series HMI Wecon</h2>
+        <ul class="cards">
+          <!-- PI3000i -->
+          <li class="card">
+            <img src="/img/hmi/pi3000i.jpg" alt="HMI Wecon PI3000i" class="card-zoom" />
+            <h3>Serie PI3000i</h3>
+            <ul class="ticks">
+              <li>Diseñada para aplicaciones estándar.</li>
+              <li>Excelente relación calidad/precio.</li>
+              <li>Tamaños disponibles: 7” y 10.2”.</li>
+              <li>Bajo consumo energético (&lt;8W).</li>
+              <li>Interfaz táctil intuitiva.</li>
+              <li>Compatible con múltiples protocolos industriales.</li>
+              <li>Ideal para proyectos donde se requiere estabilidad, simplicidad y eficiencia.</li>
+            </ul>
+            <a href="https://www.we-con.com.cn/en/product_t/80.html" target="_blank" class="btn btn-primary">Ver modelo en Wecon</a>
+          </li>
+          <!-- PI3000ie -->
+          <li class="card">
+            <img src="/img/hmi/pi3000ie.jpg" alt="HMI Wecon PI3000ie" class="card-zoom" />
+            <h3>Serie PI3000ie</h3>
+            <ul class="ticks">
+              <li>Pensada para entornos más exigentes.</li>
+              <li>Procesador multinúcleo de alta velocidad.</li>
+              <li>Encendido rápido (6 segundos).</li>
+              <li>Cambio de pantalla en solo 100 ms.</li>
+              <li>Compatible con más de 300 protocolos PLC.</li>
+              <li>Soporte para scripts LUA y múltiples pantallas.</li>
+              <li>Perfecta para procesos que requieren agilidad operativa y gran capacidad de integración.</li>
+            </ul>
+            <a href="https://www.we-con.com.cn/en/product_t/79.html" target="_blank" class="btn btn-primary">Ver modelo en Wecon</a>
+          </li>
+          <!-- PI3000ig -->
+          <li class="card">
+            <img src="/img/hmi/pi3000ig.jpg" alt="HMI Wecon PI3000ig" class="card-zoom" />
+            <h3>Serie PI3000ig</h3>
+            <ul class="ticks">
+              <li>La más avanzada, orientada a la industria 4.0 y conectividad remota.</li>
+              <li>Integración con V-BOX para acceso a la nube mediante V-NET.</li>
+              <li>Gestión remota, alarmas, mantenimiento y SCADA en la nube.</li>
+              <li>Ideal para monitoreo distribuido y operación desatendida.</li>
+              <li>Alta compatibilidad con sistemas IIoT.</li>
+              <li>Control total y supervisión inteligente desde cualquier lugar.</li>
+            </ul>
+            <a href="https://www.we-con.com.cn/en/product_t/78.html" target="_blank" class="btn btn-primary">Ver modelo en Wecon</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA final -->
+    <section class="cta-bottom">
+      <div class="container narrow">
+        <h2>¿Listo para visualizar y controlar tu proceso?</h2>
+        <div class="cta-row" style="justify-content:center;">
+          <a href="https://quarksystems.mitiendanube.com/" class="btn btn-primary" target="_blank">Ver HMIs en catálogo</a>
+          <a href="/contacto.html" class="btn btn-ghost">Contacto</a>
+          <a href="https://www.we-con.com.cn/ES/" class="btn btn-primary" target="_blank">Descubre WECON</a>
+        </div>
+      </div>
+    </section>
   </main>
+
   <div id="footer"></div>
   <script src="/assets/js/includes.js"></script>
 </body>
