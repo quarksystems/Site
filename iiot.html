@@ -63,17 +63,10 @@
       <div class="cta-row" style="margin-top:.75rem;">
         <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=vbox" target="_blank" rel="noopener">Ver vBox en catálogo</a>
       </div>
-      <figure class="figure-center">
-        <img
-          src="/assets/img/vBox_01.png"
-          alt="WECON vBox – Gateway Industrial"
-          class="vbox-zoom"
-        />
-        <figcaption class="figcaption-muted">
-          Telemetría, acceso remoto y gestión centralizada
-        </figcaption>
+      <figure class="figure">
+        <img class="vbox-zoom" src="/assets/img/vBox_01.png" alt="WECON vBox — Gateway Industrial">
+        <figcaption class="figcaption">Telemetría, acceso remoto y gestión centralizada</figcaption>
       </figure>
-      </div>
     </div>
 
     <!-- HMI ig -->
@@ -142,25 +135,22 @@
     </aside>
   </div>
 </section>
-<!-- === V-BOX Series (3 columnas, botones con rutas originales) === -->
 <section class="value" id="vbox-series">
   <div class="container narrow">
-    <h2>V-BOX Series</h2>
+    <h2>V‑BOX Series</h2>
 
-    <!-- Override mínimo: zoom suave en las imágenes dentro de las cards -->
     <style>
-      /* Mantengo tu layout y sumo solo el zoom de imagen en hover */
       #vbox-series .cards .card img {
-        height: 180px;            /* un poco más alto que tu 140px para mejor impacto visual */
+        width: 100%;
+        height: 180px;
         object-fit: cover;
         border-radius: 10px;
         transition: transform .35s cubic-bezier(.25,.8,.25,1);
         will-change: transform;
       }
       #vbox-series .cards .card:hover img {
-        transform: scale(1.06);   /* zoom suave */
+        transform: scale(1.06);
       }
-      /* Fuerzo 3 columnas en desktop; en mobile tu grid se apila solo */
       @media (min-width: 980px) {
         #vbox-series .cards { grid-template-columns: repeat(3, 1fr); }
       }
@@ -169,8 +159,8 @@
     <ul class="cards">
       <!-- H Series -->
       <li class="card">
-        <img src="/img/iiot/h-series.jpg" alt="V-BOX H Series - Conectividad robusta y versátil">
-        <h3>V-BOX H Series</h3>
+        <img src="/img/iiot/h-series.jpg" alt="V-BOX H Series">
+        <h3>V‑BOX H Series</h3>
         <p><strong>Conectividad robusta y versátil</strong></p>
         <p>“Conectá múltiples dispositivos, monitoreá en tiempo real y accedé desde cualquier lugar.”</p>
         <ul class="ticks">
@@ -180,14 +170,13 @@
           <li>Compatible con Lua scripts y protocolos PLC</li>
           <li>Ideal para monitoreo remoto, mantenimiento predictivo y SCADA en la nube</li>
         </ul>
-        <a class="btn btn-primary neon ripple" target="_blank" rel="noopener"
-           href="https://www.we-con.com.cn/en/product_t/126.html">Ver H Series</a>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/126.html" target="_blank" rel="noopener">Ver H Series</a>
       </li>
 
       <!-- E Series -->
       <li class="card">
-        <img src="/img/iiot/e-series.png" alt="V-BOX E Series - Compacto, simple y eficiente">
-        <h3>V-BOX E Series</h3>
+        <img src="/img/iiot/e-series.jpg" alt="V-BOX E Series">
+        <h3>V‑BOX E Series</h3>
         <p><strong>Compacto, simple y eficiente</strong></p>
         <p>“La solución ideal para necesidades básicas de monitoreo remoto.”</p>
         <ul class="ticks">
@@ -196,14 +185,13 @@
           <li>Funcionalidad esencial para aplicaciones simples</li>
           <li>Ideal para pequeñas instalaciones o soluciones económicas</li>
         </ul>
-        <a class="btn btn-primary neon ripple" target="_blank" rel="noopener"
-           href="https://www.we-con.com.cn/en/product_t/164.html">Ver E Series</a>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/164.html" target="_blank" rel="noopener">Ver E Series</a>
       </li>
 
       <!-- RH Series -->
       <li class="card">
-        <img src="/img/iiot/rh-series.jpg" alt="V-BOX RH Series - Potencia, integración y visualización">
-        <h3>V-BOX RH Series</h3>
+        <img src="/img/iiot/rh-series.jpg" alt="V-BOX RH Series">
+        <h3>V‑BOX RH Series</h3>
         <p><strong>Potencia, integración y visualización</strong></p>
         <p>“Más que un gateway: conectividad, visualización y compatibilidad total.”</p>
         <ul class="ticks">
@@ -213,11 +201,11 @@
           <li>Recolección de datos estable para entornos complejos</li>
           <li>Ideal para soluciones IIoT avanzadas con visualización local</li>
         </ul>
-        <a class="btn btn-primary neon ripple" target="_blank" rel="noopener"
-           href="https://www.we-con.com.cn/en/product_t/11296.html">Ver RH Series</a>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/11296.html" target="_blank" rel="noopener">Ver RH Series</a>
       </li>
-    </ul>
-  </div>
+      </ul>
+    </div>
+  </section>
 
 <!-- ===================== APLICACIONES (CARDS) ===================== -->
 <section class="container narrow" id="casos" style="margin-top:2rem;">

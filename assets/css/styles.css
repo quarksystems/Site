@@ -426,32 +426,90 @@ a:focus-visible, .btn:focus-visible {
   font-size: .95rem;
 }
 
-/* Imagen reducida por defecto */
+/* === IIoT – utilidades y componentes específicos === */
+
+/* --- Cards de V-BOX (3 columnas en desktop) --- */
+#vbox-series .cards {
+  /* En mobile/tablet se mantiene tu auto-fit. Forzamos 3 cols en desktop amplio. */
+}
+@media (min-width: 980px) {
+  #vbox-series .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Imagen dentro de card: tamaño unificado + zoom suave */
+.card img.card-zoom {
+  width: 100%;
+  height: 180px;                /* un poco más alto que 140px para mejorar presencia */
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform .35s cubic-bezier(.25,.8,.25,1), filter .35s cubic-bezier(.25,.8,.25,1);
+  will-change: transform, filter;
+}
+.card:hover img.card-zoom {
+  transform: scale(1.06);
+  filter: drop-shadow(0 0 12px rgba(0,209,178,.20));
+}
+
+/* Respeta preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+  .card img.card-zoom,
+  .card:hover img.card-zoom {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* --- Figura con zoom reducido (vBox_01.png) --- */
+/* Contenedor centrado y tipografía del figcaption consistente */
+.figure {
+  text-align: center;
+  margin: 1.5rem auto 0;
+}
+.figcaption {
+  margin-top: .5rem;
+  color: var(--muted);
+  font-size: .95rem;
+}
+
+/* Imagen reducida por defecto + zoom al hover */
 .vbox-zoom {
-  display: block;
-  margin: 0 auto;
-  max-width: 220px;                 /* tamaño reducido */
-  border-radius: 14px;
+  max-width: 220px;                      /* tamaño reducido por defecto */
+  border-radius: var(--radius);
   box-shadow: 0 6px 18px rgba(13,42,69,.10);
-  transition: transform .35s cubic-bezier(.25,.8,.25,1),
-              box-shadow .25s ease-out, filter .25s ease-out;
+  transition: transform .35s cubic-bezier(.25,.8,.25,1), box-shadow .25s ease;
+  margin: 0 auto;
+  display: block;
   will-change: transform;
 }
-
-/* Zoom + glow consistente con tu look and feel */
 .vbox-zoom:hover {
   transform: scale(1.18);
-  box-shadow: 0 12px 32px rgba(0,209,178,.18), 0 0 24px #61f2d1;
-  filter: drop-shadow(0 0 10px rgba(0,209,178,.25));
+  box-shadow: 0 12px 32px rgba(0,209,178,.18), 0 0 24px rgba(97,242,209,.45);
 }
 
-/* Respeto a usuarios con movimiento reducido */
+/* Movimiento reducido para la figura */
 @media (prefers-reduced-motion: reduce) {
-  .vbox-zoom { transition: none !important; }
-  .vbox-zoom:hover { transform: none !important; }
+  .vbox-zoom,
+  .vbox-zoom:hover {
+    transition: none !important;
+    transform: none !important;
+    box-shadow: 0 6px 18px rgba(13,42,69,.10) !important;
+  }
 }
 
-/* En pantallas grandes podés aumentar un pelín el tamaño base si querés */
-@media (min-width: 1120px) {
-  .vbox-zoom { max-width: 240px; }
+/* --- Botones dentro de cards (consistentes con tus .btn existentes) --- */
+.card .btn {
+  margin-top: .5rem;
 }
+
+/* Variante ghost sobre fondo claro (por si la quisieras usar adentro de cards) */
+.btn-ghost--dark {
+  background: transparent;
+  color: var(--brand);
+  border-color: rgba(13,42,69,.25);
+}
+.btn-ghost--dark:hover {
+  border-color: rgba(13,42,69,.35);
+  filter: none;
