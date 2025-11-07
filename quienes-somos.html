@@ -1,247 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>Quiénes Somos | Quark-Systems</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Quark‑Systems | Quiénes Somos</title>
-  <link rel="preload" href="assets/img/logo-lockup.png" as="image">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Quark-Systems: Automatización industrial WECON, soporte técnico y capacitación para PYMES argentinas." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+  <!-- Header fijo inyectado -->
+  <div id="header"></div>
 
-  <!-- Header -->
-  <header class="site-header">
-    <a href="/" class="brand">
-      <img src="assets/img/logo-lockup.png" alt="Quark‑Systems" class="logo-glow" />
-    </a>
-
-    <nav id="siteNav" class="site-nav">
-      <a class="nav-link glow is-active" href="/quienes-somos.html">Quiénes Somos</a>
-      <a class="nav-link glow" href="/oferta.html">Oferta</a>
-      <a class="nav-link glow" href="/clientes.html">Clientes</a>
-      <a class="nav-link glow" href="/q-academy.html">Q‑Academy</a>
-      <a class="nav-link glow" href="#contacto">Contacto</a>
-    </nav>
-
-    <button id="burger" class="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
-  </header>
-
-  <!-- Hero compacto -->
-  <section class="hero" aria-label="Presentación">
-    <!-- Si querés fondo con foto, colocá la imagen y listo -->
-    <!-- <img class="bg" src="assets/img/hero-about.jpg" alt="" aria-hidden="true"> -->
-
-    <div class="hero__content container narrow">
-      <span class="badge">Automatización industrial · Soporte local · ROI real</span>
-      <h1 class="fade-in-text">Somos el socio de transformación digital para PYMES industriales</h1>
-      <p class="fade-in-text">
-        Combinamos <strong>hardware WECON</strong>, nuestra plataforma <strong>Q‑Nexus</strong> (IA + analítica operativa)
-        y una metodología llave en mano para convertir datos en decisiones accionables.
-      </p>
-      <div class="cta-row">
-        <a href="https://quarksystems.mitiendanube.com/" class="btn btn-primary neon ripple">Ver catálogo</a>
-        <a href="#contacto" class="btn btn-ghost neon ripple">Hablar con un especialista</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Quiénes Somos -->
-  <section class="container narrow" id="quienes-somos">
-    <h2>Quiénes Somos</h2>
-    <p>
-      Quark‑Systems es el socio estratégico de las PYMES industriales argentinas en su proceso de transformación digital.
-      Integramos productos confiables, experiencia técnico‑gerencial y soluciones que convierten datos en decisiones accionables.
-      Nos adaptamos a la realidad regional y acompañamos al cliente desde la idea inicial hasta la operación estable.
-    </p>
-    <p>
-      <strong>Fundador:</strong> Mg. Guillermo Espósito, con más de 20 años en plantas de procesos continuos (DOW, Arauco,
-      Celulosa Argentina). Desde adentro de la industria identificó el cuello de botella: soluciones complejas, soporte remoto
-      y costos inaccesibles. Por eso creó QS: una alternativa práctica, con respaldo local y foco en ROI.
-    </p>
-  </section>
-
-  <!-- Propuesta de valor (cards) -->
-  <section class="value">
-    <div class="container">
-      <h2>Propuesta de valor</h2>
-      <ul class="cards">
-        <li class="card">
-          <img src="assets/img/card-tec-soporte.jpg" alt="Tecnología con soporte local">
-          <h3>Tecnología con soporte local</h3>
-          <p>Distribución oficial WECON + Q‑Nexus para acelerar adopción y garantizar continuidad operacional.</p>
-          <a href="https://quarksystems.mitiendanube.com/">Conocer más</a>
-        </li>
-        <li class="card">
-          <img src="assets/img/card-roi.jpg" alt="Resultados medibles">
-          <h3>Resultados medibles</h3>
-          <p>KPIs claros desde el kickoff: eficiencia energética, OEE, mermas y tiempos de ciclo.</p>
-          <a href="/casos.html">Ver casos</a>
-        </li>
-        <li class="card">
-          <img src="assets/img/card-metodo.jpg" alt="Metodología llave en mano">
-          <h3>Metodología llave en mano</h3>
-          <p>De la idea a la operación estable, con transferencia al equipo del cliente.</p>
-          <a href="/metodologia.html">Cómo trabajamos</a>
-        </li>
-        <li class="card">
-          <img src="assets/img/card-industria.jpg" alt="Experiencia en industria real">
-          <h3>Industria real</h3>
-          <p>Sabemos lo que significa una parada no programada o un lote fuera de especificación… y cómo evitarlo.</p>
-          <a href="/sectores.html">Sectores</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Oferta Comercial -->
-  <section class="container narrow" id="oferta">
-    <h2>Oferta Comercial</h2>
-    <ul class="ticks">
-      <li><strong>PLCs y HMIs WECON:</strong> Control y operación seguros para automatización industrial.</li>
-      <li><strong>VDFs (Variadores de Frecuencia):</strong> Control eficiente de motores y ahorro energético.</li>
-      <li><strong>V‑Box (IIoT):</strong> Telemetría, operación remota y gestión centralizada en la nube.</li>
-    </ul>
-    <div class="cta-row">
-      <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/">Ir al catálogo</a>
-      <a class="btn btn-ghost neon ripple" href="/oferta.html">Ver detalle de productos</a>
-    </div>
-  </section>
-
-  <!-- Diferenciales -->
-  <section class="highlight">
-    <div class="container narrow">
-      <h2>¿Por qué elegir Quark‑Systems?</h2>
-      <p>
-        Tecnología de primera línea con soporte local · Resultados medibles con ROI · Compromiso y transparencia en cada etapa ·
-        Metodología llave en mano
-      </p>
-      <a class="btn btn-primary neon ripple" href="/por-que-quarksystems.html">Nuestros diferenciales</a>
-    </div>
-  </section>
-
-  <!-- Clientes e Integradores -->
-  <section class="container narrow" id="clientes">
-    <h2>Clientes: Empresas usuarias e integradores</h2>
-    <p>
-      Atendemos a empresas industriales usuarias y a integradores de automatización, alineando cada solución con objetivos de
-      eficiencia y rentabilidad.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-primary neon ripple" href="/clientes.html">Ver clientes</a>
-      <a class="btn btn-ghost neon ripple" href="/integradores.html">Programa de integradores</a>
-    </div>
-  </section>
-
-  <!-- Q‑Academy -->
-  <section class="container narrow" id="q-academy">
-    <h2>Q‑Academy: Capacitación para el futuro</h2>
-    <p>
-      Formación práctica y aplicada que acelera la adopción tecnológica y maximiza la inversión, complementando nuestra propuesta
-      de hardware + soporte local.
-    </p>
-    <a class="btn btn-primary neon ripple" href="/q-academy.html">Ver capacitaciones</a>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="container">
-    <h2>Contacto</h2>
-
-    <div class="contact-card">
-      <div>
-        <img src="assets/img/logo-alt.png" alt="Quark‑Systems" class="logo-hero" style="max-width:140px;">
-        <p style="margin:.75rem 0 0 0">
-          <strong>Mg. Guillermo Espósito</strong> — Fundador & CEO
+  <main>
+    <!-- HERO IDENTIDAD -->
+    <section class="hero" aria-label="Quiénes Somos – Hero" style="min-height:40vh;">
+      <img src="assets/img/Hero-3d_light.png" alt="Fondo tecnológico" class="bg" />
+      <div class="hero__content" style="text-align:center;">
+        <img src="assets/img/logo-alt.png" alt="Quark‑Systems" class="logo-glow" style="max-width:110px;margin:0 auto 1rem auto;" />
+        <h1 class="fade-in-text">Quark‑Systems: Automatización industrial · Soporte real · Resultados medibles</h1>
+        <p class="fade-in-text" style="margin:.25rem 0 0 0">
+          Tecnología que impulsa tu industria, soporte que te respalda.
         </p>
-        <div class="grid-2" style="margin-top:1rem">
-          <div class="contact-side">
-            <p><strong>Email:</strong> <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a></p>
-            <p><strong>Celular:</strong> <a href="tel:+543416594559">(0341) 659‑4559</a></p>
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/543416594559?text=Hola%20Quark-Systems,%20quiero%20informaci%C3%B3n%20sobre%20hardware%20WECON">Mensaje directo</a></p>
+      </div>
+    </section>
+
+    <!-- QUIÉNES SOMOS -->
+    <section class="hero" id="quienes-somos">
+      <div class="hero__content fade-in-text">
+        <h2 class="fade-in-text">Quiénes Somos</h2>
+        <div class="grid-2 grid-responsive" style="align-items:center;">
+          <div>
+            <p class="fade-in-text">
+              <strong>Quark Systems</strong> es el socio estratégico de las PYMES industriales argentinas en su proceso de transformación digital.<br>
+              Combinamos la distribución oficial de hardware <strong>WECON</strong>, tecnología propia (<em>Q Nexus</em>, plataforma de inteligencia operativa con IA) y una metodología llave en mano, con resultados medibles y soporte local.<br><br>
+              Integramos productos confiables, experiencia técnico-gerencial y soluciones que convierten datos en decisiones accionables. Nos adaptamos a la realidad regional y acompañamos al cliente desde la idea inicial hasta la operación estable.<br><br>
+              <strong>Fundador:</strong> Mg. Guillermo Espósito, con más de 20 años en plantas de procesos continuos (DOW, Arauco, Celulosa Argentina). Desde adentro de la industria identificó el cuello de botella: soluciones complejas, soporte remoto y costos inaccesibles. Por eso creó QS: una alternativa práctica, con respaldo local y foco en ROI.<br><br>
+              No somos teóricos; somos técnicos que entienden de procesos. Sabemos lo que significa una parada no programada, un lote fuera de especificación o un pico de consumo… y cómo resolverlo.
+            </p>
+            <div class="cta-row fade-in-text" style="margin-top:.5rem;">
+              <a href="https://quarksystems.mitiendanube.com/" class="btn btn-primary neon ripple" target="_blank">Ver catálogo</a>
+              <a href="mailto:contacto.quark.systems@gmail.com" class="btn btn-primary neon ripple">Escríbenos</a>
+            </div>
           </div>
-          <div class="contact-side">
-            <p><strong>Web:</strong> <a href="https://www.quark-systems.ar/">www.quark‑systems.ar</a></p>
-            <p><strong>Catálogo:</strong> <a href="https://quarksystems.mitiendanube.com/">quarksystems.mitiendanube.com</a></p>
-            <p><strong>Oficina:</strong> Cordón Industrial San Lorenzo, Santa Fe, Argentina</p>
+          <figure style="margin:0;text-align:center;">
+            <img src="assets/img/logo-lockup.png" alt="Quark-Systems Lockup" class="logo-hero logo-glow fade-in-text" style="max-width:180px;" />
+            <figcaption style="margin-top:.5rem;color:#6b7280;font-size:.95rem;">
+              Tecnología con soporte local
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISIÓN Y VISIÓN -->
+    <section class="hero" id="mision-vision" style="margin-top:2rem; position:relative; overflow:hidden;">
+      <img src="assets/img/Hero-3d_light.png" alt="Fondo Quark Systems" class="bg-mision-vision" />
+      <div class="hero__content" style="background:rgba(13,42,69,.55);color:#fff;position:relative;z-index:1;">
+        <div class="grid-2 grid-responsive" style="align-items:center;">
+          <div style="text-align:center;">
+            <img src="assets/img/mision.png" alt="Icono Misión" class="logo-hero logo-glow fade-in icon-anim" style="max-width:100px;margin-bottom:1rem;" />
+            <h2 class="fade-in-text">Misión</h2>
+            <p class="fade-in-text">
+              Brindar soluciones de automatización e IIoT accesibles y efectivas para PYMES, combinando hardware WECON, Q Nexus y soporte especializado cercano. Nuestro objetivo: aumentar productividad, reducir costos y agregar valor tangible en cada proyecto.
+            </p>
+          </div>
+          <div style="text-align:center;">
+            <img src="assets/img/vision.png" alt="Icono Visión" class="logo-hero logo-glow fade-in icon-anim" style="max-width:100px;margin-bottom:1rem;" />
+            <h2 class="fade-in-text">Visión</h2>
+            <p class="fade-in-text">
+              Ser el partner de referencia en Argentina para la modernización industrial de PYMES, reconocidos por proyectos llave en mano, alto estándar técnico y un acompañamiento que garantiza el éxito desde el primer día.
+            </p>
           </div>
         </div>
       </div>
+    </section>
 
-      <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
-        <div class="grid-2">
-          <div>
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" required style="width:100%;padding:.6rem;border:1px solid #e5e7eb;border-radius:10px;">
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required style="width:100%;padding:.6rem;border:1px solid #e5e7eb;border-radius:10px;">
-          </div>
+    <!-- OFERTA COMERCIAL + VENTAJAS DIFERENCIALES -->
+    <section class="container narrow grid-2 grid-responsive" style="gap:2.5rem;align-items:start;margin-bottom:2.5rem;">
+      <div class="value" id="oferta" style="margin:0;">
+        <h2 class="fade-in-text">Oferta Comercial</h2>
+        <ul class="ticks">
+          <li class="fade-in-text"><strong>PLCs y HMIs WECON:</strong> Control y operación seguros para automatización industrial.</li>
+          <li class="fade-in-text"><strong>VDFs (Variadores de Frecuencia):</strong> Control eficiente de motores y ahorro energético.</li>
+          <li class="fade-in-text"><strong>V‑Box (IIoT):</strong> Telemetría, operación remota y gestión centralizada en la nube.</li>
+        </ul>
+        <div class="cta-row" style="margin-top:.5rem;">
+          <a href="https://quarksystems.mitiendanube.com/" class="btn btn-primary neon ripple" target="_blank">Explorar catálogo WECON</a>
         </div>
-        <div style="margin-top:.75rem">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required style="width:100%;padding:.6rem;border:1px solid #e5e7eb;border-radius:10px;"></textarea>
-        </div>
-        <div class="cta-row">
-          <button type="submit" class="btn btn-primary neon ripple">Enviar consulta</button>
-        </div>
-      </form>
-    </div>
-  </section>
+      </div>
+      <div class="value" id="diferenciales" style="margin:0;">
+        <h2 class="fade-in-text">Ventajas Diferenciales</h2>
+        <ul class="ticks">
+          <li class="fade-in-text"><strong>Soporte técnico local:</strong> Selección acertada, instalación y puesta en marcha guiada.</li>
+          <li class="fade-in-text"><strong>Garantía de fábrica + stock local:</strong> Menos espera en mantenimiento y producción.</li>
+          <li class="fade-in-text"><strong>Postventa certificado:</strong> Especialistas que dominan el hardware WECON.</li>
+          <li class="fade-in-text"><strong>Acompañamiento inicial:</strong> Continuidad operativa y tranquilidad desde el día uno.</li>
+        </ul>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="site-footer footer-glow">
-    <div>© <span id="year"></span> Quark‑Systems</div>
-    <div>
-      <a href="/privacidad.html">Privacidad</a> ·
-      <a href="/terminos.html">Términos</a>
-    </div>
-  </footer>
+    <!-- BLOQUE DISRUPTIVO -->
+    <section class="highlight" style="text-align:center; margin:2rem 0;">
+      <div class="container narrow">
+        <h2 class="fade-in-text" style="font-size:2rem;">¿Por qué elegir lo convencional?</h2>
+        <p class="fade-in-text" style="font-size:1.1rem;">
+          En Quark-Systems, la innovación es nuestro estándar.<br>
+          <span style="font-weight:700; color:#00d1b2;">Transformá tu industria hoy.</span>
+        </p>
+        <a href="mailto:contacto.quark.systems@gmail.com" class="btn btn-primary neon ripple" style="margin-top:1.2rem;">Solicitá tu diagnóstico sin cargo</a>
+      </div>
+    </section>
 
-  <!-- JS mínimo: burger, ripple, reveal cards, año -->
-  <script>
-    // Burger menu
-    (function () {
-      const burger = document.getElementById('burger');
-      const nav = document.getElementById('siteNav');
-      if (!burger || !nav) return;
-      burger.addEventListener('click', () => {
-        const open = nav.classList.toggle('open');
-        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      });
-    }());
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="value" id="por-que-elegirnos">
+      <div class="container narrow">
+        <h2 class="fade-in-text">Por Qué Elegir Quark‑Systems</h2>
+        <ul class="ticks">
+          <li class="fade-in-text">Tecnología de primera línea con soporte local.</li>
+          <li class="fade-in-text">Resultados medibles y proyectos con ROI.</li>
+          <li class="fade-in-text">Compromiso y transparencia en cada etapa.</li>
+          <li class="fade-in-text">Metodología llave en mano: de la idea a la operación estable.</li>
+        </ul>
+      </div>
+    </section>
 
-    // Ripple effect (usa .ripple + .ripple-circle definidos en tu CSS)
-    document.addEventListener('click', function (e) {
-      const btn = e.target.closest('.ripple');
-      if (!btn) return;
-      const circle = document.createElement('span');
-      const rect = btn.getBoundingClientRect();
-      const size = Math.max(rect.width, rect.height);
-      circle.className = 'ripple-circle';
-      circle.style.width = circle.style.height = size + 'px';
-      circle.style.left = (e.clientX - rect.left - size / 2) + 'px';
-      circle.style.top = (e.clientY - rect.top - size / 2) + 'px';
-      btn.appendChild(circle);
-      setTimeout(() => circle.remove(), 600);
-    });
+    <!-- CLIENTES -->
+    <section class="highlight" id="clientes">
+      <div class="container narrow">
+        <h2 class="fade-in-text">Clientes: Empresas Usuarias e Integradores</h2>
+        <p class="fade-in-text">
+          Atendemos a empresas industriales usuarias y a integradores de automatización, alineando cada solución con
+          objetivos de <strong>eficiencia</strong> y <strong>rentabilidad</strong>.
+        </p>
+      </div>
+    </section>
 
-    // Reveal de tarjetas al hacer scroll (aplica .reveal ya definido en CSS)
-    (function () {
-      const cards = document.querySelectorAll('.card');
-      if (!('IntersectionObserver' in window) || !cards.length) return;
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(en => {
-          if (en.isIntersecting) {
-            en.target.classList.add('reveal');
-            io.unobserve(en.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      cards.forEach(c => io.observe(c));
-    }());
+    <!-- Q-ACADEMY -->
+    <section class="highlight" id="q-academy">
+      <div class="container narrow">
+        <h2 class="fade-in-text">Q‑Academy: Capacitación para el Futuro</h2>
+        <p class="fade-in-text">
+          Formación práctica y aplicada que acelera la adopción tecnológica y maximiza la inversión, complementando
+          nuestra propuesta de <strong>hardware + soporte local</strong>.
+        </p>
+      </div>
+    </section>
 
-    // Año dinámico
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <!-- CONTACTO -->
+    <section class="highlight" id="contacto">
+      <div class="container narrow">
+        <h2 class="fade-in-text">Contacto</h2>
+        <p class="fade-in-text">
+          <strong>Mg. Guillermo Espósito — Fundador & CEO</strong><br />
+          Email: <a href="mailto:contacto.quark.systems@gmail.com">contacto.quark.systems@gmail.com</a><br />
+          Celular: <a href="tel:+543416594559">(0341) 659‑4559</a> ·
+          <a href="https://wa.me/543416594559?text=Hola%20Quark-Systems,%20quiero%20informaci%C3%B3n%20sobre%20hardware%20WECON" target="_blank">WhatsApp directo</a><br />
+          Web: <a href="https://www.quark-systems.ar" target="_blank">www.quark-systems.ar</a><br />
+          Catálogo: <a href="https://quarksystems.mitiendanube.com/" target="_blank">quarksystems.mitiendanube.com</a><br />
+          Oficina Principal: Cordón Industrial San Lorenzo, Santa Fe, Argentina
+        </p>
+        <img src="assets/img/quark-firma.png" alt="Firma Mg. Guillermo Espósito" class="logo-glow" style="max-width:180px;margin:1.2rem auto 0 auto;display:block;" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer fijo inyectado -->
+  <div id="footer"></div>
+
+  <script src="assets/js/includes.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
