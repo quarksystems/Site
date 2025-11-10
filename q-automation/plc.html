@@ -29,8 +29,6 @@
   </section>
 
 
-
-
   <!-- Por qué elegirnos -->
   <section class="value">
   <div class="container narrow">
@@ -70,7 +68,7 @@
 
   <!-- Series PLC Wecon (cards) -->
   <section class="value" id="plc-series">
-    <div class="container narrow">
+    <div>
       <h2>Series PLC Wecon</h2>
 
       <style>
@@ -193,12 +191,18 @@
   </br></p>
   </div>
   </section>
-  <!-- Footer -->
-  <footer class="site-footer footer-glow">
-  <div>© Quark‑Systems.ar</div>
-  <div><a href="/contacto.html">Contacto</a></div>
-  </footer>
+
+
+<!-- Reveal de tarjetas al aparecer (por si esta vista no carga main.js) -->
+<script>
+  document.querySelectorAll('.card').forEach((card, i) => {
+    setTimeout(() => card.classList.add('reveal'), 150 + i * 180);
+  });
+</script>
   </main>
+    <!-- Footer -->
+  <div id="footer"></div>
+  <script src="/assets/js/includes.js"></script>
 </body>
 </html>
 
