@@ -513,3 +513,67 @@ a:focus-visible, .btn:focus-visible {
 .btn-ghost--dark:hover {
   border-color: rgba(13,42,69,.35);
   filter: none;
+
+  /* === SERIES PLC SECTION === */
+.series {
+  padding: 80px 0;
+  background: var(--shell);
+}
+
+.series .container {
+  max-width: 1100px;
+}
+
+.series h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 2rem;
+  color: var(--ink);
+}
+
+.series .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.series .card {
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform .2s ease;
+}
+
+.series .card:hover {
+  transform: translateY(-6px);
+}
+
+.series .card img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.series .ticks {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.series .ticks li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+.series .ticks li::before {
+  content: "✔";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
