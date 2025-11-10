@@ -514,66 +514,70 @@ a:focus-visible, .btn:focus-visible {
   border-color: rgba(13,42,69,.35);
   filter: none;
 
-  /* === SERIES PLC SECTION === */
-.series {
-  padding: 80px 0;
-  background: var(--shell);
-}
-
-.series .container {
-  max-width: 1100px;
-}
-
-.series h2 {
+  /* === Series PLC Wecon === */
+.plc-series-section {
+  padding: 60px 0;
   text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 2rem;
-  color: var(--ink);
 }
 
-.series .cards {
+.plc-series-section .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 40px 0 0;
 }
 
-.series .card {
+.card {
   background: #fff;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform .2s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  padding: 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.series .card:hover {
-  transform: translateY(-6px);
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
-.series .card img {
-  border-radius: 10px;
-  margin-bottom: 1rem;
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
-.series .ticks {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+.card h3 {
+  margin-top: 0;
+  color: #0a3d62;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.card .ticks {
   text-align: left;
+  margin: 16px 0;
+  padding-left: 20px;
 }
 
-.series .ticks li {
+.card .ticks li {
+  margin-bottom: 6px;
   position: relative;
-  padding-left: 1.4rem;
-  margin-bottom: .5rem;
 }
 
-.series .ticks li::before {
+.card .ticks li::before {
   content: "✔";
-  color: var(--accent);
-  position: absolute;
-  left: 0;
+  color: #0a84ff;
+  margin-right: 8px;
+}
+
+.card .btn {
+  display: inline-block;
+  margin-top: 12px;
 }
