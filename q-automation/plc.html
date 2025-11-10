@@ -5,7 +5,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>PLC industriales | Quark‑Systems.ar</title>
-<link href="/assets/css/styles.css" rel="stylesheet"/>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body><section aria-label="Hero" class="hero" id="inicio">
 <img alt="Tecnología industrial futurista" class="bg" src="/assets/img/hero-3d.png"/>
@@ -61,84 +64,113 @@
 </section>
 
 <!-- Series PLC Wecon (cards) -->
-<section class="series">
-  <div class="container">
-    <h2>Series PLC Wecon</h2>
-    <ul class="cards">
-      
-      <!-- LX6V -->
-      <li class="card">
-        <img src="/assets/img/plc/lx6v.jpg" alt="PLC Serie LX6V" class="card-zoom" />
-        <h3>PLC Serie LX6V</h3>
-        <ul class="ticks">
-          <li>Gran capacidad de almacenamiento 5MB.</li>
-          <li>Incorpora EtherCAT y USB tipo C.</<!-- Series PLC Wecon -->
-<section class="plc-series-section">
+<section class="value" id="plc-series">
   <div class="container narrow">
-    <h2 class="section-title">Series PLC Wecon</h2>
+    <h2>Series PLC Wecon</h2>
+
+    <style>
+      #plc-series .cards .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform .35s cubic-bezier(.25,.8,.25,1);
+        will-change: transform;
+      }
+      #plc-series .cards .card:hover img {
+        transform: scale(1.06);
+      }
+      @media (min-width: 980px) {
+        #plc-series .cards { grid-template-columns: repeat(3, 1fr); }
+      }
+      /* Estilo para la serie A550 que ocupa todo el ancho */
+      #plc-series .full-width {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: #f8f9fa;
+        border-radius: 12px;
+        display: block;
+      }
+      @media (min-width: 980px) {
+        #plc-series .full-width .card {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 2rem;
+        }
+      }
+      #plc-series .full-width .card img {
+        height: auto;
+      }
+    </style>
 
     <ul class="cards">
       <!-- LX6V -->
       <li class="card">
-        <img src="/img/plc/lx6v.jpg" alt="PLC Serie LX6V" class="card-zoom" />
+        <img src="/img/plc/lx6v.jpg" alt="PLC Serie LX6V" />
         <h3>PLC Serie LX6V</h3>
-        <p>
-          La serie LX6V de WECON ofrece gran capacidad de programa (5 MB), 
-          comunicación EtherCAT y USB-Tipo C, y soporta múltiples lenguajes de programación. 
-          Ideal para maquinaria de envasado, robótica y sistemas industriales de alto rendimiento.
-        </p>
+        <p><strong>Máxima capacidad y alto rendimiento industrial</strong></p>
+        <p>La serie LX6V de Wecon está diseñada para entornos industriales exigentes: hasta 5 MB de memoria de programa, comunicación EtherCAT y USB Tipo C, y compatibilidad con Ladder, Instruction Table, FB y FC. Soporta expansiones modulares, alta velocidad de ejecución (~0.01-0.02 µs) y aplicaciones en robótica, maquinaria de envasado o sistemas críticos.</p>
         <ul class="ticks">
-          <li>Hasta 5 MB de almacenamiento y 0.01–0.02 µs por instrucción.</li>
-          <li>EtherCAT integrado + USB Tipo C.</li>
-          <li>Admite Ladder, Instruction Table, FB y FC.</li>
-          <li>Expansión hasta 32 módulos (64 con potencia adicional).</li>
+          <li>Memoria de hasta 5 MB de programa y 0.01 µs a 0.02 µs por instrucción.</li>
+          <li>EtherCAT incorporado + puerto USB Tipo C para configuración rápida.</li>
+          <li>Lenguajes de programación: Ladder, Instruction Table, FB, FC.</li>
+          <li>Expansión modular de E/S: hasta 32 módulos (y 64 con módulo de potencia adicional).</li>
         </ul>
-        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/2480.html" target="_blank" rel="noopener">
-          Ver modelo en Wecon
-        </a>
+        <a href="https://www.we-con.com.cn/en/product_t/126.html" class="btn btn-primary" target="_blank" rel="noopener">Ver modelo en Wecon</a>
       </li>
 
       <!-- LX5V -->
       <li class="card">
-        <img src="/img/plc/lx5v.jpg" alt="PLC Serie LX5V" class="card-zoom" />
+        <img src="/img/plc/lx5v.jpg" alt="PLC Serie LX5V" />
         <h3>PLC Serie LX5V</h3>
-        <p>
-          La serie LX5V combina velocidad y precisión para control de movimiento y automatización compleja. 
-          Con tiempos de ejecución de 0.01–0.03 µs y hasta 100 interrupciones de conteo rápido.
-        </p>
+        <p><strong>Diseñado para velocidad, control de movimiento y precisión</strong></p>
+        <p>La serie LX5V combina gran velocidad de ejecución, múltiples ejes para control de pulsos y hasta 100 interrupciones de conteo de alta velocidad. Ideal para aplicaciones de automatización que requieren control dinámico, posicionamiento y sincronización en tiempo real.</p>
         <ul class="ticks">
-          <li>Hasta 8 ejes con salida de pulsos de alta velocidad.</li>
-          <li>Velocidad en baudios de hasta 921 600 bps.</li>
-          <li>Compatible con módulos LX3V para expansión.</li>
-          <li>Ideal para maquinaria de control preciso y procesos de producción.</li>
+          <li>Salida de pulsos de alta velocidad en 8 ejes simultáneos.</li>
+          <li>Tiempo de ejecución básico: 0.01 µs a 0.03 µs.</li>
+          <li>Soporte para comunicaciones de hasta 921.600 bps.</li>
+          <li>Compatible con módulos de expansión LX3V y sistemas modulares de alta velocidad.</li>
         </ul>
-        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/news_page/58.html" target="_blank" rel="noopener">
-          Ver modelo en Wecon
-        </a>
+        <a href="https://www.we-con.com.cn/en/product_t/164.html" class="btn btn-primary" target="_blank" rel="noopener">Ver modelo en Wecon</a>
       </li>
 
       <!-- LX3VP -->
       <li class="card">
-        <img src="/img/plc/lx3vp.jpg" alt="PLC Serie LX3VP" class="card-zoom" />
+        <img src="/img/plc/lx3vp.jpg" alt="PLC Serie LX3VP" />
         <h3>PLC Serie LX3VP</h3>
-        <p>
-          La serie LX3VP ofrece control confiable y económico, con programas de hasta 64 k steps 
-          y comunicación en red N:N entre múltiples PLCs. Perfecta para sistemas industriales medianos.
-        </p>
+        <p><strong>Solución eficiente para sistemas industriales medianos</strong></p>
+        <p>La serie LX3VP ofrece un excelente equilibrio entre funcionalidad y coste: soporta programas de hasta 64 k steps, redes N:N entre PLCs (2-8 unidades), salidas de pulsos de hasta 200 kHz, expansión analógica/I/O y comunicación RS-485. Perfecta para control intermedio, integradores y sistemas con crecimiento previsto.</p>
         <ul class="ticks">
-          <li>Hasta 4 salidas de pulsos de 200 kHz.</li>
-          <li>Red N:N entre 2 – 8 PLCs interconectados.</li>
-          <li>Expansión analógica e I/O mediante módulos adicionales.</li>
-          <li>Opciones de comunicación analógica y RS-485.</li>
+          <li>Capacidad de programa: hasta 64k steps.</li>
+          <li>Salidas de pulsos de alta velocidad: 200 kHz.</li>
+          <li>Red N:N intercambiable: interconexión de 2 a 8 PLCs.</li>
+          <li>Expansión analógica e I/O mediante múltiples módulos + opción de placa BD RS-485.</li>
         </ul>
-        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/11296.html" target="_blank" rel="noopener">
-          Ver modelo en Wecon
-        </a>
+        <a href="https://www.we-con.com.cn/en/product_t/11296.html" class="btn btn-primary" target="_blank" rel="noopener">Ver modelo en Wecon</a>
       </li>
     </ul>
+
+    <!-- Serie A550 (ancho completo) -->
+    <div class="full-width">
+      <div class="card">
+        <img src="/img/plc/a550.jpg" alt="PLC Serie A550" />
+        <div>
+          <h3>PLC Serie A550</h3>
+          <p><strong>La solución premium todo-terreno para automatización global</strong></p>
+          <p>La serie A550 de Wecon es la línea más avanzada para integradores industriales: ofrece redundancia de sistema, red EtherCAT doble, módulos de seguridad SIL3, sistema HMI integrado y conectividad IoT nativa. Diseñada para plantas grandes, infraestructura crítica y sistemas con alta demanda de tiempo de actividad.</p>
+          <ul class="ticks">
+            <li>Redundancia de CPU y fuente de alimentación para tolerancia de fallos.</li>
+            <li>Doble puerto EtherCAT, ProfiNet y Modbus TCP integrados.</li>
+            <li>Módulos de seguridad SIL3 / PL e para aplicaciones críticas.</li>
+            <li>Conectividad IoT nativa, IIoT y monitorización remota con nube.</li>
+          </ul>
+          <a href="https://www.we-con.com.cn/en/product_t/550.html" class="btn btn-primary" target="_blank" rel="noopener">Ver modelo A550</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
-
 
 <!-- CTA final -->
 <section class="cta-bottom">
