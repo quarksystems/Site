@@ -40,31 +40,104 @@
   </ul>
   </div>
   </section>
-  <!-- Flexibilidad y módulos -->
-  <section class="value">
+ <!-- Flexibilidad y expansión sin límites -->
+<section class="plc-expansion">
   <div class="container narrow">
-  <h2>Flexibilidad y expansión sin límites</h2>
-  <figure class="figure">
-  <img alt="Módulos de expansión Wecon" class="card-zoom" src="/assets/img/plc/modulos-wecon.png"/>
-  <figcaption class="figcaption">Módulos digitales, analógicos, de comunicación y especiales para escalar tu PLC.</figcaption>
-  </figure>
-  <p>
-            Los PLCs Wecon están diseñados para crecer junto a tu industria. Gracias a su arquitectura modular, puedes elegir
-            entre una amplia variedad de módulos de expansión: digitales, analógicos, comunicación y especiales. Esto te permite
-            adaptar la automatización a cada etapa de tu proceso, optimizando costes y asegurando la máxima eficiencia.
-          </p>
-  <ul class="ticks">
-  <li>Decenas de módulos disponibles para entradas/salidas, medición y control avanzado.</li>
-  <li>Expansión sencilla: agrega o reemplaza módulos según la evolución de tu planta.</li>
-  <li>Integración total con protocolos industriales y sistemas SCADA.</li>
-  <li>Soporte local, capacitación y repuestos en stock para minimizar tiempos de parada.</li>
-  </ul>
-  <div class="cta-row">
-  <a class="btn btn-primary" href="https://quarksystems.mitiendanube.com/">Ver PLCs en catálogo</a>
-  <a class="btn btn-ghost" data-analytics="cta-contacto-hero" href="/contacto.html">Contacto</a>
+    <div class="expansion-grid">
+      
+      <!-- Columna de texto -->
+      <div class="expansion-text">
+        <h2>Flexibilidad y expansión sin límites</h2>
+        <p><strong>Diseñados para crecer con tu industria.</strong></p>
+        <p>
+          Los PLCs <strong>Wecon</strong> ofrecen una arquitectura totalmente modular, permitiéndote ampliar tus sistemas de control
+          de manera sencilla y económica. Con una amplia gama de módulos digitales, analógicos, de comunicación y funciones
+          especiales, podés escalar tu instalación sin reemplazar el hardware existente.
+        </p>
+        <ul class="ticks">
+          <li><strong>Decenas de módulos</strong> disponibles para entradas/salidas, medición, control PID y comunicación avanzada.</li>
+          <li><strong>Expansión rápida y segura:</strong> solo encastrá el módulo y el sistema lo reconoce automáticamente.</li>
+          <li><strong>Integración completa</strong> con protocolos industriales como Modbus, CANopen, EtherCAT y Ethernet/IP.</li>
+          <li><strong>Compatibilidad total</strong> con las series LX3VP, LX5V y LX6V.</li>
+          <li><strong>Soporte técnico local</strong> y stock permanente de repuestos y accesorios.</li>
+        </ul>
+        <p>
+          A medida que tu planta crece, los PLC Wecon crecen con vos. Actualizá, escalá y mantené tu operación siempre conectada,
+          segura y eficiente.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">
+            Ver PLCs en catálogo
+          </a>
+          <a class="btn btn-ghost" href="/contacto.html" data-analytics="cta-contacto-hero">
+            Contacto
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna de imagen -->
+      <div class="expansion-img">
+        <figure>
+          <img src="/assets/img/plc/modulos-wecon.png" alt="Módulos de expansión Wecon" />
+          <figcaption class="figcaption">
+            Módulos digitales, analógicos, de comunicación y especiales para escalar tu PLC.
+          </figcaption>
+        </figure>
+      </div>
+
+    </div>
   </div>
-  </div>
-  </section>
+          <style>
+            .expansion-grid {
+              display: grid;
+              gap: 2.5rem;
+              align-items: center;
+            }
+
+            @media (min-width: 980px) {
+              .expansion-grid {
+                grid-template-columns: 1.2fr 1fr;
+              }
+            }
+
+            .expansion-text h2 {
+              font-size: 2rem;
+              margin-bottom: 1rem;
+            }
+
+            .expansion-text p {
+              line-height: 1.6;
+              margin-bottom: 1rem;
+            }
+
+            .expansion-img img {
+              width: 100%;
+              max-width: 460px;
+              border-radius: 14px;
+              display: block;
+              margin: 0 auto;
+              box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+              transition: transform 0.35s ease;
+            }
+
+            .expansion-img img:hover {
+              transform: scale(1.04);
+            }
+
+            .figcaption {
+              text-align: center;
+              font-size: 0.95rem;
+              margin-top: 0.75rem;
+              color: #666;
+            }
+
+            @media (max-width: 979px) {
+              .expansion-img {
+                order: -1;
+              }
+            }
+          </style>
+</section>
 
   <!-- Series PLC Wecon (cards) -->
   <section class="value" id="plc-series">
