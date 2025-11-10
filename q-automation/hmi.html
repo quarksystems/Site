@@ -41,94 +41,175 @@
   </div>
   </section>
 
-
-  <!-- Cards de series HMI -->
-  <section>
+<!-- Series HMI Wecon -->
+<section class="value" id="hmi-series">
   <div class="container narrow">
-  <h2>Series HMI Wecon</h2>
-  <ul class="cards">
-  <!-- PI3000i -->
-  <li class="card">
-  <img alt="HMI Wecon PI3000i" class="card-zoom" src="/assets/img/hmi/pi3000i.jpg"/>
-  <h3>Serie PI3000i</h3>
-  <ul class="ticks">
-  <li>Diseñada para aplicaciones estándar.</li>
-  <li>Excelente relación calidad/precio.</li>
-  <li>Tamaños disponibles: 7” y 10.2”.</li>
-  <li>Bajo consumo energético (&lt;8W).</li>
-  <li>Interfaz táctil intuitiva.</li>
-  <li>Compatible con múltiples protocolos industriales.</li>
-  <li>Ideal para proyectos donde se requiere estabilidad, simplicidad y eficiencia.</li>
-  </ul>
-  <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/80.html" target="_blank">Ver modelo en Wecon</a>
-  </li>
-  <!-- PI3000ie -->
-  <li class="card">
-  <img alt="HMI Wecon PI3000ie" class="card-zoom" src="/assets/img/hmi/pi3000ie.jpg"/>
-  <h3>Serie PI3000ie</h3>
-  <ul class="ticks">
-  <li>Pensada para entornos más exigentes.</li>
-  <li>Procesador multinúcleo de alta velocidad.</li>
-  <li>Encendido rápido (6 segundos).</li>
-  <li>Cambio de pantalla en solo 100 ms.</li>
-  <li>Compatible con más de 300 protocolos PLC.</li>
-  <li>Soporte para scripts LUA y múltiples pantallas.</li>
-  <li>Perfecta para procesos que requieren agilidad operativa y gran capacidad de integración.</li>
-  </ul>
-  <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/79.html" target="_blank">Ver modelo en Wecon</a>
-  </li>
-  <!-- PI3000ig -->
-  <li class="card">
-  <img alt="HMI Wecon PI3000ig" class="card-zoom" src="/assets/img/hmi/pi3000ig.jpg"/>
-  <h3>Serie PI3000ig</h3>
-  <ul class="ticks">
-  <li>La más avanzada, orientada a la industria 4.0 y conectividad remota.</li>
-  <li>Integración con V-BOX para acceso a la nube mediante V-NET.</li>
-  <li>Gestión remota, alarmas, mantenimiento y SCADA en la nube.</li>
-  <li>Ideal para monitoreo distribuido y operación desatendida.</li>
-  <li>Alta compatibilidad con sistemas IIoT.</li>
-  <li>Control total y supervisión inteligente desde cualquier lugar.</li>
-  </ul>
-  <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/78.html" target="_blank">Ver modelo en Wecon</a>
-  </li>
-  </ul>
+    <h2>Series HMI Wecon</h2>
+    <p>
+      Las interfaces <strong>HMI Wecon</strong> están diseñadas para ofrecer visualización potente, operación fluida y una integración
+      perfecta con PLCs y sistemas SCADA. Ideales para automatización industrial, IIoT y control de planta.
+    </p>
+
+    <style>
+      #hmi-series .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 28px;
+        margin-top: 1.5rem;
+      }
+      #hmi-series .card img {
+        width: 100%;
+        height: 190px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform .35s cubic-bezier(.25,.8,.25,1);
+      }
+      #hmi-series .card:hover img { transform: scale(1.05); }
+      #hmi-series .card h3 { margin-top: .5rem; }
+      #hmi-series .ticks { margin: .7rem 0; padding-left: 18px; text-align: left; }
+      #hmi-series .btn { margin-top: .6rem; display: inline-block; }
+      /* WS21 Section */
+      #ws21 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 28px;
+        margin-top: 3rem;
+        background: linear-gradient(135deg, #f7faff 0%, #ffffff 100%);
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0, 120, 215, 0.12);
+        padding: 24px;
+      }
+      #ws21 img {
+        flex: 1 1 380px;
+        max-width: 480px;
+        border-radius: 10px;
+        filter: brightness(1.08) contrast(1.05);
+        transition: transform .3s ease;
+      }
+      #ws21 img:hover { transform: scale(1.03); }
+      #ws21 .ws21-info {
+        flex: 1 1 380px;
+        text-align: left;
+      }
+      #ws21 .ws21-info h3 { color: #0078d7; margin-bottom: .5rem; }
+      #ws21 .ws21-info p { margin-bottom: .7rem; line-height: 1.5; }
+      @media (max-width: 780px) {
+        #ws21 { flex-direction: column; text-align: center; }
+        #ws21 .ws21-info { text-align: center; }
+      }
+    </style>
+
+    <!-- Grid 2x2 for HMIs -->
+    <div class="grid-2">
+
+      <!-- PI8000IG -->
+      <div class="card">
+        <img src="/assets/img/hmi/pi8000ig.jpg" alt="HMI Wecon PI8000IG">
+        <h3>PI8000IG Series</h3>
+        <p><strong>Potencia y visualización Full HD</strong></p>
+        <p>La serie PI8000IG entrega rendimiento gráfico avanzado para paneles SCADA y centros de control industrial.</p>
+        <ul class="ticks">
+          <li>Pantallas IPS hasta 21.5”, resolución Full HD.</li>
+          <li>Procesador de alto rendimiento para visualización en tiempo real.</li>
+          <li>Soporte SCADA, SQL y dashboards personalizables.</li>
+          <li>Diseño robusto, sin ventilador y con amplia conectividad.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/276.html" target="_blank" rel="noopener">Ver PI8000IG</a>
+      </div>
+
+      <!-- PI3000IG -->
+      <div class="card">
+        <img src="/assets/img/hmi/pi3000ig.jpg" alt="HMI Wecon PI3000IG">
+        <h3>PI3000IG Series</h3>
+        <p><strong>Diseñada para entornos industriales exigentes</strong></p>
+        <p>Confiabilidad y conectividad total en formato compacto, ideal para líneas de producción y tableros de control.</p>
+        <ul class="ticks">
+          <li>Pantallas de 7" a 15.6" de alta resolución.</li>
+          <li>Ethernet, HDMI, USB, RS-485 y CAN.</li>
+          <li>Soporte para IIoT, VNC, Modbus y MQTT.</li>
+          <li>Diseño sellado y resistente al polvo.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/274.html" target="_blank" rel="noopener">Ver PI3000IG</a>
+      </div>
+
+      <!-- PI3000IE -->
+      <div class="card">
+        <img src="/assets/img/hmi/pi3000ie.jpg" alt="HMI Wecon PI3000IE">
+        <h3>PI3000IE Series</h3>
+        <p><strong>Conectividad y control inteligente</strong></p>
+        <p>La PI3000IE combina robustez y capacidad de comunicación avanzada, ideal para redes industriales modernas.</p>
+        <ul class="ticks">
+          <li>Soporte Ethernet, Modbus TCP/RTU y OPC-UA.</li>
+          <li>Interfaz multitáctil capacitiva.</li>
+          <li>Gestión de datos local y registro de procesos.</li>
+          <li>Diseño empotrable para paneles industriales.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/275.html" target="_blank" rel="noopener">Ver PI3000IE</a>
+      </div>
+
+      <!-- PI3000i -->
+      <div class="card">
+        <img src="/assets/img/hmi/pi3000i.jpg" alt="HMI Wecon PI3000i">
+        <h3>PI3000i Series</h3>
+        <p><strong>Linux embebido y estabilidad profesional</strong></p>
+        <p>Desarrollada para proyectos IIoT y SCADA, con excelente rendimiento, fiabilidad y soporte multiplataforma.</p>
+        <ul class="ticks">
+          <li>CPU ARM Cortex-A35 Quad-Core, Linux embebido.</li>
+          <li>Ethernet dual, USB, RS-232/485, CAN.</li>
+          <li>Pantallas IPS con amplia gama de tamaños.</li>
+          <li>Protocolos: MQTT, VNC, Modbus, BACnet.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/273.html" target="_blank" rel="noopener">Ver PI3000i</a>
+      </div>
+
+    </div>
+
+    <!-- WS21-EP destacado -->
+    <section id="ws21">
+      <img src="/assets/img/hmi/ws21-ep.jpg" alt="Wecon WS21-EP Monitor Industrial 21.5”">
+      <div class="ws21-info">
+        <h3>WS21-EP — Monitor Industrial 21.5”</h3>
+        <p><strong>Visualización panorámica Full HD, resistente y elegante</strong></p>
+        <p>
+          El WS21-EP es un monitor industrial Full HD con panel táctil capacitivo y chasis metálico.
+          Ideal para estaciones de control, gabinetes y supervisión de procesos en planta. 
+          Su diseño robusto y brillo optimizado lo convierten en una opción confiable para entornos exigentes.
+        </p>
+        <ul class="ticks">
+          <li>Resolución 1920×1080, alto brillo y amplio ángulo de visión.</li>
+          <li>Frontal IP65 con pantalla táctil capacitiva.</li>
+          <li>Conexiones HDMI, VGA y USB táctil.</li>
+          <li>Montaje empotrable o VESA, cuerpo metálico.</li>
+        </ul>
+        <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/3549.html" target="_blank" rel="noopener">Ver WS21-EP</a>
+      </div>
+    </section>
+
   </div>
-  </section>
+</section>
+
   
   <!-- CTA final -->
   <section class="cta-bottom">
-  <div class="container narrow" style="text-align:center;">
-  <h2>¿Listo para visualizar y controlar tu proceso?</h2>
-  <p style="font-size:1.15rem; margin-bottom:1.5rem;">
-            Da el siguiente paso y conecta tu industria con soluciones HMI de última generación.<br/>
-            Respuesta técnica rápida · Soporte real · Capacitación personalizada.
-          </p>
-  <a class="btn btn-primary neon ripple" href="/contacto.html" style="font-size:1.15rem; margin-bottom:1.2rem;">
-            Contactanos ahora
-          </a>
-  <div class="cta-row" style="justify-content:center; margin-top:1.5rem;">
-  <a class="btn btn-primary ripple" href="https://quarksystems.mitiendanube.com/" rel="noopener" target="_blank">
-              Ver HMIs en catálogo
+    <div class="container narrow" style="text-align:center;">
+    <h2>¿Listo para visualizar y controlar tu proceso?</h2>
+    <p style="font-size:1.15rem; margin-bottom:1.5rem;">
+              Da el siguiente paso y conecta tu industria con soluciones HMI de última generación.<br/>
+              Respuesta técnica rápida · Soporte real · Capacitación personalizada.
+            </p>
+    <a class="btn btn-primary neon ripple" href="/contacto.html" style="font-size:1.15rem; margin-bottom:1.2rem;">
+              Contactanos ahora
             </a>
-  <a class="btn btn-primary ripple" href="https://www.we-con.com.cn/ES/" rel="noopener" target="_blank">
-              Descubre WECON
-            </a>
-  </div>
-  <div style="margin-top:1.5rem; color:#b8e6e1; font-size:1.05rem;">
-  <span style="display:inline-block; margin-right:1.2rem;">
-  <a href="/contacto.html" style="color:#b8e6e1; text-decoration:underline;">Contacto</a>
-  </span>
-  <span style="display:inline-block; margin-right:1.2rem;">
-              Cordón Industrial San Lorenzo, Santa Fe
-            </span>
-  <span style="display:inline-block; margin-right:1.2rem;">
-              contacto.quark.systems@gmail.com
-            </span>
-  <span style="display:inline-block;">
-              Teléfono: +54 (341) 6594559
-            </span>
-  </div>
-  </div>
+      <div class="cta-row" style="justify-content:center; margin-top:1.6rem;">
+      <a class="btn btn-primary ripple" href="https://quarksystems.mitiendanube.com/" rel="noopener" target="_blank">
+                  Ver HMIs en catálogo
+                </a>
+      <a class="btn btn-primary ripple" href="https://www.we-con.com.cn/ES/" rel="noopener" target="_blank">
+                  Descubre WECON
+                </a>
+      </div>
+    </div>
   </section>
 </main>
 <div id="footer"></div>
