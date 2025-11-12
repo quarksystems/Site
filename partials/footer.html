@@ -1,44 +1,39 @@
-<footer class="site-footer footer-glow" role="contentinfo" style="background:linear-gradient(90deg,#0d2a45 0%,#00d1b2 100%); padding:2rem 1rem; display:flex; align-items:center; justify-content:space-between;">
-  <div>
-    <p style="font-weight:700; font-size:1.15rem; margin-bottom:.5rem;">¿Hablamos?</p>
-    <p>
-      <a href="/contacto.html" style="font-size:1.05rem; color:#fff; text-decoration:none; font-weight:600;">Contacto</a><br>
-      <span style="color:#b8e6e1;">Cordón Industrial San Lorenzo, Santa Fe</span><br>
-      <span style="color:#b8e6e1;">Email: contacto.quark.systems@gmail.com</span><br>
-      <span style="color:#b8e6e1;">Teléfono: +54 (341) 6594559</span>
-    </p>
-    <!-- Botón WhatsApp -->
-    <a href="https://wa.me/543416594559" target="_blank" rel="noopener" class="btn btn-primary neon ripple" style="display:inline-flex; align-items:center; gap:.5rem; margin-top:.75rem;">
-      <img src="/assets/img/icono-whats.png" alt="WhatsApp" style="height:28px; width:28px; filter:drop-shadow(0 0 8px #00d1b2);">
-      WhatsApp directo
-    </a>
-  </div>
-  <div style="text-align:right; display:flex; flex-direction:column; align-items:flex-end;">
-    <div style="position:relative; display:inline-block;">
-      <img src="/assets/img/logo-alt.png" alt="Quark‑Systems logo" style="height:54px; filter:drop-shadow(0 0 18px #00d1b2) drop-shadow(0 0 8px #fff);">
-      <!-- Reflejo debajo -->
-      <img src="/assets/img/logo-alt.png" alt="Reflejo Quark‑Systems" style="height:38px; opacity:.35; filter:blur(2px) drop-shadow(0 0 8px #00d1b2); transform:scaleY(-1); position:absolute; left:0; top:54px; pointer-events:none;">
+<footer class="site-footer footer-glow">
+  <div class="container" style="display:flex;flex-wrap:wrap;gap:2rem;align-items:center;justify-content:space-between">
+    <!-- Logo y claim -->
+    <div style="display:flex;align-items:center;gap:1rem">
+      <img src="/assets/img/logo.png" alt="Quark‑Systems logo" class="logo-glow" style="height:48px">
+      <span class="firma-glow" style="font-size:1.4rem;font-weight:900;letter-spacing:1px;">Quark‑Systems</span>
     </div>
-    <span id="firma-quark" class="firma-glow" style="margin-top:.5rem;">Quark‑Systems</span>
-    <p style="font-size:.85rem; color:#e0f7fa; margin-top:.5rem;">
-      © <span id="year"></span> Quark‑Systems.ar
-    </p>
+    <!-- Contacto rápido -->
+    <div style="display:flex;flex-direction:column;gap:.4rem">
+      <a href="mailto:contacto.quark.systems@gmail.com" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;color:inherit">
+        <span>📧</span> contacto.quark.systems@gmail.com
+      </a>
+      <a href="tel:+543416594559" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;color:inherit">
+        <span>📞</span> +54 (341) 6594559
+      </a>
+      <a href="https://wa.me/543416594559" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;color:inherit">
+        <span>🟢</span> WhatsApp directo
+      </a>
+    </div>
+    <!-- Dirección y links -->
+    <div style="display:flex;flex-direction:column;gap:.4rem">
+      <span>📍 Cordón Industrial San Lorenzo, Santa Fe</span>
+      <a href="/contacto.html" class="btn btn-ghost--dark" style="margin-top:.3rem">Contacto</a>
+      <a href="https://quarksystems.mitiendanube.com/" class="btn btn-ghost--dark" target="_blank" rel="noopener">Catálogo</a>
+      <!-- Redes sociales (opcional) -->
+      <div style="display:flex;gap:.5rem;margin-top:.3rem">
+        <a href="https://www.linkedin.com/company/quark-systems-ar" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="/assets/img/icons/linkedin.svg" alt="LinkedIn" style="height:22px"></a>
+        <a href="https://www.instagram.com/quark.systems.ar" target="_blank" rel="noopener" aria-label="Instagram"><img src="/assets/img/icons/instagram.svg" alt="Instagram" style="height:22px"></a>
+      </div>
+    </div>
   </div>
+  <div style="text-align:center;margin-top:1.2rem;color:#fff;font-size:.95rem;opacity:.85">
+    © <span id="year"></span> Quark‑Systems.ar · Argentina · Todos los derechos reservados.
+  </div>
+  <script>
+    // Año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </footer>
-
-<script>
-  // Año dinámico
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  // Glow animado en la firma
-  const firma = document.getElementById('firma-quark');
-  let glowOn = false;
-  setInterval(() => {
-    glowOn = !glowOn;
-    if (glowOn) {
-      firma.classList.add('glow-anim');
-    } else {
-      firma.classList.remove('glow-anim');
-    }
-  }, 3200);
-</script>

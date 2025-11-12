@@ -581,3 +581,12 @@ a:focus-visible, .btn:focus-visible {
   display: inline-block;
   margin-top: 12px;
 }
+
+.hero::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(13,42,69,.45),rgba(0,209,178,.18));
+  z-index:0;
+  pointer-events:none;
+}

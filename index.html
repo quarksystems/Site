@@ -34,18 +34,19 @@
 </head>
 <body>
   <!-- Header inyectado -->
-  <header id="header" class="site-header"></header>
+    <div id="header"></div>
 
   <main id="main">
     <!-- Hero -->
     <section class="hero" id="inicio" aria-label="Inicio">
-      <div class="hero__content container narrow" style="text-align:center">
+      <!-- Imagen de fondo (puede ser PNG/JPG optimizada) -->
+        <img class="bg" src="/assets/img/bg/hero-3d.jpg" alt="Planta industrial automatizada con equipos Quark-Systems">      <div class="hero__content container narrow" style="text-align:center">
         <span class="badge">Quark‑Systems.ar</span>
         <h1 class="firma-glow">Automatización sin vueltas.<br>Resultados con respaldo.</h1>
         <p class="fade-in-text">Tecnología industrial futurista · Soporte local · Capacitación práctica</p>
         <div class="cta-row" style="justify-content:center">
-          <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver catálogo</a>
-          <a class="btn btn-ghost" href="/contacto.html">Hablar con un especialista</a>
+          https://quarksystems.mitiendanube.com/Ver catálogo</a>
+          /contacto.htmlHablar con un especialista</a>
         </div>
       </div>
     </section>
@@ -103,33 +104,37 @@
     </section>
 
     <!-- Accesos rápidos a productos (sin redundar) -->
-    <section id="soluciones" class="value">
-      <div class="container">
-        <h2>Soluciones rápidas</h2>
-        <ul class="cards">
-          <li class="card">
-            <h3>PLCs</h3>
-            <p>Control confiable, modular y listo para crecer.</p>
-            <a class="btn" href="/q-automation/plc.html">Ver PLCs</a>
-          </li>
-          <li class="card">
-            <h3>HMIs</h3>
-            <p>Operación clara y segura: menos errores, más productividad.</p>
-            <a class="btn" href="/q-automation/hmi.html">Ver HMIs</a>
-          </li>
-          <li class="card">
-            <h3>VFDs</h3>
-            <p>Ahorro energético y cuidado mecánico con control preciso.</p>
-            <a class="btn" href="/vfd.html">Ver VFDs</a>
-          </li>
-          <li class="card">
-            <h3>IIoT & V‑Net</h3>
-            <p>De datos a decisiones: dashboards, alertas y acceso seguro.</p>
-            <a class="btn" href="/iiot.html">Ver IIoT</a>
-          </li>
-        </ul>
-      </div>
-    </section>
+<section id="soluciones" class="value">
+  <div class="container">
+    <h2>Soluciones rápidas</h2>
+    <ul class="cards">
+      <li class="card">
+        <img src="/assets/img/card-plc.jpg" alt="PLC industrial Wecon" style="height:140px;object-fit:cover;border-radius:10px;">
+        <h3>PLCs</h3>
+        <p>Control confiable, modular y listo para crecer.</p>
+        <a class="btn" href="/q-automation/plc.html">Ver PLCs</a>
+      </li>
+      <li class="card">
+        <img src="/assets/img/card-hmi.jpg" alt="HMI industrial Wecon" style="height:140px;object-fit:cover;border-radius:10px;">
+        <h3>HMIs</h3>
+        <p>Operación clara y segura: menos errores, más productividad.</p>
+        <a class="btn" href="/q-automation/hmi.html">Ver HMIs</a>
+      </li>
+      <li class="card">
+        <img src="/assets/img/card-vfd.jpg" alt="VFD industrial Wecon" style="height:140px;object-fit:cover;border-radius:10px;">
+        <h3>VFDs</h3>
+        <p>Ahorro energético y cuidado mecánico con control preciso.</p>
+        <a class="btn" href="/vfd.html">Ver VFDs</a>
+      </li>
+      <li class="card">
+        <img src="/assets/img/card-iiot.jpg" alt="IIoT y V-Net industrial" style="height:140px;object-fit:cover;border-radius:10px;">
+        <h3>IIoT & V‑Net</h3>
+        <p>De datos a decisiones: dashboards, alertas y acceso seguro.</p>
+        <a class="btn" href="/iiot.html">Ver IIoT</a>
+      </li>
+    </ul>
+  </div>
+</section>
 
     <!-- Logos / Confían en nosotros (opcional) -->
     <section class="value" id="confian">
