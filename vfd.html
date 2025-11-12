@@ -1,25 +1,255 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>VFD / Variadores de frecuencia | Quark‑Systems.ar</title>
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VFD industriales · Quark‑Systems</title>
+  <meta name="description" content="Variadores de Frecuencia WECON: ahorro de energía, mayor vida útil de equipos y control preciso. VM · VB · VC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
-  <div id="header"></div>
-  <main class="container narrow">
-    <h1>VFD (Variadores de frecuencia)</h1>
-    <p><strong>Eficiencia, protección y control preciso del motor.</strong> Selección por potencia, torque, ciclo de trabajo y ambiente (IP, temperatura, armónicos).</p>
-    <h2>Qué entregamos</h2>
-    <ul>
-      <li><strong>Parametrización base:</strong> macros por aplicación (bombas, ventiladores, transportadores).</li>
-      <li><strong>Integración:</strong> control local/remoto, PID, rampas y perfiles de velocidad.</li>
-      <li><strong>Calidad de energía:</strong> recomendaciones EMC, inductancias y filtros.</li>
-    </ul>
-    <p><a class="btn btn-primary" href="https://quarksystems.mitiendanube.com/" target="_blank" rel="noopener">Ver VFD en catálogo</a></p>
+  <!-- Header (include) -->
+  <header id="header" class="site-header"></header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="VFD industriales">
+      <div class="hero__content container narrow">
+        <span class="badge">Quark‑Systems.ar</span>
+        <h1>VFD industriales</h1>
+        <p>Controlá la velocidad, ahorrá energía y protegé tus activos mecánicos con variadores WECON.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary neon ripple" href="https://quarksystems.mitiendanube.com/search?q=VFD" target="_blank" rel="noopener">Ver catálogo</a>
+          <a class="btn btn-ghost" href="/contacto.html">Hablar con un especialista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Por qué Quark-Systems -->
+    <section class="value" id="por-que">
+      <div class="container narrow">
+        <h2>Quark‑Systems: eficiencia y cuidado del equipo</h2>
+        <ul class="ticks">
+          <li><strong>Ahorro de energía inmediato</strong> en bombas y ventiladores por leyes de afinidad: bajar 20% la velocidad puede reducir la potencia ~50%*.</li>
+          <li><strong>Protección mecánica</strong>: arranque/paro suave, menos golpes de ariete, menos esfuerzo en rodamientos, acoples y correas.</li>
+          <li><strong>Integración simple</strong>: RS‑485/Modbus, PID integrado y macros de aplicación típicas.</li>
+          <li><strong>Soporte local real</strong>: selección, puesta en marcha y capacitación para tu equipo.</li>
+        </ul>
+        <p style="color:var(--muted);font-size:.95rem">*Valores típicos para cargas centrífugas; el ahorro real depende del perfil de carga y sistema.</p>
+      </div>
+    </section>
+
+    <!-- Series VFD WECON -->
+    <section id="series-vfd" class="plc-series-section">
+      <div class="container">
+        <h2>Series VFD WECON</h2>
+        <ul class="cards">
+          <!-- VM -->
+          <li class="card">
+            <!-- <img src="/assets/img/vfd/vm.jpg" alt="WECON VM Series" class="card-zoom"> -->
+            <h3>VM · Compacto y económico</h3>
+            <p>Variador compacto para aplicaciones estándar en espacios reducidos.</p>
+            <ul class="ticks">
+              <li>Cuerpo pequeño; montaje en riel DIN.</li>
+              <li>Protecciones múltiples; 0–400 Hz.</li>
+              <li>Sobrecarga 150% 60 s.</li>
+              <li>220 V monofásico 0.75–2.2 kW · 380 V trifásico 0.75–7.5 kW.</li>
+            </ul>
+            <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/161.html" target="_blank" rel="noopener">Ver VM</a>
+          </li>
+
+          <!-- VB -->
+          <li class="card">
+            <!-- <img src="/assets/img/vfd/vb.jpg" alt="WECON VB Series" class="card-zoom"> -->
+            <h3>VB · Alto rendimiento</h3>
+            <p>Vectorial de uso general con control SVC y V/F para procesos exigentes.</p>
+            <ul class="ticks">
+              <li>SVC hasta 320 Hz · V/F hasta 1000 Hz.</li>
+              <li>Unidad de freno incorporada en 0.75–22 kW.</li>
+              <li>PID optimizado; detección de cortocircuito a tierra.</li>
+              <li>Rangos: 220 V monof./trifásico · 380/415/440 V trifásico hasta 400 kW.</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_t/162.html" target="_blank" rel="noopener">Ver VB</a>
+              <a class="btn btn-ghost--dark" href="https://www.we-con.com.cn/en/product_page/298.html" target="_blank" rel="noopener">Ficha 0.75–2.2 kW</a>
+            </div>
+          </li>
+
+          <!-- VC -->
+          <li class="card">
+            <!-- <img src="/assets/img/vfd/vc.jpg" alt="WECON VC Series" class="card-zoom"> -->
+            <h3>VC · Flexible y expandible</h3>
+            <p>Diseño estrecho, módulos de expansión y control mejorado.</p>
+            <ul class="ticks">
+              <li>Tarjetas para comunicación, I/O y encoder incremental.</li>
+              <li>Compatible con motores síncronos y asíncronos.</li>
+              <li>Entrada de voltaje amplia.</li>
+              <li>220 V monofásico 0.75–2.2 kW · 380–480 V trifásico 5.5–37 kW.</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://www.we-con.com.cn/en/product_page/3096.html" target="_blank" rel="noopener">Ver VC 5.5–37 kW</a>
+              <a class="btn btn-ghost--dark" href="https://www.we-con.com.cn/en/product_s/89.html" target="_blank" rel="noopener">Gama VFD</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Casos / Ejemplos de aplicación -->
+    <section class="value" id="casos">
+      <div class="container">
+        <h2>Ejemplos que rinden</h2>
+        <ul class="cards">
+          <li class="card">
+            <h3>Agua · Presión constante</h3>
+            <p>Con VB + PLC ajustamos la velocidad de la bomba según el PID de presión. Menos cavitación y menor consumo frente a válvula estranguladora.</p>
+            <ul class="ticks">
+              <li>Ahorro típico significativo al reducir rpm en cargas centrífugas.</li>
+              <li>Arranque/paro suave → menos golpes de ariete.</li>
+            </ul>
+            <a class="btn btn-ghost--dark" href="https://www.we-con.com.cn/en/solutions_t/2617.html" target="_blank" rel="noopener">Caso de calefacción con VB</a>
+          </li>
+          <li class="card">
+            <h3>Ventilación · HVAC</h3>
+            <p>En extractores y inyectores, el VFD sigue la demanda. Menos ruido, mejor confort y ahorro por leyes de afinidad.</p>
+            <ul class="ticks">
+              <li>Ideal para torres de enfriamiento y ventiladores de proceso.</li>
+              <li>Integración por Modbus y señales analógicas.</li>
+            </ul>
+          </li>
+          <li class="card">
+            <h3>Transporte & mezclado</h3>
+            <p>Arranques suaves en cintas, extrusoras o mezcladores evitan tironeos y alargan la vida de acoples y reductores.</p>
+            <ul class="ticks">
+              <li>Protecciones y rampas configurables.</li>
+              <li>Función de frenado (según modelo/potencia).</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="selector-vfd" class="value">
+  <div class="container">
+    <h2>Tabla de selección de VFD</h2>
+    <p class="narrow" style="margin:0 auto 1rem auto;color:var(--muted)">
+      Referencia rápida para elegir la serie según aplicación y exigencias típicas.
+      <br>Tip: en cargas centrífugas (bombas/ventiladores) priorizá control estable, PID y frenado cuando sea necesario; en transporte/mezclado, buscá rampas y torque a baja frecuencia.
+    </p>
+
+    <div class="card" style="overflow:auto">
+      <table style="width:100%; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th style="text-align:left; padding:.65rem; border-bottom:1px solid #e5e7eb;">Aplicación</th>
+            <th style="text-align:left; padding:.65rem; border-bottom:1px solid #e5e7eb;">Requisito típico</th>
+            <th style="text-align:left; padding:.65rem; border-bottom:1px solid #e5e7eb;">Serie sugerida</th>
+            <th style="text-align:left; padding:.65rem; border-bottom:1px solid #e5e7eb;">Motivo / Observaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Bombas -->
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Bomba agua (presión constante)</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">PID de presión + ahorro energético</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong> (general) · <strong>VC</strong> (expansión/red)</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              VB ofrece SVC estable y freno integrado en 0.75–22 kW; VC si necesitás expansión (comunicaciones/PG) o gabinetes compactos.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Bomba proceso (caudal variable)</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Rampa suave + anti‑golpe de ariete</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong></td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              Buen control vectorial y protecciones; usar macro PID y rampas S‑curve.
+            </td>
+          </tr>
+
+          <!-- Ventiladores -->
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Ventiladores HVAC / torres</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Modulación por temperatura/ΔP</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong> · <strong>VM</strong> (baja potencia/espacio)</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              VB para demandas medias/altas; VM cuando el espacio y el costo mandan en equipos pequeños.
+            </td>
+          </tr>
+
+          <!-- Transporte/mezclado -->
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Cintas, elevadores, transportes</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Torque a baja vel. + rampas suaves</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong></td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              Mejor respuesta SVC y control de frenado (resistencia si aplica). Ajustar tiempos de aceleración/dec.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Mezcladores / extrusoras</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Par estable + protección mecánica</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong> · <strong>VC</strong> (si red/encoder)</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              Para sincronía o feedback de velocidad, usar VC con tarjeta PG/fieldbus.
+            </td>
+          </tr>
+
+          <!-- Agua/servicios -->
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Agua helada / booster / riego</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Eficiencia + control estable</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VB</strong></td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              PID integrado, buena respuesta a baja velocidad y protecciones estándar.
+            </td>
+          </tr>
+
+          <!-- Compacto/entry -->
+          <tr>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Equipos compactos / tableros chicos</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">Huella reducida + costo</td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;"><strong>VM</strong></td>
+            <td style="padding:.65rem; border-bottom:1px solid #f1f5f9;">
+              Dimensiones pequeñas y montaje en riel DIN; ideal en 220 V monofásico (0.75–2.2 kW).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card" style="margin-top:1rem">
+      <h3 style="margin:.25rem 0 .5rem 0;">Notas de selección</h3>
+      <ul class="ticks" style="margin:0;">
+        <li><strong>Potencias/voltajes</strong>: VM (220 V monof. 0.75–2.2 kW; 380 V 0.75–7.5 kW), VB (hasta 400 kW en 380/415/440 V), VC (5.5–37 kW en 380–480 V; 0.75–2.2 kW en 220 V).</li>
+        <li><strong>Frenado</strong>: VB trae unidad de freno integrada hasta 22 kW (sumá resistencia si tu inercia lo requiere).</li>
+        <li><strong>Comunicación/feedback</strong>: si necesitás fieldbus (p.ej. Profinet/EtherCAT) o encoder incremental, elegí VC con módulos de expansión.</li>
+        <li><strong>Ahorro energético</strong>: en bombas/ventiladores, la potencia cae fuertemente con la velocidad (afinidad). Ajustá setpoints/rampas y verificá curva de sistema.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+    <!-- CTA final -->
+    <section class="highlight cta-bottom">
+      <div class="container narrow">
+        <h2>¿Listo para bajar kWh y cuidar tu mecánica?</h2>
+        <p>Te acompañamos en selección, parametrización y capacitación.</p>
+        <div class="cta-row" style="justify-content:center;">
+          <a class="btn btn-primary neon ripple" href="/contacto.html">Contactanos ahora</a>
+          <a class="btn btn-ghost" href="https://quarksystems.mitiendanube.com/search?q=VFD" target="_blank" rel="noopener">Ver VFD en catálogo</a>
+        </div>
+      </div>
+    </section>
   </main>
-  <div id="footer"></div>
-  <script src="/assets/js/includes.js"></script>
+
+  <!-- Footer (include) -->
+  <footer id="footer" class="site-footer footer-glow"></footer>
+
+  <script src="/assets/js/includes.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
