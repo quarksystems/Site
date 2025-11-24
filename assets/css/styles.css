@@ -581,3 +581,40 @@ a:focus-visible, .btn:focus-visible {
   display: inline-block;
   margin-top: 12px;
 }
+/* Alineación visual para la tarjeta amplia A500 */
+#plc-series .full-width .card img {
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Mejora leve al título dentro del full-width */
+#plc-series .full-width .card h3 {
+  margin-top: 1rem;
+}
+.plc-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.plc-compare-table th {
+  background: #0d2a45;
+  color: #fff;
+  padding: 0.75rem;
+}
+
+.plc-compare-table td {
+  padding: 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.plc-compare-table tbody tr:nth-child(even) {
+  background: #f5f7fb;
+}
+
+.plc-compare-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
